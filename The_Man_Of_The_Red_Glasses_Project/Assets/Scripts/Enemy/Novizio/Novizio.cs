@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Novizio : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class Novizio : MonoBehaviour
     public float speed = 2f;
 
     public Animator animator;
+
+    private bool chase;
+
+    private bool patrol;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +28,20 @@ public class Novizio : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(transform.position, target.position);
-        Debug.Log(distance);
-        //Debug.Log(currentState);
+     
+        if (chase == false)
+        {
+            animator.SetBool("Chase",false);
+            patrol = true;
+            animator.SetBool("isPatrolling",true);
+            GetComponent<NavMeshAgent>().SetDestination(RandomNavMeshLocation(50f));
+        }
         if (distance < chaseRange)
         { 
             currentState = "ChaseState";
             if (currentState == "ChaseState")
             {
-                //animator.SetTrigger("chase");
+                animator.SetBool("isPatrolling",false);
                 animator.SetBool("Chase",true);
             
                 if (target.position.x > transform.position.x)
@@ -70,5 +81,18 @@ public class Novizio : MonoBehaviour
                 animator.SetBool("Chase",false);
             }
         }
+    }
+
+    public Vector3 RandomNavMeshLocation(float radius)
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * radius;
+        randomDirection += transform.position;
+        NavMeshHit hit;
+        Vector3 finalPosition = Vector3.zero;
+        if (NavMesh.SamplePosition(randomDirection, out hit, radius, 1))
+        {
+            finalPosition = hit.position;
+        }
+        return finalPosition;
     }
 }

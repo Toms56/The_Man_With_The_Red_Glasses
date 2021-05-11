@@ -18,6 +18,7 @@ public class Soldati : MonoBehaviour
 
     public Animator animator;
     private bool shoot;
+    private bool patrol;
     
     // Start is called before the first frame update
     void Start()
@@ -29,20 +30,24 @@ public class Soldati : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Patrol();
+        
         float distance = Vector3.Distance(transform.position, target.position);
         Debug.Log(distance);
         Debug.Log(currentState);
 
+        //Patrol State
         if (shoot == false)
         {
             animator.SetBool("isShooting",false);
-            GetComponent<NavMeshAgent>().Move(transform.forward*Time.deltaTime);
+            patrol = true;
+            animator.SetBool("isPatrolling",true);
+            GetComponent<NavMeshAgent>().SetDestination(RandomNavMeshLocation(6f));
         }
 
         if (distance > chaseRange)
         {
             animator.SetBool("isShooting",false);
+            animator.SetBool("isPatrolling",true);
             shoot = false;
         }else if (distance < chaseRange)
         {
@@ -50,14 +55,18 @@ public class Soldati : MonoBehaviour
             {
                 //transform.Translate(transform.right * speed * Time.deltaTime);
                 currentState = "shootState";
+                animator.SetBool("isPatrolling",false);
                 animator.SetBool("isShooting", true);
+                patrol = false;
                 shoot = true;
             }
             if (Vector2.Distance(transform.position, target.position) > stopDistance)
             {
                 transform.Translate(transform.right * -speed * Time.deltaTime);
                 currentState = "shootState";
+                animator.SetBool("isPatrolling",false);
                 animator.SetBool("isShooting", true);
+                patrol = false;
                 shoot = true;
             }else if(Vector2.Distance(transform.position,target.position)< stopDistance && Vector2.Distance(transform.position,target.position)>retreatDistance)
             {
@@ -66,7 +75,9 @@ public class Soldati : MonoBehaviour
             {
                 transform.Translate(-transform.right * -speed * Time.deltaTime); // -transform.r == transform.left
                 currentState = "shootState";
+                animator.SetBool("isPatrolling",false);
                 animator.SetBool("isShooting", true);
+                patrol = false;
                 shoot = true;
             } 
             if (target.position.x > transform.position.x)
@@ -79,20 +90,16 @@ public class Soldati : MonoBehaviour
             }
         }
     }
-
-    /*public void Patrol()
+    public Vector3 RandomNavMeshLocation(float radius)
     {
-        transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, speed * Time.deltaTime);
-        if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
+        Vector3 randomDirection = Random.insideUnitSphere * radius;
+        randomDirection += transform.position;
+        NavMeshHit hit;
+        Vector3 finalPosition = Vector3.zero;
+        if (NavMesh.SamplePosition(randomDirection, out hit, radius, 1))
         {
-            if (waitTime <= 0)
-            {
-                waitTime = startWaitTime;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
+            finalPosition = hit.position;
         }
-    }*/
+        return finalPosition;
+    }
 }
