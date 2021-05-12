@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class AimPlayer : MonoBehaviour
 {
-    
+    public GameObject gun;
+    public Transform gunTransform;
+    public GameObject bullet;
+
 
     private void Awake()
     {
@@ -30,13 +33,23 @@ public class AimPlayer : MonoBehaviour
             {
                 transform.rotation = Quaternion.Euler(new Vector3(180f,0f,-weaponAngle));
             }
+
+            if (Input.GetMouseButtonDown(0)){
+                Shoot();
+            }
+
             else
             {
                 transform.rotation = Quaternion.Euler(new Vector3(0f,0f,weaponAngle));
 
             }
         }
-       
+    }
+
+    void Shoot()
+    {
+        GameObject firedBullet = Instantiate(bullet, gunTransform.position, gunTransform.rotation);
+        firedBullet.GetComponent<Rigidbody>().velocity = gunTransform.right * 10f;
     }
 
 }

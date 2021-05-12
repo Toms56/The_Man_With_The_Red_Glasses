@@ -33,7 +33,7 @@ public class PlayerTomTest : MonoBehaviour
         }
         else
         {
-            mouvement.y += -9.81f * Time.deltaTime;
+            mouvement.y += -50f * Time.deltaTime;
         }
     }
 }
