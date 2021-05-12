@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class Novizio : MonoBehaviour
 {
+    public float healthPts = 1; 
+    
     private string currentState = "IdleState";
     public Transform target;
 
@@ -80,6 +82,13 @@ public class Novizio : MonoBehaviour
                 currentState = "IdleState";
                 animator.SetBool("Chase",false);
             }
+        }
+
+        if (healthPts <= 0)
+        {
+            //Vfx de l'effusion de sang
+            //call de l'anim de destruction
+            Destroy(gameObject);
         }
     }
 

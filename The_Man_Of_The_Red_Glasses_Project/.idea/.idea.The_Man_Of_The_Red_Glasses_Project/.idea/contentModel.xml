@@ -80,9 +80,15 @@
           <e p="Enemy" t="Include">
             <e p="Novizio" t="Include">
               <e p="Novizio.cs" t="Include" />
+              <e p="Novizio2D.cs" t="Include" />
             </e>
             <e p="Soldati" t="Include">
+              <e p="Shoot" t="Include">
+                <e p="SoldatiBullet.cs" t="Include" />
+                <e p="SoldatiCanon.cs" t="Include" />
+              </e>
               <e p="Soldati.cs" t="Include" />
+              <e p="Soldati2D.cs" t="Include" />
             </e>
           </e>
           <e p="Test" t="Include">
