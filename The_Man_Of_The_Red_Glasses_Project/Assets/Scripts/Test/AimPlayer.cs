@@ -9,6 +9,7 @@ public class AimPlayer : MonoBehaviour
     public GameObject bullet;
 
 
+
     private void Awake()
     {
         

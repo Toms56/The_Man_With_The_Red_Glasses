@@ -5,10 +5,8 @@ using UnityEngine;
 public class AIMTest : MonoBehaviour
 {
     public Transform gunTransform;
-    public GameObject bullet;
 
-    private Vector2 lookDirection;
-    private float lookAngle;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,19 +17,23 @@ public class AIMTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
-
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(1))
         {
-            Shoot();
-        }
-    }
+            Vector3 mousePos = Input.mousePosition;
+            Vector3 gunPos = Camera.main.WorldToScreenPoint(transform.position);
+            mousePos.x = mousePos.x - gunPos.x;
+            mousePos.y = mousePos.y - gunPos.y;
+            float weaponAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+            if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(180f, 0f, -weaponAngle));
+            }
 
-    void Shoot()
-    {
-        GameObject firedBullet = Instantiate(bullet, gunTransform.position, gunTransform.rotation);
-        firedBullet.GetComponent<Rigidbody>().velocity = gunTransform.right * 10f;
+            else
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, weaponAngle));
+
+            }
+        }
     }
 }
