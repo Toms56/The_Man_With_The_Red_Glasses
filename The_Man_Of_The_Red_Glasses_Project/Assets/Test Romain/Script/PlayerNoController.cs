@@ -84,6 +84,12 @@ public class PlayerNoController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rbody.velocity = new Vector3(rbody.velocity.x, jumpHeight, 0);
+            animator.SetBool("Jump",true);
+        }
+
+        if (rbody.velocity.y == 0)
+        {
+            animator.SetBool("Jump", false);
         }
 
         // Facing Rotation
@@ -96,15 +102,22 @@ public class PlayerNoController : MonoBehaviour
 
         rbody.MoveRotation(Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(targetTform.position.x - transform.position.x),0)));
 
+        Debug.Log(isGrounded);
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheckTransform.position, groundCheckRadius, groundCheckMask, QueryTriggerInteraction.Ignore);
     }
 
-   /* private void OnAnimatorIK()
+    private void OnAnimatorIK()
     {
-        // Weapon Aim Target
-        animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
-        animator.SetIKPosition(AvatarIKGoal.RightHand, targetTform.position);
+        if (Input.GetMouseButton(1))
+        {
+            // Weapon Aim Target
+            animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
+            animator.SetIKPosition(AvatarIKGoal.RightHand, targetTform.position);
+
+            animator.SetLookAtWeight(1);
+            animator.SetLookAtPosition(targetTform.position);
+        }
+
     }
-   */
 }
