@@ -87,13 +87,21 @@
                 <e p="SoldatiBullet.cs" t="Include" />
                 <e p="SoldatiCanon.cs" t="Include" />
               </e>
-              <e p="Soldati.cs" t="Include" />
-              <e p="Soldati2D.cs" t="Include" />
+              <e p="SoldatiPatrol.cs" t="Include" />
+              <e p="SoldatiStatic.cs" t="Include" />
             </e>
           </e>
           <e p="Test" t="Include">
             <e p="AimPlayer.cs" t="Include" />
             <e p="PlayerTomTest.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Test Romain" t="Include">
+          <e p="Script" t="Include">
+            <e p="AIMTest.cs" t="Include" />
+            <e p="MainCamera.cs" t="Include" />
+            <e p="PlayerNoController.cs" t="Include" />
+            <e p="PlayersTest.cs" t="Include" />
           </e>
         </e>
       </e>

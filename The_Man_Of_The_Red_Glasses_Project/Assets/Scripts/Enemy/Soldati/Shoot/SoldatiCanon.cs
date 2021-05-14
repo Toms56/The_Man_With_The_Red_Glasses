@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class SoldatiCanon : MonoBehaviour
 {
@@ -19,8 +21,8 @@ public class SoldatiCanon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartShooting();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        /*StartShooting();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();*/
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class SoldatiCanon : MonoBehaviour
     {
         StartShooting();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        Debug.DrawLine(Vector3.zero, new Vector3(10,0,0), Color.red);//Demander indications
     }
     
     void SpawnBullet()
@@ -36,7 +39,7 @@ public class SoldatiCanon : MonoBehaviour
         {
             Instantiate(soldatiBullet, transform.position + bossBulletOffset, transform.rotation);
             time = Time.time + fireRate;
-            target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); //utiliser ds boss
+            //target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); 
         }
     }
     

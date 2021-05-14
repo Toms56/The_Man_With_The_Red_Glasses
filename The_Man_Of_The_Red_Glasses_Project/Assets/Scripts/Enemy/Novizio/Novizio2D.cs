@@ -44,6 +44,7 @@ public class Novizio2D : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, target.position);
 
+        Debug.Log(distance);
         if (chase == false)
         {
             animator.SetBool("Chase",false);
@@ -76,10 +77,11 @@ public class Novizio2D : MonoBehaviour
             currentState = "IdleState";
             animator.SetBool("Chase",false);
         }
-        if (distance < attackRange)
+        if (distance < attackRange && distance<chaseRange)
         {
             currentState = "AttackState";
             animator.SetBool("isAttacking", true);
+            animator.SetBool("Chase",false);
         }
 
         if (distance > attackRange)
