@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PlayerNoController : MonoBehaviour
 {
+    public static PlayerNoController Instance;
+
     // For Mouvement
     public float jumpHeight;
     public float baseSpeed;
     private float finalSpeed;
     private float mouvement;
     private bool accroupi;
+
+    // PV
+    public int pv = 3;
+    public bool die = false;
+
         // Rotation (Permet à la bonne animation de se faire selon le sens où il regarde)
     private int facingSign
     {
@@ -26,8 +33,8 @@ public class PlayerNoController : MonoBehaviour
     public LayerMask groundCheckMask;
 
 
-    // For its privates Components
-    private Animator animator;
+    // For its Components
+    private static Animator animator;
     private Rigidbody rbody;
     private Transform tform;
     private Camera mainCamera;
@@ -37,6 +44,18 @@ public class PlayerNoController : MonoBehaviour
     public Transform targetTform;
     public LayerMask mouseAimMask;
 
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -49,12 +68,21 @@ public class PlayerNoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (pv == 0)
+        {
+            // Mort du joueur / Empêcher le shoot 
+            animator.SetBool("Jump", true);
+            die = true;
+            return;
+        }
+
         //Movement
         mouvement = Input.GetAxis("Horizontal");
         rbody.velocity = new Vector3(mouvement * finalSpeed, rbody.velocity.y, 0);
         animator.SetFloat("Speed", (facingSign * rbody.velocity.x) / finalSpeed);
 
-        // Sneaky and Speed
+        // Sneaky and Speed                                             REMETTRE L ANIMATION POUR LE SNEAKY 
         if (Input.GetKeyDown(KeyCode.LeftControl) && !accroupi)
         {
             animator.SetBool("Accroupi", true);
@@ -70,6 +98,7 @@ public class PlayerNoController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             finalSpeed = baseSpeed * 2;
+            animator.SetBool("Run", true);
         }
         else if (accroupi)
         {
@@ -78,6 +107,7 @@ public class PlayerNoController : MonoBehaviour
         else
         {
             finalSpeed = baseSpeed;
+            animator.SetBool("Run", false);
         }
 
         // Jump
@@ -92,6 +122,8 @@ public class PlayerNoController : MonoBehaviour
             animator.SetBool("Jump", false);
         }
 
+        Debug.Log(isGrounded);
+
         // Facing Rotation
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -102,15 +134,16 @@ public class PlayerNoController : MonoBehaviour
 
         rbody.MoveRotation(Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(targetTform.position.x - transform.position.x),0)));
 
-        Debug.Log(isGrounded);
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheckTransform.position, groundCheckRadius, groundCheckMask, QueryTriggerInteraction.Ignore);
     }
 
     private void OnAnimatorIK()
     {
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1) && die == false)
         {
+            animator.SetBool("Aiming", true);
+
             // Weapon Aim Target
             animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
             animator.SetIKPosition(AvatarIKGoal.RightHand, targetTform.position);
@@ -118,6 +151,17 @@ public class PlayerNoController : MonoBehaviour
             animator.SetLookAtWeight(1);
             animator.SetLookAtPosition(targetTform.position);
         }
+        else
+        {
+            animator.SetBool("Aiming", false);
+        }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "BulletEnemy")
+        {
+            pv -= 1;
+        }
     }
 }

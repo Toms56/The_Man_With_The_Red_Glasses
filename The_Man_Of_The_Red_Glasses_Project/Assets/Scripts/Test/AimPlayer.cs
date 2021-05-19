@@ -8,16 +8,17 @@ public class AimPlayer : MonoBehaviour
     public Transform gunTransform;
     public GameObject bullet;
 
-
+    [SerializeField] int magazine;
+    [SerializeField] int bulletSpeed;
 
     private void Awake()
     {
-        
+
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -42,16 +43,23 @@ public class AimPlayer : MonoBehaviour
               }
           } */
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !PlayerNoController.Instance.die)
         {
-            Shoot();
+            if (magazine != 0)
+            {
+                Shoot();
+            }
         }
+        
     }
 
     void Shoot()
     {
         GameObject firedBullet = Instantiate(bullet, gunTransform.position, gunTransform.rotation);
-        firedBullet.GetComponent<Rigidbody>().velocity = gunTransform.right * 10f;
+        firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * 10f;
+        magazine -= 1;
+        //Debug.Log(gunTransform.parent.localPosition);
+        //firedBullet.transform.Translate(Vector3.Lerp(gunTransform.transform.position, PlayerNoController.Instance.targetTform.transform.position,2f));
+        //firedBullet.transform.Translate((Vector3.forward * 10f) * Time.deltaTime);
     }
-
 }
