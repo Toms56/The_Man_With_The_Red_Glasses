@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SoldatiPatrol : MonoBehaviour
 {
@@ -13,9 +15,16 @@ public class SoldatiPatrol : MonoBehaviour
 
     private float currentWaitTime = 0f;
 
-    private float minX, maxX;
+    [SerializeField]private float minX;
+    [SerializeField]private float maxX;
+    
 
     private Vector3 moveSpot;
+    
+    //Jumping
+    private Rigidbody rb;
+    private Vector3 localScale;
+    private float dirX;
 
     #endregion
 
@@ -45,6 +54,8 @@ public class SoldatiPatrol : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         GetGroundSize();
         moveSpot = GetNewPosition();
+        //Jump
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -80,7 +91,8 @@ public class SoldatiPatrol : MonoBehaviour
                 patrol = false;
                 shoot = true;
             }
-            if (Vector2.Distance(transform.position, target.position) > stopDistance+0.1f)
+            
+            if (Vector2.Distance(transform.position, target.position) > stopDistance + 0.1f)
             {
                 transform.Translate(transform.right * -speed * Time.deltaTime);
                 currentState = "shootState";
@@ -89,12 +101,18 @@ public class SoldatiPatrol : MonoBehaviour
                 animator.SetBool("shootBack", false);
                 patrol = false;
                 shoot = true;
-            }else if(Vector2.Distance(transform.position,target.position)< stopDistance && Vector2.Distance(transform.position,target.position)>retreatDistance)
+            }
+            
+            else if(Vector2.Distance(transform.position,target.position)> stopDistance && Vector2.Distance(transform.position,target.position)<retreatDistance)
             {
-                transform.position = this.transform.position;
+                animator.SetBool("isPatrolling",false);
+                animator.SetBool("isShooting", false);
+                animator.SetBool("shootBack", false);
+                animator.SetBool("stopWalk", true);
+                //transform.position = this.transform.position;
             }else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
             {
-                transform.Translate(-transform.right * -speed * Time.deltaTime); // -transform.r == transform.left
+                transform.Translate(-transform.right * -speed * Time.deltaTime); // -transform.right == transform.left
                 currentState = "shootState";
                 animator.SetBool("isPatrolling",false);
                 animator.SetBool("isShooting", false);
@@ -112,6 +130,12 @@ public class SoldatiPatrol : MonoBehaviour
             }
         }
     }
+
+    /*private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(transform.localScale.x , rb.velocity.y);
+    }*/
+
     private void GetGroundSize()
     {
         GameObject ground = GameObject.FindWithTag("Ground");
@@ -149,5 +173,23 @@ public class SoldatiPatrol : MonoBehaviour
         Vector3 targetDirection = moveSpot - transform.position;
         Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 0.3f, 0f);
         transform.rotation = Quaternion.LookRotation(newDirection);
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Wall")
+        {
+            GetNewPosition();
+        }
+        /*switch (col.tag)
+        {
+            case "BigStump":
+                rb.AddForce(Vector2.up*300f);
+                break;
+            
+            case "SmallStump":
+                rb.AddForce(Vector2.up*150f);
+                break;
+        }*/
     }
 }

@@ -72,6 +72,18 @@
             </e>
           </e>
         </e>
+        <e p="QuickOutline" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Resources" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="OutlineFill.shader" t="Include" />
+              <e p="OutlineMask.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Outline.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Camera" t="Include">
             <e p="SimpleCameraController.cs" t="Include" />
@@ -79,10 +91,13 @@
           </e>
           <e p="Enemy" t="Include">
             <e p="Novizio" t="Include">
-              <e p="Novizio.cs" t="Include" />
-              <e p="Novizio2D.cs" t="Include" />
+              <e p="NovizioAfk.cs" t="Include" />
+              <e p="NovizioPatrol.cs" t="Include" />
+              <e p="NovizioRaycast.cs" t="Include" />
+              <e p="NovizioStatic.cs" t="Include" />
             </e>
             <e p="Soldati" t="Include">
+              <e p="JumpTest.cs" t="Include" />
               <e p="Shoot" t="Include">
                 <e p="SoldatiBullet.cs" t="Include" />
                 <e p="SoldatiCanon.cs" t="Include" />
