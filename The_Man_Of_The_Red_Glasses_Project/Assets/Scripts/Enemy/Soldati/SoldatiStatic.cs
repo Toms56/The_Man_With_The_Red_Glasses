@@ -51,7 +51,7 @@ public class SoldatiStatic : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(transform.position, target.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if (shoot == false)
         {
             animator.SetBool("isShooting",false);

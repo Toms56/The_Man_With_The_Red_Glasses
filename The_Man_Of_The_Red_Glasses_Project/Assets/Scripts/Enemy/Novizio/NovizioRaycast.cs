@@ -80,14 +80,15 @@ public class NovizioRaycast : MonoBehaviour
             castDist = -distance;
         }
 
-        Vector2 endPos = castPoint.position + Vector3.left * castDist;
+        //Vector2 endPos = castPoint.position + Vector3.left * castDist;
 
-        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPos, 1 << LayerMask.NameToLayer("Action"));
+        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, Vector2.left , 1 << LayerMask.NameToLayer("Action"));
 
         if (hit.collider != null)
         {
-            if (hit.collider.gameObject.CompareTag("Player"))
+            if (hit.collider.CompareTag("Player"))
             {
+                Debug.Log("Player hit");
                 val = true;
             }
             else
@@ -98,7 +99,7 @@ public class NovizioRaycast : MonoBehaviour
         }
         else
         {
-            Debug.DrawLine(castPoint.position, endPos, Color.blue);
+            Debug.DrawLine(castPoint.position, Vector2.left, Color.green);
         }
         return val;
     }

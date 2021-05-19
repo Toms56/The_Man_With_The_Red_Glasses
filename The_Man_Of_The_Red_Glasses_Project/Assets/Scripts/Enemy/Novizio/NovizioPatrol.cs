@@ -45,7 +45,7 @@ public class NovizioPatrol : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, target.position);
 
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if (chase == false)
         {
             animator.SetBool("Chase",false);
