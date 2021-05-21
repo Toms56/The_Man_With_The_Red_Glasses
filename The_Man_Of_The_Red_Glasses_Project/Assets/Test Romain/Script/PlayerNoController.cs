@@ -45,6 +45,7 @@ public class PlayerNoController : MonoBehaviour
     public LayerMask mouseAimMask;
 
 
+
     private void Awake()
     {
         if (Instance == null)
@@ -142,18 +143,12 @@ public class PlayerNoController : MonoBehaviour
     {
         if (Input.GetMouseButton(1) && die == false)
         {
-            animator.SetBool("Aiming", true);
-
             // Weapon Aim Target
             animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
-            animator.SetIKPosition(AvatarIKGoal.RightHand, targetTform.position);
+            animator.SetIKPosition(AvatarIKGoal.RightHand, targetTform.position/* + new Vector3(0,1,0)*/);
 
             animator.SetLookAtWeight(1);
             animator.SetLookAtPosition(targetTform.position);
-        }
-        else
-        {
-            animator.SetBool("Aiming", false);
         }
     }
 

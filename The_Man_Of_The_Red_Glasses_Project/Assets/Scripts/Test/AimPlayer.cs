@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class AimPlayer : MonoBehaviour
 {
-    public GameObject gun;
-    public Transform gunTransform;
+    public Transform targetTransform;
     public GameObject bullet;
 
     [SerializeField] int magazine;
@@ -49,13 +48,12 @@ public class AimPlayer : MonoBehaviour
             {
                 Shoot();
             }
-        }
-        
+        }   
     }
 
     void Shoot()
     {
-        GameObject firedBullet = Instantiate(bullet, gunTransform.position, gunTransform.rotation);
+        GameObject firedBullet = Instantiate(bullet, targetTransform.position, targetTransform.rotation);
         firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * 10f;
         magazine -= 1;
         //Debug.Log(gunTransform.parent.localPosition);
