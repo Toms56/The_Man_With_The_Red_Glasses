@@ -94,7 +94,6 @@
               <e p="NovizioAfk.cs" t="Include" />
               <e p="NovizioPatrol.cs" t="Include" />
               <e p="NovizioRaycast.cs" t="Include" />
-              <e p="NovizioStatic.cs" t="Include" />
             </e>
             <e p="Soldati" t="Include">
               <e p="JumpTest.cs" t="Include" />
@@ -104,6 +103,7 @@
               </e>
               <e p="SoldatiPatrol.cs" t="Include" />
               <e p="SoldatiStatic.cs" t="Include" />
+              <e p="SoldatiStaticRaycast.cs" t="Include" />
             </e>
           </e>
           <e p="Test" t="Include">
@@ -113,10 +113,12 @@
         </e>
         <e p="Test Romain" t="Include">
           <e p="Script" t="Include">
-            <e p="AIMTest.cs" t="Include" />
+            <e p="Bullet.cs" t="Include" />
             <e p="MainCamera.cs" t="Include" />
             <e p="PlayerNoController.cs" t="Include" />
             <e p="PlayersTest.cs" t="Include" />
+            <e p="Shoot.cs" t="Include" />
+            <e p="WeaponsSwitch.cs" t="Include" />
           </e>
         </e>
       </e>

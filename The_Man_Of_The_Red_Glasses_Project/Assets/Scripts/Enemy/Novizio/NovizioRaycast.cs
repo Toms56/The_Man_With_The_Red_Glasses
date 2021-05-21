@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,100 +8,102 @@ public class NovizioRaycast : MonoBehaviour
     [SerializeField]
     private Transform castPoint;
 
-    [SerializeField]
-    private Transform player;
-
-    [SerializeField] private float agroRange;
-
     [SerializeField] private float speed;
 
+    public Animator animator;
+
     private Rigidbody rb;
-    
-    private bool isAgro = false;
+    private float chaseRange = 1.5f;
+    [SerializeField]private float attackRange;
+    private bool isAgro;
 
     private bool isSearching;
 
     private bool isFacingLeft;
+
+    public Transform target;
     // Start is called before the first frame update
     void Start()
     {
+        isAgro = false;
         rb = GetComponent<Rigidbody>();
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (CanSeePlayer(agroRange))
+        float distance = Vector3.Distance(transform.position, target.position);
+        //Debug.Log(distance);
+        if (distance > chaseRange)
         {
-            isAgro = true;
+            isAgro = false;
+            animator.SetBool("Chase",false);
         }
-        else
+        if (isAgro == false)
         {
-            if (isAgro)
+            CancelInvoke("RushPlayer");
+            animator.SetBool("Chase",false);
+            Patrol();
+        }else if (isAgro && distance < chaseRange)
+        {
+            CancelInvoke("Patrol");
+            RushPlayer();
+        }
+    }
+
+    void RushPlayer()
+    {
+        float distance = Vector3.Distance(transform.position, target.position);
+        animator.SetBool("Chase",true);
+        if (distance > attackRange)
+        {
+            animator.SetBool("isAttacking", false);
+            animator.SetBool("Chase",true);
+            if (target.position.x > transform.position.x)
             {
-                if (!isSearching)
-                {
-                    isSearching = true;
-                    Invoke("StopChasingPlayer",5);
-                }
-            }
-        }
-
-        if (isAgro)
-        {
-            ChasePlayer();
-        }
-    }
-
-    void ChasePlayer()
-    {
-        if (transform.position.x < player.position.x)
-        {
-            rb.velocity = new Vector2(-speed,0);
-            transform.localScale = new Vector2(1,1);
-        }
-        else
-        {
-            rb.velocity = new Vector2(-speed,0);
-            transform.localScale = new Vector2(-1,1);
-        }
-    }
-
-    void StopChasingPlayer()
-    {
-        rb.velocity = new Vector2(0, 0);
-    }
-
-    bool CanSeePlayer(float distance)
-    {
-        bool val = false;
-        float castDist = distance;
-        if (isFacingLeft)
-        {
-            castDist = -distance;
-        }
-
-        //Vector2 endPos = castPoint.position + Vector3.left * castDist;
-
-        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, Vector2.left , 1 << LayerMask.NameToLayer("Action"));
-
-        if (hit.collider != null)
-        {
-            if (hit.collider.CompareTag("Player"))
-            {
-                Debug.Log("Player hit");
-                val = true;
+                transform.Translate(transform.right * speed * Time.deltaTime);
+                transform.rotation = Quaternion.Euler(0, 180, 0);
             }
             else
             {
-                val = false;
+                transform.Translate(-transform.right * speed * Time.deltaTime); // -transform.r == transform.left
+                transform.rotation = Quaternion.identity;
+            }
+        }
+        
+        if (distance < attackRange)
+        {
+            animator.SetBool("isAttacking", true);
+        }
+    }
+    void Patrol()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(castPoint.position, -transform.right, out hit, 1f, 1 << LayerMask.NameToLayer("Action")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit.collider.CompareTag("Player"))
+            {
+                Debug.Log("Player hit");
+                isAgro = true;
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }
         else
         {
-            Debug.DrawLine(castPoint.position, Vector2.left, Color.green);
+            isAgro = false;
+            Debug.DrawLine(castPoint.position, castPoint.position + -transform.right.normalized * 1f,
+                Color.green);
         }
-        return val;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PlayerBullet")
+        {
+            Debug.Log("Enemy Hit ! ");
+        }
     }
 }

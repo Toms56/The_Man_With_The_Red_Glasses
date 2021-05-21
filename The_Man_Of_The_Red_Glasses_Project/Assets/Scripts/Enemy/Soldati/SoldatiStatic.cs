@@ -108,4 +108,11 @@ public class SoldatiStatic : MonoBehaviour
             }
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PlayerBullet")
+        {
+            Debug.Log("Enemy Hit ! ");
+        }
+    }
 }
