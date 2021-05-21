@@ -88,6 +88,8 @@ public class SoldatiPatrol : MonoBehaviour
                 animator.SetBool("isPatrolling",false);
                 animator.SetBool("isShooting", true);
                 animator.SetBool("shootBack", false);
+                Vector3 targetDirection = target.position - transform.position;
+                transform.rotation = Quaternion.LookRotation(targetDirection);
                 patrol = false;
                 shoot = true;
             }
@@ -117,6 +119,8 @@ public class SoldatiPatrol : MonoBehaviour
                 animator.SetBool("isPatrolling",false);
                 animator.SetBool("isShooting", false);
                 animator.SetBool("shootBack", true);
+                /*Vector3 targetDirection = target.position - transform.position;
+                transform.rotation = Quaternion.LookRotation(targetDirection);*/
                 patrol = false;
                 shoot = true;
             } 
@@ -154,7 +158,6 @@ public class SoldatiPatrol : MonoBehaviour
 
     void GetToStepping()
     {
-        //Debug.Log(currentWaitTime);
         transform.position = Vector3.MoveTowards(transform.position, moveSpot, speed * Time.deltaTime);
         if (currentWaitTime <= 0)
         {
@@ -172,7 +175,7 @@ public class SoldatiPatrol : MonoBehaviour
     {
         Vector3 targetDirection = moveSpot - transform.position;
         Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 0.3f, 0f);
-        transform.rotation = Quaternion.LookRotation(newDirection);
+        transform.rotation = Quaternion.LookRotation(targetDirection);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -181,15 +184,5 @@ public class SoldatiPatrol : MonoBehaviour
         {
             GetNewPosition();
         }
-        /*switch (col.tag)
-        {
-            case "BigStump":
-                rb.AddForce(Vector2.up*300f);
-                break;
-            
-            case "SmallStump":
-                rb.AddForce(Vector2.up*150f);
-                break;
-        }*/
     }
 }

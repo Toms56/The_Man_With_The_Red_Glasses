@@ -17,4 +17,12 @@ public class NovizioAfk : MonoBehaviour
     {
         
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PlayerBullet")
+        {
+            Debug.Log("Enemy Hit ! ");
+        }
+    }
 }

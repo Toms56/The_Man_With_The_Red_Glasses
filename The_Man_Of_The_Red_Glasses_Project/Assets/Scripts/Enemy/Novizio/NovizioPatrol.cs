@@ -22,13 +22,14 @@ public class NovizioPatrol : MonoBehaviour
     private string currentState = "IdleState";
     public Transform target;
 
-    public float chaseRange = 4f;
-    public float attackRange = 0.5f;
+    public float chaseRange = 1.5f;
+    public float attackRange = 0.3f;
     public Animator animator;
 
     private bool chase;
 
     private bool patrol;
+    [SerializeField] private Transform castPoint;
     
 
     #endregion
@@ -43,8 +44,28 @@ public class NovizioPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(chase);
         float distance = Vector3.Distance(transform.position, target.position);
 
+        RaycastHit hit;
+
+        if (Physics.Raycast(castPoint.position, transform.forward, out hit, 1.5f, 1 << LayerMask.NameToLayer("Action")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit.collider.CompareTag("Player"))
+            {
+                Debug.Log("Player hit");
+                chase = true;
+            }
+            Debug.DrawLine(castPoint.position, hit.point, Color.red);
+        }
+        else if(distance > chaseRange)
+        {
+            chase = false;
+            Debug.DrawLine(castPoint.position, castPoint.position + transform.forward.normalized * 1.5f,
+                Color.green);
+        }
+        
         //Debug.Log(distance);
         if (chase == false)
         {
@@ -52,50 +73,30 @@ public class NovizioPatrol : MonoBehaviour
             WatchYourStep();
             GetToStepping();
         }
-        if (distance < chaseRange)
+        else if (chase)
         {
-            chase = true;
-            currentState = "ChaseState";
-            if (currentState == "ChaseState")
+            animator.SetBool("isPatrolling",false);
+            animator.SetBool("Chase",true);
+            if (target.position.x > transform.position.x)
             {
-                animator.SetBool("isPatrolling",false);
-                animator.SetBool("Chase",true);
-            
-                if (target.position.x > transform.position.x)
-                {
-                    transform.Translate(transform.right * speed * Time.deltaTime);
-                    transform.rotation = Quaternion.Euler(0, 180, 0);
-                }
-                else
-                {
-                    transform.Translate(-transform.right * speed * Time.deltaTime); // -transform.r == transform.left
-                    transform.rotation = Quaternion.identity;
-                }
+                transform.Translate(transform.right * speed * Time.deltaTime);
+                transform.rotation = Quaternion.Euler(0, 180, 0);
             }
-        }else if (distance > chaseRange)
-        {
-            chase = false;
-            currentState = "IdleState";
-            animator.SetBool("Chase",false);
-        }
-        if (distance < attackRange && distance<chaseRange)
-        {
-            currentState = "AttackState";
-            animator.SetBool("isAttacking", true);
-            animator.SetBool("Chase",false);
-        }
-
-        if (distance > attackRange)
-        {
-            animator.SetBool("isAttacking", false);
-            if (distance < chaseRange)
+            else
             {
-                currentState = "ChaseState";
-                animator.SetBool("Chase", true);
-            }else if (distance > chaseRange)
+                transform.Translate(-transform.right * speed * Time.deltaTime); // -transform.r == transform.left
+                transform.rotation = Quaternion.identity;
+            }
+            if (distance < attackRange && distance<chaseRange)
             {
-                currentState = "IdleState";
+                currentState = "AttackState";
+                animator.SetBool("isAttacking", true);
                 animator.SetBool("Chase",false);
+            }
+
+            if (distance > attackRange)
+            {
+                animator.SetBool("isAttacking", false);
             }
         }
     }
@@ -127,17 +128,22 @@ public class NovizioPatrol : MonoBehaviour
         }
         else
         {
-            animator.SetBool("isPatrolling",true);
+            animator.SetBool("isPatrolling",true); // REMETTRE A TRUE PLUS TARD
             currentWaitTime -= Time.deltaTime;
         }
     }
-
     void WatchYourStep()
     {
         Vector3 targetDirection = moveSpot - transform.position;
         Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 0.3f, 0f);
         transform.rotation = Quaternion.LookRotation(newDirection);
     }
-
-   
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "PlayerBullet")
+        {
+            Debug.Log("Enemy Hit ! ");
+        }
+    }
 }
