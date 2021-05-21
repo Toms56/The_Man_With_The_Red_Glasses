@@ -70,6 +70,8 @@ public class PlayerNoController : MonoBehaviour
     void Update()
     {
 
+        targetTform.position = new Vector3(targetTform.position.x, targetTform.position.y, 0.14f);
+
         if (pv == 0)
         {
             // Mort du joueur / Empêcher le shoot 
