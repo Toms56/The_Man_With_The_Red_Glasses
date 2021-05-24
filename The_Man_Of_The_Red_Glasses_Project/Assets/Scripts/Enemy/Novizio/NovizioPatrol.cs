@@ -49,7 +49,7 @@ public class NovizioPatrol : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(castPoint.position, transform.forward, out hit, 1.5f, 1 << LayerMask.NameToLayer("Action")))
+        if (Physics.Raycast(castPoint.position, transform.forward, out hit, 1.5f, 1 << LayerMask.NameToLayer("Default")))
         {
             //penser a desac .forward lors de la rotation
             if (hit.collider.CompareTag("Player"))
