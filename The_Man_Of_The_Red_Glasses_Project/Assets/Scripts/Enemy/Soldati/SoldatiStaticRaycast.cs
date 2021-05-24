@@ -64,7 +64,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(castPoint.position, -transform.right, out hit, 1f, 1 << LayerMask.NameToLayer("Action")))
+        if (Physics.Raycast(castPoint.position, -transform.right, out hit, 1f, 1 << LayerMask.NameToLayer("Default")))
         {
             //penser a desac .forward lors de la rotation
             if (hit.collider.CompareTag("Player"))
