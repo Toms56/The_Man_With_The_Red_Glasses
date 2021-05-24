@@ -36,11 +36,12 @@ public class PlayerNoController : MonoBehaviour
     // For its Components
     private static Animator animator;
     private Rigidbody rbody;
-    private Transform tform;
+    //private Transform tform;
     private Camera mainCamera;
 
+
     // For other public Components
-        // Rotation
+    // Rotation
     public Transform targetTform;
     public LayerMask mouseAimMask;
 
@@ -62,7 +63,7 @@ public class PlayerNoController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
-        tform = GetComponent<Transform>();
+        //tform = GetComponent<Transform>();
         mainCamera = Camera.main;
     }
 
@@ -70,7 +71,7 @@ public class PlayerNoController : MonoBehaviour
     void Update()
     {
 
-        targetTform.position = new Vector3(targetTform.position.x, targetTform.position.y, 0.14f);
+        targetTform.position = new Vector3(targetTform.position.x, targetTform.position.y, -0.14f);
 
         if (pv == 0)
         {
