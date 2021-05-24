@@ -10,7 +10,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     [SerializeField]private float stopDistance;
     [SerializeField]private float retreatDistance;
     
-    private float chaseRange = 2.5f;
+    private float chaseRange = 2f;
     
     [SerializeField]
     private Transform castPoint;
@@ -46,22 +46,23 @@ public class SoldatiStaticRaycast : MonoBehaviour
         if (distance > chaseRange)
         {
             shoot = false;
-            animator.SetBool("Chase",false);
+            Debug.Log(shoot + ">chase Range");
         }
         if (shoot == false)
         {
             CancelInvoke("ShootPlayer");
-            animator.SetBool("Chase",false);
             Patrol();
-        }else if (shoot && distance < chaseRange)
+        }else if (shoot == true && distance < chaseRange)
         {
             CancelInvoke("Patrol");
-            ShootPLayer();
+            ShootPlayer();
         }
     }
 
     void Patrol()
     {
+        animator.SetBool("isShooting", false);
+        animator.SetBool("shootBack", false);
         RaycastHit hit;
 
         if (Physics.Raycast(castPoint.position, -transform.right, out hit, 1f, 1 << LayerMask.NameToLayer("Default")))
@@ -82,7 +83,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
         }
     }
     
-    void ShootPLayer()
+    void ShootPlayer()
     {
         //float distance = Vector2.Distance(transform.position, target.position);
         if(shoot == true)
