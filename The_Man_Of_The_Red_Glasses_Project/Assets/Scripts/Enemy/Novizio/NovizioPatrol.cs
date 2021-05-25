@@ -23,7 +23,7 @@ public class NovizioPatrol : MonoBehaviour
     public Transform target;
 
     public float chaseRange = 1.5f;
-    public float attackRange = 0.3f;
+    [SerializeField]private float attackRange;
     public Animator animator;
 
     private bool chase;
@@ -59,7 +59,7 @@ public class NovizioPatrol : MonoBehaviour
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }
-        else if(distance > chaseRange)
+        else if(distance > chaseRange && chase == false)
         {
             chase = false;
             Debug.DrawLine(castPoint.position, castPoint.position + transform.forward.normalized * 1.5f,
@@ -79,19 +79,24 @@ public class NovizioPatrol : MonoBehaviour
             animator.SetBool("Chase",true);
             if (target.position.x > transform.position.x)
             {
-                transform.Translate(transform.right * speed * Time.deltaTime);
-                transform.rotation = Quaternion.Euler(0, 180, 0);
+                transform.rotation = Quaternion.Euler(0, 90, 0);
+                transform.Translate(-transform.right * speed * Time.deltaTime);
             }
             else
             {
-                transform.Translate(-transform.right * speed * Time.deltaTime); // -transform.r == transform.left
-                transform.rotation = Quaternion.identity;
+                transform.rotation = Quaternion.Euler(0, -90, 0);
+                transform.Translate(transform.right * speed * Time.deltaTime); // -transform.r == transform.left
             }
-            if (distance < attackRange && distance<chaseRange)
+            /*if (distance < attackRange && distance<chaseRange)
             {
                 currentState = "AttackState";
                 animator.SetBool("isAttacking", true);
                 animator.SetBool("Chase",false);
+            }*/
+
+            if (distance < attackRange)
+            {
+                animator.SetBool("isAttacking", true);
             }
 
             if (distance > attackRange)

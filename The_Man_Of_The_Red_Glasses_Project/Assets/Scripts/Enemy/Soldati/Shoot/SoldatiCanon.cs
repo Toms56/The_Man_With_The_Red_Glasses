@@ -28,9 +28,13 @@ public class SoldatiCanon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartShooting();
+        Debug.Log(gameObject.activeSelf + "CANON WALLAH");
+        InvokeRepeating("SpawnBullet", 0.5f, 0.40f);
+        if (gameObject.activeSelf == false)
+        {
+            CancelInvoke("SpawnBullet");
+        }
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        Debug.DrawLine(Vector3.zero, new Vector3(10,0,0), Color.red);//Demander indications
     }
     
     void SpawnBullet()
@@ -39,12 +43,6 @@ public class SoldatiCanon : MonoBehaviour
         {
             Instantiate(soldatiBullet, transform.position + bossBulletOffset, transform.rotation);
             time = Time.time + fireRate;
-            //target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); 
         }
-    }
-    
-    public void StartShooting()
-    {
-        InvokeRepeating("SpawnBullet", 2f, 0.40f);
     }
 }

@@ -17,9 +17,10 @@ public class SoldatiStaticRaycast : MonoBehaviour
     public Transform target;
     #endregion
     
-    [SerializeField]
     
     private Rigidbody rb;
+
+    public GameObject canon;
     
     public Animator animator;
 
@@ -61,6 +62,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
 
     void Patrol()
     {
+        canon.SetActive(false);
         animator.SetBool("isShooting", false);
         animator.SetBool("shootBack", false);
         RaycastHit hit;
@@ -88,6 +90,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
         //float distance = Vector2.Distance(transform.position, target.position);
         if(shoot == true)
         {
+            canon.SetActive(true);
             if (Vector2.Distance(transform.position, target.position) < stopDistance)
             {
                 //transform.Translate(transform.right * speed * Time.deltaTime);
