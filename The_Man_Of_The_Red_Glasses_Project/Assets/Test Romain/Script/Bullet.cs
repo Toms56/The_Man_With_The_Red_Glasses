@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speedBullet;
     public float lifeTime;
 
     void Start()
     {
-        Invoke("DestructBullet", lifeTime);
+        Destroy(this.gameObject, lifeTime);
     }
 
     // Update is called once per frame
@@ -18,8 +17,9 @@ public class Bullet : MonoBehaviour
         
     }
 
-    void DestructBullet()
+    private void OnCollisionEnter(Collision collision)
     {
         Destroy(this.gameObject);
+        // FAIRE VFX  ICI POUR L'IMPACT
     }
 }

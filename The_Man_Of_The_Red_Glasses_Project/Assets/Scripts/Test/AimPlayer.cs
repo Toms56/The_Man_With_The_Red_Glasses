@@ -56,6 +56,9 @@ public class AimPlayer : MonoBehaviour
         GameObject firedBullet = Instantiate(bullet, targetTransform.position, targetTransform.rotation);
         firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * 10f;
         magazine -= 1;
+
+        // Faire VFX ICI POUR LE SHOOT 
+
         //Debug.Log(gunTransform.parent.localPosition);
         //firedBullet.transform.Translate(Vector3.Lerp(gunTransform.transform.position, PlayerNoController.Instance.targetTform.transform.position,2f));
         //firedBullet.transform.Translate((Vector3.forward * 10f) * Time.deltaTime);
