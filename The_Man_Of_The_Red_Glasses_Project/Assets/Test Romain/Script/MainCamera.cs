@@ -20,6 +20,5 @@ public class MainCamera : MonoBehaviour
     {
         Vector3 newPos = playerTransform.position + camOffset;
         transform.position = Vector3.Slerp(transform.position, newPos, smoothFactor);
-
     }
 }

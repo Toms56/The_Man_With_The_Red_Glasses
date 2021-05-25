@@ -6,17 +6,17 @@ public class PlayerNoController : MonoBehaviour
 {
     public static PlayerNoController Instance;
 
+    // PV
+    public int pv = 3;
+    public bool die = false;
+
+
     // For Mouvement
     public float jumpHeight;
     public float baseSpeed;
     private float finalSpeed;
     private float mouvement;
-    private bool accroupi;
-
-    // PV
-    public int pv = 3;
-    public bool die = false;
-
+    private bool sneaky;
         // Rotation (Permet à la bonne animation de se faire selon le sens où il regarde)
     private int facingSign
     {
@@ -36,7 +36,6 @@ public class PlayerNoController : MonoBehaviour
     // For its Components
     private static Animator animator;
     private Rigidbody rbody;
-    //private Transform tform;
     private Camera mainCamera;
 
 
@@ -63,7 +62,6 @@ public class PlayerNoController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
-        //tform = GetComponent<Transform>();
         mainCamera = Camera.main;
     }
 
@@ -76,35 +74,36 @@ public class PlayerNoController : MonoBehaviour
         if (pv == 0)
         {
             // Mort du joueur / Empêcher le shoot 
-            animator.SetBool("Jump", true);
+            animator.SetBool("Death", true);
             die = true;
             return;
         }
 
-        //Movement
+
+        //MOVEMENT
         mouvement = Input.GetAxis("Horizontal");
         rbody.velocity = new Vector3(mouvement * finalSpeed, rbody.velocity.y, 0);
         animator.SetFloat("Speed", (facingSign * rbody.velocity.x) / finalSpeed);
 
-        // Sneaky and Speed                                             REMETTRE L ANIMATION POUR LE SNEAKY 
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !accroupi)
+        // SNEAKY AND SPEED                                    REMETTRE L ANIMATION POUR LE SNEAKY 
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !sneaky)
         {
-            animator.SetBool("Accroupi", true);
-            accroupi = true;
+            animator.SetBool("Sneaky", true);
+            sneaky = true;
         }
-        else if (Input.GetKeyDown(KeyCode.LeftControl) && accroupi)
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && sneaky)
         {
-            animator.SetBool("Accroupi", false);
-            accroupi = false;
+            animator.SetBool("Sneaky", false);
+            sneaky = false;
             finalSpeed = baseSpeed;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && finalSpeed != 0)
         {
             finalSpeed = baseSpeed * 2;
             animator.SetBool("Run", true);
         }
-        else if (accroupi)
+        else if (sneaky)
         {
             finalSpeed = baseSpeed / 1.5f;
         }
@@ -114,7 +113,8 @@ public class PlayerNoController : MonoBehaviour
             animator.SetBool("Run", false);
         }
 
-        // Jump
+
+        // JUMP
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rbody.velocity = new Vector3(rbody.velocity.x, jumpHeight, 0);
@@ -126,9 +126,11 @@ public class PlayerNoController : MonoBehaviour
             animator.SetBool("Jump", false);
         }
 
-        Debug.Log(isGrounded);
+        Debug.Log("Grounded : " + isGrounded);
+        Debug.Log("Run : " + animator.GetBool("Run"));
 
-        // Facing Rotation
+
+        // FACING ROTATION
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, mouseAimMask))
@@ -138,7 +140,8 @@ public class PlayerNoController : MonoBehaviour
 
         rbody.MoveRotation(Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(targetTform.position.x - transform.position.x),0)));
 
-        // Ground Check
+
+        // GROUND CHECK
         isGrounded = Physics.CheckSphere(groundCheckTransform.position, groundCheckRadius, groundCheckMask, QueryTriggerInteraction.Ignore);
     }
 
