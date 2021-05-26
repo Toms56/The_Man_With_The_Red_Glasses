@@ -48,11 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-<<<<<<< Updated upstream
-  controlID: 107
-=======
-  controlID: 120
->>>>>>> Stashed changes
+  controlID: 54
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -115,11 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream
-  m_Name: ProjectBrowser
-=======
   m_Name: 
->>>>>>> Stashed changes
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -135,11 +127,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
-<<<<<<< Updated upstream
-  m_LastSelected: 1
-=======
   m_LastSelected: 0
->>>>>>> Stashed changes
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,11 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-<<<<<<< Updated upstream
-  controlID: 15
-=======
-  controlID: 47
->>>>>>> Stashed changes
+  controlID: 55
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,11 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-<<<<<<< Updated upstream
-  controlID: 16
-=======
-  controlID: 48
->>>>>>> Stashed changes
+  controlID: 56
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -358,34 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< Updated upstream
-    - Assets/Scenes
+    - Assets/Test Romain
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
-=======
-    - Assets
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
->>>>>>> Stashed changes
+  - Assets/Test Romain
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "F:\\Projet Fin d'ann\xE9e\\The_Man_With_The_Red_Glasses\\The_Man_Of_The_Red_Glasses_Project"
+  m_LastProjectPath: "C:\\Users\\romai\\Bureau\\Bachelor\\2\xE8me semestre\\The_Man_With_The_Red_Glasses\\The_Man_Of_The_Red_Glasses_Project"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< Updated upstream
-    m_SelectedIDs: 52c00000
-    m_LastClickedID: 49234
-    m_ExpandedIDs: 00000000e641000026c0000028c000002ac000002cc000002ec0000030c0000032c0000034c0000036c0000038c000003cc00000
-=======
-    m_SelectedIDs: 0c3f0000
-    m_LastClickedID: 16140
-    m_ExpandedIDs: 000000000c3f0000e4620000e6620000e8620000ea620000ec620000ee620000f0620000f2620000f4620000f6620000f8620000fa62000000ca9a3b
->>>>>>> Stashed changes
+    m_SelectedIDs: 2ed80000
+    m_LastClickedID: 55342
+    m_ExpandedIDs: 00000000e0410000fcd70000fed7000000d8000002d8000004d8000006d8000008d800000ad800000cd800000ed8000010d8000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,11 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< Updated upstream
-    m_ExpandedIDs: 00000000e641000026c0000028c000002ac000002cc000002ec0000030c0000032c0000034c0000036c0000038c000003ac000003cc00000
-=======
-    m_ExpandedIDs: 000000000c3f0000e4620000e6620000e8620000ea620000ec620000ee620000f0620000f2620000f4620000f6620000f8620000fa620000
->>>>>>> Stashed changes
+    m_ExpandedIDs: 00000000e0410000fcd70000fed7000000d8000002d8000004d8000006d8000008d800000ad800000cd800000ed8000010d80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -444,11 +406,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-<<<<<<< Updated upstream
     m_HadKeyboardFocusLastEvent: 1
-=======
-    m_HadKeyboardFocusLastEvent: 0
->>>>>>> Stashed changes
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -543,17 +501,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-<<<<<<< Updated upstream
-      scrollPos: {x: 0, y: 1703}
-      m_SelectedIDs: 3601feff
-      m_LastClickedID: -130762
-      m_ExpandedIDs: d405feff660bfeff0815feff621bfeff
-=======
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 64c0ffff
-      m_LastClickedID: -16284
-      m_ExpandedIDs: f8c2ffff
->>>>>>> Stashed changes
+      m_SelectedIDs: 30fbfdff
+      m_LastClickedID: -132304
+      m_ExpandedIDs: 9efefdff9e1bfeff96da0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -576,11 +527,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-<<<<<<< Updated upstream
-  m_WindowGUID: c01eed0cdcb09ca42b9a22676a26ea1f
-=======
-  m_WindowGUID: 22c85dc691a4f5b489bce082d9aff4e5
->>>>>>> Stashed changes
+  m_WindowGUID: 1b1d2e466949fd942b3ddd529649caf9
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -608,11 +555,7 @@ MonoBehaviour:
     height: 542
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-<<<<<<< Updated upstream
-  m_WindowGUID: 786dc26e659373d4287c5f796413b0a2
-=======
-  m_WindowGUID: 2f26c5b255c3467498afc802e963b4e3
->>>>>>> Stashed changes
+  m_WindowGUID: 00a9402a7a243fd41864782c79be550d
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -621,15 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< Updated upstream
-    m_Target: {x: 6.5018835, y: -2.7306685, z: 15.567022}
+    m_Target: {x: 1.4291346, y: -0.6773608, z: 3.0595045}
     speed: 2
-    m_Value: {x: 6.5018835, y: -2.7306685, z: 15.567022}
-=======
-    m_Target: {x: -0.28665495, y: 0.5614176, z: -0.031764507}
-    speed: 2
-    m_Value: {x: -0.28665495, y: 0.5614176, z: -0.031764507}
->>>>>>> Stashed changes
+    m_Value: {x: 1.4291346, y: -0.6773608, z: 3.0595045}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -675,23 +612,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-<<<<<<< Updated upstream
-    m_Target: {x: -0.0975509, y: -0.045667302, z: 0.0044810423, w: -0.99417216}
+    m_Target: {x: -0.1327755, y: 0.17505008, z: -0.023831496, w: -0.975274}
     speed: 2
-    m_Value: {x: -0.097557515, y: -0.044175994, z: 0.004334711, w: -0.99423957}
+    m_Value: {x: -0.1313125, y: 0.17508571, z: -0.023568904, w: -0.9754725}
   m_Size:
-    m_Target: 10
+    m_Target: 5.8427143
     speed: 2
-    m_Value: 10
-=======
-    m_Target: {x: -0.06339209, y: 0.9036658, z: -0.14380288, w: -0.39835963}
-    speed: 2
-    m_Value: {x: -0.06360772, y: 0.90306723, z: -0.14370763, w: -0.39971468}
-  m_Size:
-    m_Target: 2.107395
-    speed: 2
-    m_Value: 1.807395
->>>>>>> Stashed changes
+    m_Value: 5.542714
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -830,13 +757,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 8
-<<<<<<< Updated upstream
-    y: 644
-    width: 1517
-    height: 347
-=======
     y: 718
     width: 1366
     height: 308
->>>>>>> Stashed changes
   m_ViewDataDictionary: {fileID: 0}
