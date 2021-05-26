@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SoldatiStaticRaycast : MonoBehaviour
 {
+    
     #region Movement
 
     [SerializeField] float speed;
@@ -16,7 +18,9 @@ public class SoldatiStaticRaycast : MonoBehaviour
     private Transform castPoint;
     public Transform target;
     #endregion
-    
+
+    [SerializeField]
+    private SoldatiCanon canonScript;
     
     private Rigidbody rb;
 
@@ -30,6 +34,8 @@ public class SoldatiStaticRaycast : MonoBehaviour
 
     private bool isPatrolling;
 
+    [SerializeField] private float healthPts;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +48,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         float distance = Vector3.Distance(transform.position, target.position);
         //Debug.Log(distance);
         if (distance > chaseRange)
@@ -51,10 +58,15 @@ public class SoldatiStaticRaycast : MonoBehaviour
         }
         if (shoot == false)
         {
+            Debug.Log(canonScript);
+            //GetComponent<SoldatiCanon>().enabled = false;
+            canonScript.enabled = false;
             CancelInvoke("ShootPlayer");
             Patrol();
         }else if (shoot == true && distance < chaseRange)
         {
+            //GetComponent<SoldatiCanon>().enabled = true;
+            canonScript.enabled = true;
             CancelInvoke("Patrol");
             ShootPlayer();
         }
@@ -129,11 +141,19 @@ public class SoldatiStaticRaycast : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "PlayerBullet")
         {
             Debug.Log("Enemy Hit ! ");
-        }
+            healthPts--;
+            //Destroy(other.gameObject);
+            if (healthPts <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }    
     }
+
 }

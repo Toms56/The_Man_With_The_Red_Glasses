@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class NovizioPatrol : MonoBehaviour
 {
@@ -17,7 +19,6 @@ public class NovizioPatrol : MonoBehaviour
     private Vector3 moveSpot;
 
     #region animationState
-    public float healthPts = 1; 
     
     private string currentState = "IdleState";
     public Transform target;
@@ -33,6 +34,8 @@ public class NovizioPatrol : MonoBehaviour
     
 
     #endregion
+    public float healthPts; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,12 +62,17 @@ public class NovizioPatrol : MonoBehaviour
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }
-        else if(distance > chaseRange && chase == false)
+        else
         {
             chase = false;
+        }
+        /*else if(distance > chaseRange && chase == false)
+        {
+            chase = false;
+            animator.SetBool("Chase", false);
             Debug.DrawLine(castPoint.position, castPoint.position + transform.forward.normalized * 1.5f,
                 Color.green);
-        }
+        }*/
         
         //Debug.Log(distance);
         if (chase == false)
@@ -143,12 +151,17 @@ public class NovizioPatrol : MonoBehaviour
         Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 0.3f, 0f);
         transform.rotation = Quaternion.LookRotation(newDirection);
     }
-    
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.tag == "PlayerBullet")
+        if (other.gameObject.tag == "PlayerBullet")
         {
             Debug.Log("Enemy Hit ! ");
+            healthPts--;
+            if (healthPts <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
