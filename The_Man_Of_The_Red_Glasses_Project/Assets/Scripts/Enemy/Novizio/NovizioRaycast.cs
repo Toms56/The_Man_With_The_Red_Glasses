@@ -15,11 +15,21 @@ public class NovizioRaycast : MonoBehaviour
     private Rigidbody rb;
     private float chaseRange = 1.5f;
     [SerializeField]private float attackRange;
+
+    #region state
+
     private bool isAgro;
 
     private bool isSearching;
 
     private bool isFacingLeft;
+
+    #endregion
+
+    #region Heal
+
+    [SerializeField] private float healthPts;
+    #endregion
 
     public Transform target;
     // Start is called before the first frame update
@@ -99,11 +109,16 @@ public class NovizioRaycast : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "PlayerBullet")
         {
             Debug.Log("Enemy Hit ! ");
+            healthPts--;
+            if (healthPts <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
