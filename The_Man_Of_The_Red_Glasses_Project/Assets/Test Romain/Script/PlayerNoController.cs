@@ -37,6 +37,7 @@ public class PlayerNoController : MonoBehaviour
     private static Animator animator;
     private Rigidbody rbody;
     private Camera mainCamera;
+    public Animation animCollider;
 
 
     // For other public Components
@@ -62,6 +63,7 @@ public class PlayerNoController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
+        animCollider = GetComponent<Animation>();
         mainCamera = Camera.main;
     }
 
@@ -76,6 +78,7 @@ public class PlayerNoController : MonoBehaviour
             // Mort du joueur / Empêcher le shoot 
             animator.SetBool("Death", true);
             die = true;
+            animCollider.Play("DeathCollider");
             return;
         }
 
@@ -89,11 +92,15 @@ public class PlayerNoController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl) && !sneaky)
         {
             animator.SetBool("Sneaky", true);
+            animCollider["SneakyCollider"].speed = 1;
+            animCollider.Play("SneakyCollider");
             sneaky = true;
         }
         else if (Input.GetKeyDown(KeyCode.LeftControl) && sneaky)
         {
             animator.SetBool("Sneaky", false);
+            animCollider["SneakyCollider"].speed = -1;
+            animCollider.Play("SneakyCollider");
             sneaky = false;
             finalSpeed = baseSpeed;
         }
