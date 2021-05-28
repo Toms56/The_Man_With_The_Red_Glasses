@@ -13,7 +13,7 @@ public class SoldatiStatic : MonoBehaviour
     [SerializeField]private float retreatDistance;
     [SerializeField] float waitTime;
 
-    private float currentWaitTime = 0f;
+    //private float currentWaitTime = 0f;
 
     private float minX, maxX;
 
