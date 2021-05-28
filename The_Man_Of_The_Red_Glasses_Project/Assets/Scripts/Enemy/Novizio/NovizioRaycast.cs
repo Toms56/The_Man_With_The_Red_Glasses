@@ -31,6 +31,13 @@ public class NovizioRaycast : MonoBehaviour
     [SerializeField] private float healthPts;
     #endregion
 
+    #region Audio
+
+    [SerializeField] private AudioSource novizio;
+    [SerializeField] private AudioClip deathClip;
+    
+    #endregion
+
     public Transform target;
     // Start is called before the first frame update
     void Start()
@@ -43,6 +50,10 @@ public class NovizioRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (healthPts <= 0)
+        {
+            healthPts = 0;
+        }
         float distance = Vector3.Distance(transform.position, target.position);
         //Debug.Log(distance);
         if (distance > chaseRange)
@@ -109,6 +120,12 @@ public class NovizioRaycast : MonoBehaviour
         }
     }
 
+    IEnumerator DestroyNovizio()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "PlayerBullet")
@@ -117,7 +134,10 @@ public class NovizioRaycast : MonoBehaviour
             healthPts--;
             if (healthPts <= 0)
             {
-                Destroy(gameObject);
+                novizio.clip = deathClip;
+                novizio.Play();
+                Debug.Log(deathClip);
+                StartCoroutine(DestroyNovizio());
             }
         }
     }

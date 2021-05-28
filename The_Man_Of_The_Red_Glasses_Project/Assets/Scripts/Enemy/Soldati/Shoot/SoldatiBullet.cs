@@ -16,7 +16,7 @@ public class SoldatiBullet : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * bulletSpeed * Time.deltaTime);
-        //transform.rotation = Quaternion.Euler(0,0,0);
+        transform.rotation = Quaternion.Euler(0,0,0);
     }
 
     private void OnTriggerEnter(Collider other)

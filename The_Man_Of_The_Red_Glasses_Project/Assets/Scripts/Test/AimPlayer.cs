@@ -42,7 +42,14 @@ public class AimPlayer : MonoBehaviour
               }
           } */
 
-        if (Input.GetMouseButtonDown(0) && !PlayerController.Instance.die && PlayerController.Instance.aiming)
+        /*if (Input.GetMouseButtonDown(0) && !PlayerController.Instance.die && PlayerController.Instance.aiming)
+        {
+            if (magazine != 0)
+            {
+                Shoot();
+            }
+        } */  
+        if (Input.GetMouseButtonDown(0) && !PlayerNoController.Instance.die)
         {
             if (magazine != 0)
             {
