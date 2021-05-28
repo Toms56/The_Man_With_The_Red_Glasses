@@ -9,6 +9,7 @@ TagManager:
   - BigStump
   - PlayerBullet
   - Novizio
+  - SecondWeapon
   layers:
   - Default
   - TransparentFX

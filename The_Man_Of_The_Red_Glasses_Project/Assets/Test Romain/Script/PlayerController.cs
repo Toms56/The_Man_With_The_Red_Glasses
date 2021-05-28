@@ -30,12 +30,12 @@ public class PlayerController : MonoBehaviour
     }
 
     public bool aiming;
+    public bool equipSecondWeap = false;
 
     // For its Components
     private static Animator animator;
     private Camera mainCamera;
     private Transform playerTransform;
-    //private Animation animCollider;
     private CharacterController charaController;
 
 
@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
     // Rotation
     public Transform targetTform;
     public LayerMask mouseAimMask;
+    /*public Transform weaponsTransf;
+    public GameObject secondWeapon;*/
 
     private void Awake()
     {
@@ -61,7 +63,6 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         charaController = GetComponent<CharacterController>();
         playerTransform = GetComponent<Transform>();
-        //animCollider = GetComponent<Animation>();
         mainCamera = Camera.main;
     }
 
@@ -72,13 +73,12 @@ public class PlayerController : MonoBehaviour
         {
             // Mort du joueur / Empêcher le shoot 
             animator.SetBool("Death", true);
-            //animCollider.Play("DeathCollider");
             die = true;
             if (die)
             {
-                charaController.height = 0f;
+                StartCoroutine(DeathCollider());
+                return;
             }
-            return;
         }
 
         // MOVEMENT
@@ -91,16 +91,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl) && !sneaky)
         {
             animator.SetBool("Sneaky", true);
-            //animCollider["SneakyCollider"].speed = 1;
-            //animCollider.Play("SneakyCollider");
-            charaController.height = 6f;
             sneaky = true;
         }
         else if (Input.GetKeyDown(KeyCode.LeftControl) && sneaky)
         {
             animator.SetBool("Sneaky", false);
-            //animCollider["SneakyCollider"].speed = -1;
-            //animCollider.Play("SneakyCollider");
             sneaky = false;
             finalSpeed = baseSpeed;
         }
@@ -128,7 +123,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetButtonDown("Jump"))
                 {
-                    movement.y = 7f;
+                    movement.y = jumpHeight;
                     isGrounded = true;
                     animator.SetBool("Jump", true);
                 }
@@ -158,7 +153,7 @@ public class PlayerController : MonoBehaviour
 
 
         charaController.Move(movement * Time.deltaTime);
-        Debug.Log(charaController.height);
+        //Debug.Log(charaController.height);
     }
 
     private void OnAnimatorIK()
@@ -186,5 +181,24 @@ public class PlayerController : MonoBehaviour
         {
             pv -= 1;
         }
+
+      /*  if (other.tag == "SecondWeapon")
+        {
+            Instantiate(secondWeapon,weaponsTransf);
+            Destroy(other.gameObject);
+            equipSecondWeap = true;
+        } */
     }
+
+    // First méthod for adapt the height of the CharacterController
+    IEnumerator DeathCollider()
+    {
+        yield return new WaitForSeconds(1.2f);
+        charaController.height = 0f;
+    }
+
+    // La deuxième méthode va être de duppliquer l'animation afin d'en avoir une qui ne soit pas en mode Read Only
+    // Après cela importer un skinn sur la scene et y ajouter un Characontroller / Faire glisser l'animation sur "Animator" dans l'inspecteur afin qu'un ControllerAnimator se créé
+    // Ajouter la "property" CharaController.Height sur l'animation et adapter comme l'on souhaite
+    // Enfin dans l'animator du player, changer l'animation sneaky de base par celle modifier / Possible de supprimer le skin importer sur la scène après
 }
