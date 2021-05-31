@@ -43,8 +43,10 @@ public class PlayerController : MonoBehaviour
     // Rotation
     public Transform targetTform;
     public LayerMask mouseAimMask;
-    /*public Transform weaponsTransf;
-    public GameObject secondWeapon;*/
+    public Transform weaponsTransf;
+    public GameObject beretta;
+    GameObject firstWeapon;
+    public GameObject secondWeapon;
 
     private void Awake()
     {
@@ -121,7 +123,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!isGrounded)
             {
-                if (Input.GetButtonDown("Jump"))
+                if (Input.GetButtonDown("Jump") && !sneaky)
                 {
                     movement.y = jumpHeight;
                     isGrounded = true;
@@ -182,12 +184,23 @@ public class PlayerController : MonoBehaviour
             pv -= 1;
         }
 
-      /*  if (other.tag == "SecondWeapon")
+        if (other.tag == "FirstWeapon")
+        {
+            firstWeapon = Instantiate(beretta, weaponsTransf);
+            Destroy(other.gameObject);
+        }
+
+        if (other.tag == "SecondWeapon")
         {
             Instantiate(secondWeapon,weaponsTransf);
             Destroy(other.gameObject);
             equipSecondWeap = true;
-        } */
+
+            if (firstWeapon.activeSelf)
+            {
+                firstWeapon.SetActive(false);
+            }
+        }
     }
 
     // First méthod for adapt the height of the CharacterController
@@ -197,8 +210,8 @@ public class PlayerController : MonoBehaviour
         charaController.height = 0f;
     }
 
-    // La deuxième méthode va être de duppliquer l'animation afin d'en avoir une qui ne soit pas en mode Read Only
-    // Après cela importer un skinn sur la scene et y ajouter un Characontroller / Faire glisser l'animation sur "Animator" dans l'inspecteur afin qu'un ControllerAnimator se créé
+    // La deuxième méthode va être de dupliquer l'animation afin d'en avoir une qui ne soit pas en mode Read Only
+    // Après cela importer un skin sur la scene et y ajouter un Characontroller / Faire glisser l'animation sur "Animator" dans l'inspecteur afin qu'un ControllerAnimator se créé
     // Ajouter la "property" CharaController.Height sur l'animation et adapter comme l'on souhaite
     // Enfin dans l'animator du player, changer l'animation sneaky de base par celle modifier / Possible de supprimer le skin importer sur la scène après
 }

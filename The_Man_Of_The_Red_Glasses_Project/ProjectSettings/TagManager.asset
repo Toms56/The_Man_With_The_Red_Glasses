@@ -10,6 +10,7 @@ TagManager:
   - PlayerBullet
   - Novizio
   - SecondWeapon
+  - FirstWeapon
   layers:
   - Default
   - TransparentFX
