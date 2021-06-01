@@ -90,6 +90,7 @@
             <e p="SimpleCameraController.cs" t="Include" />
             <e p="SmoothCamera.cs" t="Include" />
           </e>
+          <e p="EmissiveMaterial.cs" t="Include" />
           <e p="Enemy" t="Include">
             <e p="Novizio" t="Include">
               <e p="NovizioAfk.cs" t="Include" />
@@ -103,7 +104,7 @@
                 <e p="SoldatiCanon.cs" t="Include" />
               </e>
               <e p="SoldatiPatrol.cs" t="Include" />
-              <e p="SoldatiStatic.cs" t="Include" />
+              <e p="SoldatiPatrolWP.cs" t="Include" />
               <e p="SoldatiStaticRaycast.cs" t="Include" />
             </e>
           </e>
