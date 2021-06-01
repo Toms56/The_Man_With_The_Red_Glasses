@@ -129,6 +129,15 @@ public class PlayerController : MonoBehaviour
                     isGrounded = true;
                     animator.SetBool("Jump", true);
                 }
+                else if (Input.GetButtonDown("Jump") && sneaky)
+                {
+                    movement.y = jumpHeight * 1.5f;
+                    isGrounded = true;
+                    animator.SetBool("Jump", true);
+                    animator.SetBool("Sneaky", false);
+                    sneaky = false;
+                    finalSpeed = baseSpeed;
+                }
             }
             else
             {
@@ -139,7 +148,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            movement.y -= 9.81f * Time.deltaTime;
+            movement.y -= 15f * Time.deltaTime;
         }
 
 
