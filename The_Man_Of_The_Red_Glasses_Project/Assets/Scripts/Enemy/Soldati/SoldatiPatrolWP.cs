@@ -27,6 +27,8 @@ public class SoldatiPatrolWP : MonoBehaviour
     private bool walk = true;
     [SerializeField]
     private SoldatiCanon canonScript;
+
+    public float healthPts;
     
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,7 @@ public class SoldatiPatrolWP : MonoBehaviour
         if (shoot == false)
         {
             canonScript.enabled = false;
+            animator.SetBool("isShooting", false);
             CancelInvoke("ShootPlayer");
             Move();
         }
@@ -109,41 +112,54 @@ public class SoldatiPatrolWP : MonoBehaviour
     {
         animator.SetBool("isPatrolling",false);
         canon.SetActive(true);
-            if (Vector2.Distance(transform.position, target.position) < stopDistance)
+        if (Vector2.Distance(transform.position, target.position) < stopDistance)
+        {
+            //transform.Translate(transform.right * speed * Time.deltaTime);
+            animator.SetBool("isShooting", true);
+            animator.SetBool("shootBack", false);
+            walk = false;
+            shoot = true;
+        }
+        if (Vector2.Distance(transform.position, target.position) > stopDistance+0.1f)
+        {
+            transform.Translate(transform.right * -speed * Time.deltaTime);
+            animator.SetBool("isShooting", true);
+            animator.SetBool("shootBack", false);
+            walk = false;
+            shoot = true;
+        }else if(Vector2.Distance(transform.position,target.position) < stopDistance && Vector2.Distance(transform.position,target.position) > retreatDistance)
+        {
+            transform.position = this.transform.position;
+        }else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
+        {
+            transform.Translate(-transform.right * -speed * Time.deltaTime); // -transform.r == transform.left
+            animator.SetBool("isShooting", false);
+            animator.SetBool("shootBack", true);
+            walk = false;
+            shoot = true;
+        } 
+        if (target.position.x > transform.position.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            animator.SetBool("isShooting", true);
+            animator.SetBool("shootBack", false);
+        }
+        else
+        {
+            transform.rotation = Quaternion.identity;
+        }
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "PlayerBullet")
+        {
+            Debug.Log("Enemy Hit ! ");
+            healthPts--;
+            //Destroy(other.gameObject);
+            if (healthPts <= 0)
             {
-                //transform.Translate(transform.right * speed * Time.deltaTime);
-                animator.SetBool("isShooting", true);
-                animator.SetBool("shootBack", false);
-                walk = false;
-                shoot = true;
+                Destroy(gameObject);
             }
-            if (Vector2.Distance(transform.position, target.position) > stopDistance+0.1f)
-            {
-                transform.Translate(transform.right * -speed * Time.deltaTime);
-                animator.SetBool("isShooting", true);
-                animator.SetBool("shootBack", false);
-                walk = false;
-                shoot = true;
-            }else if(Vector2.Distance(transform.position,target.position) < stopDistance && Vector2.Distance(transform.position,target.position) > retreatDistance)
-            {
-                transform.position = this.transform.position;
-            }else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
-            {
-                transform.Translate(-transform.right * -speed * Time.deltaTime); // -transform.r == transform.left
-                animator.SetBool("isShooting", false);
-                animator.SetBool("shootBack", true);
-                walk = false;
-                shoot = true;
-            } 
-            if (target.position.x > transform.position.x)
-            {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-                animator.SetBool("isShooting", true);
-                animator.SetBool("shootBack", false);
-            }
-            else
-            {
-                transform.rotation = Quaternion.identity;
-            }
+        }    
     }
 }

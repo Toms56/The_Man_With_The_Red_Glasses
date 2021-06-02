@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/PersonalScene/Scene_Thomas.unity
-=======
-- path: Assets/Test Romain/SceneTestDebug.unity
->>>>>>> main
+- path: Assets/Scenes/Tutorial/Tutorial.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
