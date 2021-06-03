@@ -10,6 +10,9 @@ public class AimPlayer : MonoBehaviour
     [SerializeField] int magazine;
     [SerializeField] int bulletSpeed;
 
+    [SerializeField] float fireRate;
+    private float time = 0;
+
     private void Awake()
     {
 
@@ -49,7 +52,7 @@ public class AimPlayer : MonoBehaviour
                 Shoot();
             }
         } */  
-        if (Input.GetMouseButtonDown(0) && !PlayerController.Instance.die && PlayerController.Instance.aiming)
+        if (Input.GetMouseButton(0) && !PlayerController.Instance.die && PlayerController.Instance.aiming)
         {
             if (magazine != 0)
             {
@@ -60,9 +63,15 @@ public class AimPlayer : MonoBehaviour
 
     void Shoot()
     {
-        GameObject firedBullet = Instantiate(bullet, targetTransform.position, targetTransform.rotation);
-        firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * 10f;
-        magazine -= 1;
+        if (Time.time > time)
+        {
+            GameObject firedBullet = Instantiate(bullet, targetTransform.position, targetTransform.rotation);
+            firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * bulletSpeed;
+            firedBullet.transform.rotation = bullet.transform.rotation;
+            magazine -= 1;
+            time = Time.time + fireRate;
+        }
+
 
         // Faire VFX ICI POUR LE SHOOT 
 
