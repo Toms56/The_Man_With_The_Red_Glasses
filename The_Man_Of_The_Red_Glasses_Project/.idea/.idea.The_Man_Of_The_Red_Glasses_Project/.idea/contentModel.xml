@@ -29,6 +29,7 @@
             <e p="Novizio" t="Include">
               <e p="NovizioAfk.cs" t="Include" />
               <e p="NovizioPatrol.cs" t="Include" />
+              <e p="NovizioPatrolWP.cs" t="Include" />
               <e p="NovizioRaycast.cs" t="Include" />
             </e>
             <e p="Soldati" t="Include">
@@ -42,8 +43,8 @@
               <e p="SoldatiStaticRaycast.cs" t="Include" />
             </e>
           </e>
+          <e p="MenuManager.cs" t="Include" />
           <e p="Test" t="Include">
-            <e p="AimPlayer.cs" t="Include" />
             <e p="PlayerTomTest.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
@@ -53,6 +54,7 @@
         </e>
         <e p="Test Romain" t="Include">
           <e p="Script" t="Include">
+            <e p="AimPlayer.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="MainCamera.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
