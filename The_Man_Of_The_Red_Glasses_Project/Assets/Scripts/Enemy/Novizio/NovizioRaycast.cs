@@ -134,10 +134,11 @@ public class NovizioRaycast : MonoBehaviour
             healthPts--;
             if (healthPts <= 0)
             {
-                novizio.clip = deathClip;
+                /*novizio.clip = deathClip;
                 novizio.Play();
-                Debug.Log(deathClip);
-                StartCoroutine(DestroyNovizio());
+                Debug.Log(deathClip);*/
+                //StartCoroutine(DestroyNovizio());
+                Destroy(gameObject);
             }
         }
     }
