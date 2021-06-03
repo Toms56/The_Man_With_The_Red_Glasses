@@ -71,6 +71,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (UIManager.isPaused)
+        {
+            animator.SetFloat("Speed", 0);
+            return;
+        }
+
         if (pv == 0 && !die)
         {
             // Mort du joueur / Empêcher le shoot 
@@ -131,7 +137,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else if (Input.GetButtonDown("Jump") && sneaky)
                 {
-                    movement.y = jumpHeight * 1.5f;
+                    movement.y = jumpHeight * 1.2f;
                     isGrounded = true;
                     animator.SetBool("Jump", true);
                     animator.SetBool("Sneaky", false);
