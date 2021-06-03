@@ -20,637 +20,441 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Enemies/Novizio/NovizioRaycast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Enemies/Novizio/NovizioRaycast.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BACKWARD_WALK_2_Cyrius.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BACKWARD_WALK_2_Cyrius.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cyrius Controller.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cyrius Controller.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/3DObjects/SpotDoor (1).controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/3DObjects/SpotDoor (1).controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/Lighting/BlueLight.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/Lighting/BlueLight.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/Lighting/RedLight.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/Lighting/RedLight.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/Neon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/Neon.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/NeonBlue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/NeonBlue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bar_Sign.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bar_Sign.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon metal.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon metal.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon metal_Material _75_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon metal_Material _75_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon metal_Material _75_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon metal_Material _75_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Bidon metal/Bidon.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Metal scie etc_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Metal scie etc_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Metal scie etc_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Metal scie etc_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Table bois_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Table bois_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Table bois_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_Table bois_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_poigné scie_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_poigné scie_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_poigné scie_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Etablit/Etablit_poigné scie_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Grille aeration.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Grille aeration.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_AO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_AO.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_BasedColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_BasedColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/Gros meuble_DefaultMaterial_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/GrosMeuble1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Gros meuble/GrosMeuble1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble_DefaultMaterial_AO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble_DefaultMaterial_AO.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble_DefaultMaterial_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble_DefaultMaterial_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble_DefaultMaterial_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/Texture sans albedo/Gros meuble_DefaultMaterial_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/miroir.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/3DObjects/miroir.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Breathing Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Breathing Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Douglas.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Douglas.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Douglas.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Douglas.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Male Crouch Pose.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Male Crouch Pose.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Punching.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Punching.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Standing To Crouched.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Standing To Crouched.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Walking.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Douglas/Walking.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Editor/NavMeshComponentsExamplesEditor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Editor/NavMeshComponentsExamplesEditor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Editor/NavMeshPrefabInstanceEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Editor/NavMeshPrefabInstanceEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/brightgreen.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/brightgreen.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/brown.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/brown.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/crosshair.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/crosshair.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/floor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/floor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/grey.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/grey.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/modify_crosshair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/modify_crosshair.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Materials/yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/NavMeshComponentsExamples.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/NavMeshComponentsExamples.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/BanyanTree.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/BanyanTree.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/BanyanTree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/BanyanTree.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile10.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile10.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile11.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile11.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile12.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile12.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile13.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile13.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile14.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile14.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile15.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile15.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile8.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile8.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/DungeonTiles/Tile9.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/GroundTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/GroundTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/Materials/BanyanBark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/Materials/BanyanBark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/Materials/BanyanBranches.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/Materials/BanyanBranches.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/Plank.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Prefabs/Plank.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/1_multiple_agent_sizes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/1_multiple_agent_sizes.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/1_multiple_agent_sizes.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/2_drop_plank.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/2_drop_plank.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/3_free_orientation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/3_free_orientation.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/3_free_orientation.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/3_free_orientation/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/3_free_orientation/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/4_sliding_window_infinite.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/4_sliding_window_infinite.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/5_sliding_window_terrain.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/5_sliding_window_terrain.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/6_modify_mesh.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/6_modify_mesh.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/7_dungeon.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/7_dungeon.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/7b_dungeon_tile_prefabs.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scenes/7b_dungeon_tile_prefabs.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/AgentLinkMover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/AgentLinkMover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/ClickToMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/ClickToMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/DestroyOnTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/DestroyOnTrigger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/DungeonManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/DungeonManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/EnableIffSleeping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/EnableIffSleeping.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/FreeCam.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/FreeCam.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/LocalNavMeshBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/LocalNavMeshBuilder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/MeshTool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/MeshTool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/NavMeshPrefabInstance.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/NavMeshPrefabInstance.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/NavMeshSourceTag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/NavMeshSourceTag.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/Oscillator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/Oscillator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/RandomInstancing.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/RandomInstancing.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/RandomWalk.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/RandomWalk.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/SpawnPrefabOnKeyDown.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Scripts/SpawnPrefabOnKeyDown.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Terrains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Terrains/Islands.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Terrains/Islands.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Terrains/LightmapWithFog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Terrains/LightmapWithFog.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Examples/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Gizmos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Gizmos/NavMeshLink Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Gizmos/NavMeshLink Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Gizmos/NavMeshModifierVolume Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Gizmos/NavMeshModifierVolume Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Gizmos/NavMeshSurface Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Gizmos/NavMeshSurface Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshAssetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshLinkEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshModifierEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshComponents.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshLink.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshLink.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshModifier.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshModifierVolume.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshComponentsTestsEditmode.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshComponentsTestsEditmode.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshModifierVolumeInPrefabTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshModifierVolumeInPrefabTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshSurfaceInPrefabTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshSurfaceInPrefabTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshSurfaceInPrefabVariantTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/NavMeshSurfaceInPrefabVariantTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/PrefabSavingUtil.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/PrefabSavingUtil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/PrefabStageAutoSavingUtil.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/Editor/PrefabStageAutoSavingUtil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshComponentsTestsPlaymode.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshComponentsTestsPlaymode.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceAgentTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceAgentTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceLinkTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceLinkTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceModifierTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceModifierTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceModifierVolumeTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceModifierVolumeTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceTests.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/ConnectingSurfaces.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/ConnectingSurfaces.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/ConnectingSurfaces-Example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/ConnectingSurfaces-Example.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshLink-Example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshLink-Example.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshModifier-Example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshModifier-Example.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshModifierVolume-Example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshModifierVolume-Example.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshSurface-Advanced.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshSurface-Advanced.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshSurface-Example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/Images/NavMeshSurface-Example.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshLink.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshLink.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshModifier.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshModifier.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshModifierVolume.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshModifierVolume.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshSurface.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/NavMeshSurface.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Documentation/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/LICENSE.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Packages.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Packages/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/Packages/manifest.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/AudioManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/ClusterInputManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/DynamicsManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/EditorBuildSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/EditorSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/GraphicsSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/InputManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/NavMeshAreas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/NetworkManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/NetworkManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/Physics2DSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/PresetManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/PresetManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/ProjectSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/ProjectVersion.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/QualitySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/QualitySettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/TagManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/TagManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/TimeManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/UnityConnectSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/VFXManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/VFXManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/XRSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/ProjectSettings/XRSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/NavMeshComponents-master/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Braced Hang To Crouch.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Braced Hang To Crouch.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Firing Rifle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Firing Rifle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Jab To Elbow Punch.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Jab To Elbow Punch.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Jumping Down.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Jumping Down.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Run (1).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Run (1).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Run Backwards.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Run Backwards.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Shooting (1).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Shooting (1).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Walking (1).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/Walking (1).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/passive_Man_Novizio.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/passive_Man_Novizio.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/passive_marker_man.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/passive_marker_man.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/passive_marker_man.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/PassiveMan/passive_marker_man.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/Idle_Novizio.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/Idle_Novizio.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/Novizio-StaticRC.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/Novizio-StaticRC.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/Walking_visual.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/Walking_visual.fbx.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Niveau_tuto_light.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Niveau_tuto_light.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Scene_Thomas.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Scene_Thomas.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Scene_Thomas/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Scene_Thomas/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Scene_Thomas/ReflectionProbe-0.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Scene_Thomas/ReflectionProbe-0.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStatic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test/AimPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test/AimPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerNoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerNoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/after.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/after.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/before.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/before.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/ground.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/target.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity/ConstraintSamples/Materials/target.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Box tuto UV_Material _225_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Box tuto UV_Material _225_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Box tuto UV_Material _225_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Box tuto UV_Material _225_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/LevelTuto/texture fond.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/LevelTuto/texture fond/Box tuto UV_Material _225_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/LevelTuto/texture fond/Box tuto UV_Material _225_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/LevelTuto/texture fond/Box tuto UV_Material _225_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/LevelTuto/texture fond/Box tuto UV_Material _225_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/LevelTuto/texture fond/Box tuto UV_Material _225_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/LevelTuto/texture fond/Box tuto UV_Material _225_Normal.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/00/006c09a3ccded5a77e8c3ec385836750" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/01/010c0a3297bef966830ffc9e06ffde68" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/02/028b1b03b8c2d789e5ef198a38af7a77" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/04/04ebd77a2fa7cedd5d9f933c84c92154" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/08/088fb3a3586c3a2936cb17e3d95d06ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/09/09072ffa7e17cf07b019df24eaa8a2f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0c/0c082a1527a18d85479778d3e159b8a5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/10/1057190ac14d9ca7ee5f9bc35c44c9a0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/12/127537cad2400a9d41f1345d8065b7a1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/16/1675573f7e74ed4ebe56396a952da924" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/17/17a2b66affc41fadb2d47c9ca9736ce6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/18/18aa5cc0e34c2802477aa80c1a6de5fe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1b/1b4a68282856f344060301f7b0c53da9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1d/1d34baf642b1431365b8f5408e102686" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1d/1d6783355184ae733acc829a741752d7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1e/1eedd8c791fc1eae1ad46256db34ac46" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/20/207fad55d777c711d34b4d123d853b2c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/23/23ed7f7a46ccf2968fcb634f50fc01b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/24/24028cb43546823ccbeafac8f5285052" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/25/25fcc568b81d964c066c11143a39a69f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2b/2b7df46b60d1023166bf58150733e4e7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2f/2f81d98ef6c384d02b2b99917d58775c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/34/34de42ddae9842545818a2a8925f4f2e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/39/39bafbc5dfbe4a8b72224e4c14f05969" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/39/39dd51d30b5605ad177c745f2c4f327e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3d/3d364bb82f8c4ff0124c2001652e4593" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3f/3f872c9fe85d8e9f9560521b7ec4fcb4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3f/3fbf29b520d5fbb141c2b3f43bd832f1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/41f1f77ebc0554e369e88de59586483c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/46/4685c269a6d42dc3331fcec462f8dcf1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/47/4735bdf7684cc6b405ef0ddb18afb8a7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4a/4a59c0069e26287bdef5c3485fa1cac6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4f/4f7f6a3de5fcbd95c650f870bf3d91d9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/55/555d31a00418021074540f0ae47396f3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/57407f1e8c5b872781192090197de25c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/575250c73c98b7b1efe0441c4009699d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/58/588e1d3a72a67257ba495a09af6080e7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5a/5a64e279aabc7461f2d127c7be1cc0cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5d/5d6341b817b6f7867795472553e28f15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5e/5e5a987159ed2e6acea7935165ea8f03" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60327a941ef9921579d3d920b6e2ebfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60571e47fe43a854c1a3389c57bf3cb6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60b602ca10acbca6f5e4e74c35411ebd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/63/637efa21d7f598942a77f7447b6e25e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/63/63c9f0ffd7a706a2b25daa88f60c3b97" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/64/6488d6384c95d7634bae34bfa69eedad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/68/68f98df936e19b928eb51b60b90c8497" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6e/6e17899333658f05d3d6c4bb94fd02bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/71/710d75b6fd033fbf4381f35234206422" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/71/71266898d335ad71f0cd6f1b31485bb0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/76/766e94d9dffb3cf2e6aafea35a444c22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/76/76d5f841135eefb4f8752d442308b7cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/77/7721fbbaf00873ae66de5b636ca5c9f5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/78/781bb192fb7d82fed00d9feafddd5f6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/78/78a5f5dde7d0aa94cb8a9c2b5b535807" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7a/7ad77542ba54ff70427e4a7f4528070b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7b/7b4dc123bd46438abfdec106479b02f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7d/7d0f19da5e91355ab4d3fdb76d7e3921" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/80/80655f674340ab47c098c1705dc8f098" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/80/80abd9f3d93478f7629e1e381e63a69c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/84/841fc656f4068deacb8c7b9babfec6ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/8796a604ec0be479e60d8bb8a519c718" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/87a2aa82c24aef2e0ac1a7e385fb805d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8a/8a04285851cf38ae72401be0dbca9a10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8a/8a93c0c2385d748d6f8c03030656e769" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8c/8cc9c6588508d80b6e684dacce977644" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8d/8d3debc6ad3a5cb54fee782d917c4490" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8e/8e8f8ffaaa6b266cfc79c0652efbec27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/94b88ffabe164b99c595033b5d243265" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/951cd73e3fe81dd8e5b35099901cfe97" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/97/97e88feee6dfbde59a38bdb70e8d866e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9f/9f0c2fa664c1b42793dc2c30a5986c3c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a0/a023152e43de8b9a79b9cd20e6219557" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a3/a36a51becd344c9f960194ffa30daaa0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a3/a3c0173d3a1e8e886a49bb77ba619571" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a4/a4df785bb70f391b29e867a3f5a681c2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b5/b52d1258c60164fe6aef5940843eef1b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b5/b5854a3775069fecced31ff0f89fd171" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b6/b6345218f64c59a4b77bf915828ba723" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b7/b702cf1741eee40da54a78ca517cf0e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b9/b9f3e29895970363541316bf7e3bc8a4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bf/bfa0fcbf755626074f935b3ebd31fc8c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c0/c052d205fb4075b3b3e217529173f705" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c1/c17c8080470982b2ce937b8c0d2da2f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c213dcab0d95b1735f7da9583c3c0807" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2f83e5f849ae0cc403c5296d6a49252" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c3666b6a0db45a0456c1863632b362bb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c6/c65892c0d5b15f0f6423bc9f96e279ef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c75f78455941e61cda42c10f7c5f38ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c77de0a66cc5100052136622508f238d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8d6321a0329b3aa37e496c0a50adc13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c9/c9925c24d68fe7e310b8a83d1a2dc80f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cba08e3e4ff70a877d50150412fa9691" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cc13fa094d44c66ce906bf25feb4b276" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cc84d2af1b650a6816b55ced8f70266f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ce/ce881d392aca61eddf05bedb5b0ec288" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d0/d0ccbdf4b2d36cdda9279cc066054c71" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d17af17fa43b634e4c34251f674500e3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d1bae5b3d656ba7cc4ed79a241341ebf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d2/d24c13800b169252d1fc244506220dd3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d2/d279214ae7b50735eacf4846b62dd475" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d3289956d169978c2bda40665eb520a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d4/d4785be8b92b075e3558ce8d366c53da" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d5/d5c28decfeafeec9caacb96f3892278f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d9/d96837f3a3beddbf7d3cc524ed45dde9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/da/daa21a39a325ba0ce98285a255bc88e3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/db/db95e9b4640a94f7f6fcc73ad22fdaf0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e1/e1e9007ff1b9b63e183508346817cae6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e2/e277a72ec3d169c3969a8ce5930b25c2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3f572f41e80bfe9d8a4cb164dad680a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e5/e556907acfbd5a4ded46c44125b70fc9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/eb/ebc9aa9692699133f2fd59ad07b355fe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f0/f0f1e69b051d2c6e03d079c2a3f7e949" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f4/f42ecb32c93acf515965bb92c2d7b21b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f6/f668936b5a2bd9a3242e82a12e7187b2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f6/f6fcda05c323f3bde699e90aaf31e821" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f9/f9fea65bfe1dca77f7e5ff804b8b06b5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fb/fbe9cb4b76a77b0e557c91f656286c7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fd/fd2df48693d32ce4bf45fd22035dd542" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fe16a755d28be02d175d04d3c4348803" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/0556314f2a03b8f0f3a27ac5539778b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0e/0e532f86d28d7c6b7c5877092fd8e6ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0e/0ec4b3e3595d1450a789dcea81d3b8d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/21/2110b82a8bf4cfcd74a4f93937e1d9b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/47/47175623aad65e102cf882875ce17e3b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6f/6f0c235a463bf80363d1da92cf52bf05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/71/71a194aff9d206077890383ba84cbd22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7f32b4fea068a713fd645ed9e88369bb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8f/8f9a84a0b1eaf33df9ba9b27fdf1e7a3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9e/9e021c696b09dd3a2208cc6c91b4c2e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a6/a6f8d48d08f785d09bc7937c3ee67cee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a9/a93ad7db08850cd9dc10cc49eaef36df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/be/bed938716d5b87357c98ec26dd493174" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d3c4792d0f216a58b26b6793223a5e3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/dd/dd4bb87966bc271d53ea0e97d4789bfb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e4/e4427a79d8bc196d88c6251c0dc14a03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e7/e7ec32220ef4a42ab1c823549c4628e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ea/ea6e1a4d09ce9eb2829751796bbc5b43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ec/ecdef8f498af26dad8da477c9601b8ec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/207A89C76C3730EA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/43FFF67504C1B77C" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/Burst.Backend.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/Burst.Compiler.IL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/Smash.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/Unity.Cecil.Mdb.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/Unity.Cecil.Pdb.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/Unity.Cecil.Rocks.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/Unity.Cecil.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/bcl.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/burst-llvm-shared.bc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/burst-llvm.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/burst-llvm.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/hostlin/lld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/hostmac/lld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/hostwin/lld.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/hostwin/vswhere.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/libburst-llvm.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/libburst-llvm.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/.Runtime/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/CHANGELOG.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstAotCompiler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstAotCompiler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstAotSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstAotSettings.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstCompileTarget.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstCompileTarget.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstDisassembler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstDisassembler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstEditorOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstEditorOptions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstInspectorGUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstInspectorGUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstReflection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/BurstReflection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/LongTextArea.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/LongTextArea.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/Unity.Burst.Editor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Editor/Unity.Burst.Editor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/LICENSE.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstCompileAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstCompileAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstCompiler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstCompiler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstCompilerOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstCompilerOptions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstExecutionEnvironment.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstExecutionEnvironment.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstRuntime.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/BurstRuntime.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/FunctionPointer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/FunctionPointer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/SharedStatic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/SharedStatic.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/Unity.Burst.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Runtime/Unity.Burst.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/ManagedExceptionsBurstJobs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/ManagedExceptionsBurstJobs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/NativeTriggeredManagedExceptionsBurstJobs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/NativeTriggeredManagedExceptionsBurstJobs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/010-NotSupported.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/010-NotSupported.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/020-Types.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/020-Types.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/031-Pointers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/031-Pointers.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/035-Functions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/035-Functions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/040-ControlFlows.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/040-ControlFlows.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/050-TestStructs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/050-TestStructs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/053-TestConstArrays.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/053-TestConstArrays.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/060-TestEnums.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/060-TestEnums.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/070-TestAtomics.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/070-TestAtomics.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/080-TestSystemMath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/080-TestSystemMath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/081-UnityMath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/081-UnityMath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/082-PartialManaged.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/082-PartialManaged.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/AssertHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/AssertHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/DataRange.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/DataRange.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/DelegateHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/DelegateHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/NativeArrayRaw.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/Helpers/NativeArrayRaw.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/StaticDelegateRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/StaticDelegateRegistry.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/StaticDelegateRegistry.generated.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/StaticDelegateRegistry.generated.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/TestCompilerAttributeBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Shared/TestCompilerAttributeBase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/TestCompilerAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/TestCompilerAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Tests.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/Tests.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/IArgumentProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/IArgumentProvider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/PerfNotes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/PerfNotes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/SphereCulling.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/SphereCulling.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/SumNumberJob.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Tests/UnityBenchShared/SumNumberJob.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.1.1/readme.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/CHANGELOG.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/LICENSE.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/TestCompilerAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/TestCompilerAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBitmanipulation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBitmanipulation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestBool4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestDouble4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestFloat4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestHalf.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestHalf.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestInt4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestMath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestMath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestMath.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestMath.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestMatrix.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestMatrix.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestQuaternion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestQuaternion.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestRigidTransform.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestRigidTransform.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUint4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/Shared/TestUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/TestMath2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/TestMath2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/TestRandom.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Tests/TestRandom.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Unity.Mathematics.Tests.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Unity.Mathematics.Tests.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/MatrixDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/MatrixDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/PostNormalizedVectorDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/PostNormalizedVectorDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/PrimitiveVectorDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/PrimitiveVectorDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/QuaternionDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/QuaternionDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/LICENSE.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/README.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular2D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular2x2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular2x2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular2x2x2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular2x2x2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular3D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/cellular3D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/classicnoise2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/classicnoise2D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/classicnoise3D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/classicnoise3D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/classicnoise4D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/classicnoise4D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/common.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/common.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise2D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise3D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise3D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise3Dgrad.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise3Dgrad.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise4D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise4D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/psrdnoise2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/psrdnoise2D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/PropertyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/PropertyAttributes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Unity.Mathematics.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Unity.Mathematics.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/double4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/math.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/math.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/math_unity_conversion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/math_unity_conversion.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/matrix.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/matrix.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/matrix.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/matrix.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/quaternion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/quaternion.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/random.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/random.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/rigid_transform.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/rigid_transform.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4x2.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4x2.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4x3.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4x3.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4x4.gen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4x4.gen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/package.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponents.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsEditor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsEditor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsExamples.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsExamples.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsExamplesEditor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsExamplesEditor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsTestsEditmode.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsTestsEditmode.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsTestsPlaymode.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsTestsPlaymode.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsEditor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsExamples.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsExamplesEditor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsTestsEditmode.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/NavMeshComponentsTestsPlaymode.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Animation.Rigging.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Animation.Rigging.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Animation.Rigging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Animation.Rigging.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Burst.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Burst.Editor.dll" afterDir="false" />
@@ -682,9 +486,6 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/1b1d2e-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/1b1d2e-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/00a940-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/00a940-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
@@ -692,12 +493,8 @@
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/NavMeshComponents.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/NavMeshComponents.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/NavMeshComponentsEditor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/NavMeshComponentsEditor.csprojAssemblyReference.cache" afterDir="false" />
@@ -715,8 +512,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/JumpTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmissiveMaterial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/QuickOutline/Scripts/Outline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -728,8 +527,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/Novizio2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/Novizio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioStatic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/FadeOnScene.cs" />
@@ -738,8 +535,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EmissiveMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" />
       </list>
     </option>
   </component>
@@ -816,6 +617,10 @@
       <workItem from="1622037223736" duration="11000" />
       <workItem from="1622040128954" duration="149000" />
       <workItem from="1622190452137" duration="6026000" />
+      <workItem from="1622448672927" duration="8275000" />
+      <workItem from="1622550172517" duration="2087000" />
+      <workItem from="1622557171662" duration="654000" />
+      <workItem from="1622643578689" duration="608000" />
     </task>
     <servers />
   </component>
@@ -840,14 +645,15 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="498" height="446" key="SwitcherDM" timestamp="1621425188115">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621425188115" />
-    <state x="-1909" y="0" width="1380" height="1028" key="dock-window-1" timestamp="1620812062516">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1622468233690">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1909" y="0" width="1380" height="1028" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620812062516" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1622468233690" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621425188115" />
+    <state x="-1663" y="0" width="1565" height="1028" key="dock-window-1" timestamp="1622452181963">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1663" y="0" width="1565" height="1028" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1622452181963" />
     <state x="-1920" y="5" width="1380" height="1023" maximized="true" key="dock-window-2" timestamp="1620820513219">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

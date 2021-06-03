@@ -46,7 +46,7 @@ public class SoldatiPatrol : MonoBehaviour
     #endregion
 
     #region Shoot
-    //GameObject canon;
+    public GameObject canon;
     #endregion
     // Start is called before the first frame update
     void Start()

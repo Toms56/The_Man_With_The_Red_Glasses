@@ -41,7 +41,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         shoot = false;
-        Debug.Log(shoot);
+        //Debug.Log(shoot);
         rb = GetComponent<Rigidbody>();
     }
 
@@ -54,11 +54,11 @@ public class SoldatiStaticRaycast : MonoBehaviour
         if (distance > chaseRange)
         {
             shoot = false;
-            Debug.Log(shoot + ">chase Range");
+            //Debug.Log(shoot + ">chase Range");
         }
         if (shoot == false)
         {
-            Debug.Log(canonScript);
+            //Debug.Log(canonScript);
             //GetComponent<SoldatiCanon>().enabled = false;
             canonScript.enabled = false;
             CancelInvoke("ShootPlayer");
