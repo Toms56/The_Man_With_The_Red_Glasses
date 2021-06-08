@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public int pv = 3;
     public bool die = false;
 
+    public bool wallJump = false;
+    private Vector3 aimPosition;
 
     // For Mouvement
     public float jumpHeight;
@@ -29,6 +31,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Shoot
     public bool aiming;
     public bool equipSecondWeap = false;
 
@@ -91,7 +94,10 @@ public class PlayerController : MonoBehaviour
 
         // MOVEMENT
         float inputX = Input.GetAxis("Horizontal");
-        movement.x = inputX * finalSpeed;
+        if (!wallJump)
+        {
+            movement.x = inputX * finalSpeed;
+        }
         animator.SetFloat("Speed", (facingSign * movement.x) / finalSpeed);
 
 
@@ -101,7 +107,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Sneaky", true);
             sneaky = true;
         }
-        else if (Input.GetKeyDown(KeyCode.LeftControl) && sneaky)
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && sneaky && RaycastSneaky())
         {
             animator.SetBool("Sneaky", false);
             sneaky = false;
@@ -127,6 +133,7 @@ public class PlayerController : MonoBehaviour
         // JUMP
         if (charaController.isGrounded)
         {
+            wallJump = false;
             if (!isGrounded)
             {
                 if (Input.GetButtonDown("Jump") && !sneaky)
@@ -164,13 +171,18 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, mouseAimMask))
         {
             targetTform.position = hit.point;
+            if (!wallJump)
+            {
+                aimPosition = hit.point;
+            }
         }
 
-        playerTransform.rotation = (Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(targetTform.position.x - transform.position.x), 0)));
+        playerTransform.rotation = (Quaternion.Euler(new Vector3(0, 90 * Mathf.Sign(aimPosition.x - transform.position.x), 0)));
 
+        //Debug.Log(Time.frameCount + " " + movement + wallJump);
 
         charaController.Move(movement * Time.deltaTime);
-        //Debug.Log(charaController.height);
+        Debug.Log("Raycast Sneaky : " + RaycastSneaky());
     }
 
     private void OnAnimatorIK()
@@ -179,7 +191,7 @@ public class PlayerController : MonoBehaviour
         {
             // Weapon Aim Target
             animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
-            animator.SetIKPosition(AvatarIKGoal.RightHand, targetTform.position/* + new Vector3(0,1,0)*/);
+            animator.SetIKPosition(AvatarIKGoal.RightHand, targetTform.position);
 
             animator.SetLookAtWeight(1);
             animator.SetLookAtPosition(targetTform.position);
@@ -216,6 +228,38 @@ public class PlayerController : MonoBehaviour
                 firstWeapon.SetActive(false);
             }
         }
+    }
+
+    // WALL JUMP
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        //Debug.DrawRay(hit.point, hit.normal, Color.red, 3f);
+        if (!charaController.isGrounded && hit.normal.y < 0.1f)
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                aimPosition = hit.point + hit.normal.normalized * 5;
+                wallJump = true;
+                movement = hit.normal * finalSpeed;
+                movement.y = jumpHeight;
+                //Debug.Log(Time.frameCount + " Hit "  + movement);
+            }
+        }
+    }
+
+    // Raycast for sneaky
+    bool RaycastSneaky()
+    {
+        // Raycast for detect the collision with other object
+        //Debug.DrawRay(playerTransform.position + new Vector3(0,2,0), transform.up * 2f, Color.red);
+        RaycastHit hit;
+
+        if (Physics.Raycast(playerTransform.position + new Vector3(0,2,0), transform.up, out hit,2f))
+        {
+            //Debug.Log("Je touche un truc");
+            return false;
+        }
+        return true;
     }
 
     // First méthod for adapt the height of the CharacterController
