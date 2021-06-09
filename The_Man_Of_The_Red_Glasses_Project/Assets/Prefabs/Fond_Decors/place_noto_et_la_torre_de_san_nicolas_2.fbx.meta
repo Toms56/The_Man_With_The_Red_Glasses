@@ -3,7 +3,52 @@ guid: e008855f75d17604aae248c02ff9859a
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #2
+    second: {fileID: 2100000, guid: de0a495a3b760864ca9fe9a02b2640a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fenetre
+    second: {fileID: 2100000, guid: 8ad5050cfad0d4c479eb2d78bb5550d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maison
+    second: {fileID: 2100000, guid: 1dc3fd24cf8440e47b2d8cc45b16ee39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plateforme
+    second: {fileID: 2100000, guid: 467e7c2cb94c82646ac5ae8919f4c6a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: porte du bas
+    second: {fileID: 2100000, guid: 233b5893cfadf58408b4d2c37aace31f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol
+    second: {fileID: 2100000, guid: 7daf2824a4e9a8c4fa6fa56e7c7ee8be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spot lumineux
+    second: {fileID: 2100000, guid: ce6ea10206c80f543b3d3a074be6e944, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toit
+    second: {fileID: 2100000, guid: 1bf36c12068a21b4cb9b1dfb2b61296c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: verre
+    second: {fileID: 2100000, guid: 573d6e8fc0f354e4890206cabd05809d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

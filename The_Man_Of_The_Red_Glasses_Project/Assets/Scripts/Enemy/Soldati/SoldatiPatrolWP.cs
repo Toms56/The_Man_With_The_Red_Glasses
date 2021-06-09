@@ -16,6 +16,7 @@ public class SoldatiPatrolWP : MonoBehaviour
         
         [SerializeField]
         private Transform castPoint;
+        private Transform castPoint2;
         public Transform target;
         #endregion
 
@@ -105,7 +106,24 @@ public class SoldatiPatrolWP : MonoBehaviour
             Debug.DrawLine(castPoint.position, castPoint.position + -transform.right.normalized * 1f,
                 Color.green);
         }
-        
+        RaycastHit hit2;
+
+        if (Physics.Raycast(castPoint2.position, -transform.right, out hit2, 1f, 1 << LayerMask.NameToLayer("Default")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit2.collider.CompareTag("Player"))
+            {
+                //Debug.Log("Player detected");
+                shoot = true;
+            }
+            Debug.DrawLine(castPoint2.position, hit2.point, Color.red);
+        }
+        else
+        {
+            shoot = false;
+            Debug.DrawLine(castPoint2.position, castPoint2.position + -transform.right.normalized * 1f,
+                Color.green);
+        }
     }
 
     void ShootPlayer()

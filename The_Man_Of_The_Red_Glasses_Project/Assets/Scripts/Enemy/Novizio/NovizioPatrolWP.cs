@@ -12,6 +12,7 @@ public class NovizioPatrolWP : MonoBehaviour
     private float chaseRange = 1f;
 
     [SerializeField] private Transform castPoint;
+    [SerializeField] private Transform castPoint2;
     public Transform target;
     [SerializeField]private float attackRange;
 
@@ -121,6 +122,26 @@ public class NovizioPatrolWP : MonoBehaviour
             Debug.DrawLine(castPoint.position, castPoint.position + -transform.right.normalized * 1f,
                 Color.green);
         }
+        RaycastHit hit2;
+
+        if (Physics.Raycast(castPoint2.position, -transform.right, out hit2, 1f, 1 << LayerMask.NameToLayer("Default")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit2.collider.CompareTag("Player"))
+            {
+                Debug.Log("Player hit");
+                walk = false;
+                isAgro = true;
+            }
+            Debug.DrawLine(castPoint2.position, hit2.point, Color.red);
+        }
+        else
+        {
+            isAgro = false;
+            Debug.DrawLine(castPoint2.position, castPoint2.position + -transform.right.normalized * 1f,
+                Color.green);
+        }
+        
     }
     void RushPlayer()
     {
@@ -147,11 +168,11 @@ public class NovizioPatrolWP : MonoBehaviour
             animator.SetBool("isAttacking", true);
         }
     }
-    IEnumerator DestroyNovizio()
+    /*IEnumerator DestroyNovizio()
     {
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
-    }
+    }*/
 
     private void OnCollisionEnter(Collision other)
     {
@@ -161,10 +182,11 @@ public class NovizioPatrolWP : MonoBehaviour
             healthPts--;
             if (healthPts <= 0)
             {
-                novizio.clip = deathClip;
+                /*novizio.clip = deathClip;
                 novizio.Play();
-                Debug.Log(deathClip);
-                StartCoroutine(DestroyNovizio());
+                Debug.Log(deathClip);*/
+                //StartCoroutine(DestroyNovizio());
+                Destroy(gameObject);
             }
         }
     }
