@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoldatiStaticRaycast : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class SoldatiStaticRaycast : MonoBehaviour
     
     [SerializeField]
     private Transform castPoint;
+    [SerializeField]
+    private Transform castPoint2;
     public Transform target;
     #endregion
 
@@ -35,6 +38,9 @@ public class SoldatiStaticRaycast : MonoBehaviour
     private bool isPatrolling;
 
     [SerializeField] private float healthPts;
+    [SerializeField] private float maxHealth;
+    public GameObject healthBarUI;
+    public Slider slider;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +49,9 @@ public class SoldatiStaticRaycast : MonoBehaviour
         shoot = false;
         //Debug.Log(shoot);
         rb = GetComponent<Rigidbody>();
+
+        healthPts = maxHealth;
+        slider.value = CalculateHealth();
     }
 
     // Update is called once per frame
@@ -70,6 +79,22 @@ public class SoldatiStaticRaycast : MonoBehaviour
             CancelInvoke("Patrol");
             ShootPlayer();
         }
+
+        slider.value = CalculateHealth();
+        if (healthPts < maxHealth)
+        {
+            healthBarUI.SetActive(true);
+        }
+
+        if (healthPts <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+        if (healthPts > maxHealth)
+        {
+            healthPts = maxHealth;
+        }
     }
 
     void Patrol()
@@ -93,6 +118,25 @@ public class SoldatiStaticRaycast : MonoBehaviour
         {
             shoot = false;
             Debug.DrawLine(castPoint.position, castPoint.position + -transform.right.normalized * 1f,
+                Color.green);
+        }
+        
+        RaycastHit hit2;
+
+        if (Physics.Raycast(castPoint2.position, -transform.right, out hit2, 1f, 1 << LayerMask.NameToLayer("Default")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit2.collider.CompareTag("Player"))
+            {
+                //Debug.Log("Player detected");
+                shoot = true;
+            }
+            Debug.DrawLine(castPoint2.position, hit2.point, Color.red);
+        }
+        else
+        {
+            shoot = false;
+            Debug.DrawLine(castPoint2.position, castPoint2.position + -transform.right.normalized * 1f,
                 Color.green);
         }
     }
@@ -146,14 +190,18 @@ public class SoldatiStaticRaycast : MonoBehaviour
     {
         if(other.gameObject.tag == "PlayerBullet")
         {
-            Debug.Log("Enemy Hit ! ");
             healthPts--;
             //Destroy(other.gameObject);
-            if (healthPts <= 0)
+            /*if (healthPts <= 0)
             {
                 Destroy(gameObject);
-            }
+            }*/
         }    
+    }
+
+    float CalculateHealth()
+    {
+        return healthPts / maxHealth;
     }
 
 }

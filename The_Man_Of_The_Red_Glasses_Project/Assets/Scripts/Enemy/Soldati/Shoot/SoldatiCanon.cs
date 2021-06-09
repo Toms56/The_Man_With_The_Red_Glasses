@@ -18,6 +18,8 @@ public class SoldatiCanon : MonoBehaviour
     private float fireRate;
 
     private float time = 0f;
+
+    private int n = 6;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +30,16 @@ public class SoldatiCanon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameObject.activeSelf + "CANON");
         //InvokeRepeating("SpawnBullet", 0.5f, 0.40f);
-        SpawnBullet();
+        if (n >= 0)
+        {
+            SpawnBullet();
+        }
+        if (n <= 0)
+        {
+            StartCoroutine(Shoot());  
+        }
+        //SpawnBullet();
         if (gameObject.activeSelf == false)
         {
             GetComponent<SoldatiCanon>().enabled = false;
@@ -38,14 +47,22 @@ public class SoldatiCanon : MonoBehaviour
         }
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
+
+    IEnumerator Shoot()
+    {
+        yield return new WaitForSeconds(3);
+        n = 6;
+        SpawnBullet();
+    }
     
     void SpawnBullet()
     {
-        Debug.Log("Function Called");
         if (Time.time > time)
         {
+            Debug.Log(n);
             Instantiate(soldatiBullet, transform.position + bossBulletOffset, transform.rotation);
             time = Time.time + fireRate;
+            n -= 1;
         }
     }
 }
