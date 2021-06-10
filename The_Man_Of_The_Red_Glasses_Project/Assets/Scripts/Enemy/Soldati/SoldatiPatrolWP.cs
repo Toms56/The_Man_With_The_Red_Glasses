@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoldatiPatrolWP : MonoBehaviour
 {
@@ -24,22 +25,47 @@ public class SoldatiPatrolWP : MonoBehaviour
     [SerializeField] private Animator animator;
 
     private bool shoot = false;
+    Rigidbody rb;
 
     private bool walk = true;
     [SerializeField]
     private SoldatiCanon canonScript;
 
+    #region UI
     public float healthPts;
+    [SerializeField] private float maxHealth;
+    public GameObject healthBarUI;
+    public Slider slider;
+    #endregion
     
     // Start is called before the first frame update
     void Start()
     {
         transform.position = wayPoints[wayPointIndex].transform.position;
+        rb = GetComponent<Rigidbody>();
+
+        healthPts = maxHealth;
+        slider.value = CalculateHealth();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (healthPts > maxHealth)
+        {
+            healthPts = maxHealth;
+        }
+        if (healthPts <= 0)
+        {
+            animator.SetBool("Death", true);
+            healthPts = 0;
+            StartCoroutine(Destroy());
+        }
+        slider.value = CalculateHealth();
+        if (healthPts < maxHealth)
+        {
+            healthBarUI.SetActive(true);
+        }
         float distance = Vector3.Distance(transform.position, target.position);
 
         if (distance > chaseRange)
@@ -167,17 +193,24 @@ public class SoldatiPatrolWP : MonoBehaviour
             transform.rotation = Quaternion.identity;
         }
     }
+    
+    IEnumerator Destroy()
+    {
+        rb.detectCollisions = false;
+        canon.SetActive(false);
+        animator.SetBool("Death", true);
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
+    }
+    float CalculateHealth()
+    {
+        return healthPts / maxHealth;
+    }
     private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "PlayerBullet")
         {
-            Debug.Log("Enemy Hit ! ");
             healthPts--;
-            //Destroy(other.gameObject);
-            if (healthPts <= 0)
-            {
-                Destroy(gameObject);
-            }
         }    
     }
 }

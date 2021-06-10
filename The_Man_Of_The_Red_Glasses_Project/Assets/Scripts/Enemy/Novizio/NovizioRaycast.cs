@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NovizioRaycast : MonoBehaviour
 {
     [SerializeField]
     private Transform castPoint;
+    [SerializeField]
+    private Transform castPoint2;
 
     [SerializeField] private float speed;
 
@@ -24,6 +27,11 @@ public class NovizioRaycast : MonoBehaviour
 
     private bool isFacingLeft;
 
+    #endregion
+    #region UI
+    [SerializeField] private float maxHealth;
+    public GameObject healthBarUI;
+    public Slider slider;
     #endregion
 
     #region Heal
@@ -45,14 +53,32 @@ public class NovizioRaycast : MonoBehaviour
         isAgro = false;
         rb = GetComponent<Rigidbody>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        healthPts = maxHealth;
+        slider.value = CalculateHealth();
     }
 
     // Update is called once per frame
     void Update()
     {
+        slider.value = CalculateHealth();
+        if (healthPts < maxHealth)
+        {
+            healthBarUI.SetActive(true);
+        }
+        if (healthPts > maxHealth)
+        {
+            healthPts = maxHealth;
+        }
         if (healthPts <= 0)
         {
             healthPts = 0;
+            animator.SetBool("Death",true);
+            healthBarUI.SetActive(false);
+            /*novizio.clip = deathClip;
+            novizio.Play();
+            Debug.Log(deathClip);*/
+            StartCoroutine(Destroy());
         }
         float distance = Vector3.Distance(transform.position, target.position);
         //Debug.Log(distance);
@@ -118,28 +144,44 @@ public class NovizioRaycast : MonoBehaviour
             Debug.DrawLine(castPoint.position, castPoint.position + -transform.right.normalized * 1f,
                 Color.green);
         }
+        RaycastHit hit2;
+
+        if (Physics.Raycast(castPoint2.position, -transform.right, out hit2, 1f, 1 << LayerMask.NameToLayer("Default")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit2.collider.CompareTag("Player"))
+            {
+                //Debug.Log("Player detected");
+                isAgro = true;
+            }
+            Debug.DrawLine(castPoint2.position, hit2.point, Color.red);
+        }
+        else
+        {
+            isAgro = false;
+            Debug.DrawLine(castPoint2.position, castPoint2.position + -transform.right.normalized * 1f,
+                Color.green);
+        }
     }
 
-    IEnumerator DestroyNovizio()
+    IEnumerator Destroy()
     {
-        yield return new WaitForSeconds(2);
+        rb.detectCollisions = false;
+        healthBarUI.SetActive(false);
+        animator.SetBool("Death", true);
+        yield return new WaitForSeconds(3);
         Destroy(gameObject);
+    }
+    float CalculateHealth()
+    {
+        return healthPts / maxHealth;
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "PlayerBullet")
         {
-            Debug.Log("Enemy Hit ! ");
             healthPts--;
-            if (healthPts <= 0)
-            {
-                /*novizio.clip = deathClip;
-                novizio.Play();
-                Debug.Log(deathClip);*/
-                //StartCoroutine(DestroyNovizio());
-                Destroy(gameObject);
-            }
         }
     }
 }
