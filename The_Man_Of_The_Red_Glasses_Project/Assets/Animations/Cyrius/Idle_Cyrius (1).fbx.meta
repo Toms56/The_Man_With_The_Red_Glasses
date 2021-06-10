@@ -6,7 +6,32 @@ ModelImporter:
   - first:
       74: -4791504522942941401
     second: Armature|Armature|mixamo.com|Layer0
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 955c452cde064e340b41dcbc6e478066, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: b1b9213307081e147a59c1b74c7c9821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: e27f409ffe944b74e9910a5e24d40f97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: f2800253c6386c44eba53c394051e340, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 069afa531e3921c46bf2cfad82bae022, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

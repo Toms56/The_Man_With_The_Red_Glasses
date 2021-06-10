@@ -39,8 +39,8 @@ public class SoldatiStaticRaycast : MonoBehaviour
 
     [SerializeField] private float healthPts;
     [SerializeField] private float maxHealth;
-    public GameObject healthBarUI;
-    public Slider slider;
+    /*public GameObject healthBarUI;
+    public Slider slider;*/
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +51,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         healthPts = maxHealth;
-        slider.value = CalculateHealth();
+        //slider.value = CalculateHealth();
     }
 
     // Update is called once per frame
@@ -80,11 +80,11 @@ public class SoldatiStaticRaycast : MonoBehaviour
             ShootPlayer();
         }
 
-        slider.value = CalculateHealth();
-        if (healthPts < maxHealth)
+        //slider.value = CalculateHealth();
+        /*if (healthPts < maxHealth)
         {
             healthBarUI.SetActive(true);
-        }
+        }*/
 
         if (healthPts <= 0)
         {
