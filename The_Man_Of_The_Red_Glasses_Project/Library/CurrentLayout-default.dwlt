@@ -24,7 +24,10 @@ MonoBehaviour:
   m_RootView: {fileID: 8}
 =======
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -143,7 +146,10 @@ MonoBehaviour:
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
   controlID: 51
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,6 +168,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 403
     height: 573
   m_MinSize: {x: 201, y: 221}
@@ -172,6 +179,8 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     width: 1531
     height: 947
   m_MinSize: {x: 403, y: 492}
@@ -197,6 +206,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 745
     height: 374
   m_MinSize: {x: 231, y: 271}
@@ -208,6 +218,8 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     width: 1531
     height: 573
   m_MinSize: {x: 403, y: 221}
@@ -269,12 +281,15 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     width: 1152
     height: 573
   m_MinSize: {x: 202, y: 221}
@@ -286,7 +301,10 @@ MonoBehaviour:
   - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,12 +322,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 977
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     y: 573
     width: 1531
     height: 374
@@ -317,7 +338,10 @@ MonoBehaviour:
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
   controlID: 80
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,6 +362,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1367
     height: 947
   m_MinSize: {x: 433, y: 492}
@@ -345,6 +370,8 @@ MonoBehaviour:
   vertical: 1
   controlID: 64
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     width: 1021
     height: 374
   m_MinSize: {x: 231, y: 271}
@@ -373,13 +400,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ConsoleWindow
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 6}
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 0
@@ -390,6 +421,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 65
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     x: 1021
     y: 0
     width: 510
@@ -418,6 +451,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 403
     y: 0
     width: 964
@@ -428,6 +462,10 @@ MonoBehaviour:
 =======
     x: 1531
     y: 0
+=======
+    x: 1531
+    y: 0
+>>>>>>> parent of b2c1624d (Équilibrage)
     width: 389
     height: 947
   m_MinSize: {x: 276, y: 71}
@@ -464,11 +502,14 @@ MonoBehaviour:
     x: 403
     y: 73
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 962
     height: 552
   m_ViewDataDictionary: {fileID: 0}
   m_SplitPaneLeftWidth: 295
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     width: 1150
     height: 552
   m_ViewDataDictionary: {fileID: 0}
@@ -747,10 +788,14 @@ MonoBehaviour:
     x: 0
     y: 646
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 744
 =======
     width: 1020
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+    width: 1020
+>>>>>>> parent of b2c1624d (Équilibrage)
     height: 353
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -767,6 +812,7 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -779,22 +825,35 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Test Romain
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+    - Assets/Test Romain
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Test Romain
+>>>>>>> parent of b2c1624d (Équilibrage)
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "F:\\Projet_Fin_d'ann\xE9e\\The_Man_With_The_Red_Glasses\\The_Man_Of_The_Red_Glasses_Project"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 31}
     m_SelectedIDs: 92400000
     m_LastClickedID: 16530
     m_ExpandedIDs: 0000000092400000d08c0000d28c0000d48c0000d68c0000d88c0000da8c0000dc8c0000de8c0000e08c0000e28c0000e48c0000e68c0000e88c0000ea8c0000ec8c0000
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     scrollPos: {x: 0, y: 643}
     m_SelectedIDs: 76480000
     m_LastClickedID: 18550
     m_ExpandedIDs: 00000000de3e00004c4800004e48000050480000524800005448000056480000584800005a4800005c4800005e48000060480000624800006448000066480000684800006a4800006c4800006e4800007048000072480000744800007648000000ca9a3b
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -867,10 +926,14 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 7}
 =======
       m_ClientGUIView: {fileID: 0}
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+      m_ClientGUIView: {fileID: 0}
+>>>>>>> parent of b2c1624d (Équilibrage)
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1119,7 +1182,10 @@ MonoBehaviour:
     x: 0
     y: 646
     width: 1020
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     height: 353
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -1166,24 +1232,31 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       y: 21
       width: 620
       height: 332
     m_Scale: {x: 0.32291666, y: 0.32291663}
     m_Translation: {x: 310, y: 165.99998}
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
       y: 0
       width: 1020
       height: 353
     m_Scale: {x: 0.32685184, y: 0.32685184}
     m_Translation: {x: 510, y: 176.5}
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -960
       y: -514.0645
@@ -1193,6 +1266,8 @@ MonoBehaviour:
   m_defaultScale: 0.32291666
   m_LastWindowPixelSize: {x: 620, y: 353}
 =======
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
       x: -1560.34
       y: -540
       width: 3120.68
@@ -1200,7 +1275,10 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.32685184
   m_LastWindowPixelSize: {x: 1020, y: 353}
+<<<<<<< HEAD
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+>>>>>>> parent of b2c1624d (Équilibrage)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1261,10 +1339,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
 =======
     x: 1021
 >>>>>>> parent of b2c1624... Équilibrage
+=======
+    x: 1021
+>>>>>>> parent of b2c1624d (Équilibrage)
     y: 646
     width: 744
     height: 353
