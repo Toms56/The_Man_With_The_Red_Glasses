@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance;
 
     // PV
-    public int pv = 3;
+    public int pv;
     public bool die = false;
 
     public bool wallJump = false;
@@ -80,14 +80,15 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (pv == 0 && !die)
+        if (pv <= 0)
         {
-            // Mort du joueur / Empêcher le shoot 
+            //die = true;
+            animator.SetFloat("Speed", 0);
             animator.SetBool("Death", true);
-            die = true;
+            baseSpeed = 0;
+            jumpHeight = 0;
             if (die)
             {
-                StartCoroutine(DeathCollider());
                 return;
             }
         }
@@ -114,7 +115,7 @@ public class PlayerController : MonoBehaviour
             finalSpeed = baseSpeed;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && finalSpeed != 0)
+        if (Input.GetKey(KeyCode.LeftShift) && finalSpeed != 0 && !sneaky && die == false)
         {
             finalSpeed = baseSpeed * 2;
             animator.SetBool("Run", true);
@@ -134,6 +135,7 @@ public class PlayerController : MonoBehaviour
         if (charaController.isGrounded)
         {
             wallJump = false;
+            animator.SetBool("WallJump", false);
             if (!isGrounded)
             {
                 if (Input.GetButtonDown("Jump") && !sneaky)
@@ -182,7 +184,7 @@ public class PlayerController : MonoBehaviour
         //Debug.Log(Time.frameCount + " " + movement + wallJump);
 
         charaController.Move(movement * Time.deltaTime);
-        Debug.Log("Raycast Sneaky : " + RaycastSneaky());
+        //Debug.Log("Movement.y: " + movement.y);
     }
 
     private void OnAnimatorIK()
@@ -234,12 +236,14 @@ public class PlayerController : MonoBehaviour
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         //Debug.DrawRay(hit.point, hit.normal, Color.red, 3f);
-        if (!charaController.isGrounded && hit.normal.y < 0.1f)
+        if (!charaController.isGrounded && hit.normal.y < 0.1f )
         {
             if (Input.GetButtonDown("Jump"))
             {
+                animator.SetBool("WallJump", true);
                 aimPosition = hit.point + hit.normal.normalized * 5;
                 wallJump = true;
+                finalSpeed = baseSpeed;
                 movement = hit.normal * finalSpeed;
                 movement.y = jumpHeight;
                 //Debug.Log(Time.frameCount + " Hit "  + movement);
@@ -247,11 +251,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void DeathAnimation()
+    {
+        die = true;
+    }
+
     // Raycast for sneaky
     bool RaycastSneaky()
     {
-        // Raycast for detect the collision with other object
-        //Debug.DrawRay(playerTransform.position + new Vector3(0,2,0), transform.up * 2f, Color.red);
+        // Raycast for detect the collision with other object at top
+        //Debug.DrawRay(playerTransform.position /*+ new Vector3(0,2,0)*/, transform.up * 2f, Color.red);
         RaycastHit hit;
 
         if (Physics.Raycast(playerTransform.position + new Vector3(0,2,0), transform.up, out hit,2f))
@@ -262,12 +271,12 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
-    // First méthod for adapt the height of the CharacterController
-    IEnumerator DeathCollider()
+    // First méthod for adapt the height of the CharacterController / Malheureusement au bout d'un moment la technique avec le lancement de la coroutine et le return ne marchait plus 
+   /* IEnumerator DeathCollider()
     {
         yield return new WaitForSeconds(1.2f);
         charaController.height = 0f;
-    }
+    } */ 
 
     // La deuxième méthode va être de dupliquer l'animation afin d'en avoir une qui ne soit pas en mode Read Only
     // Après cela importer un skin sur la scene et y ajouter un Characontroller / Faire glisser l'animation sur "Animator" dans l'inspecteur afin qu'un ControllerAnimator se créé
