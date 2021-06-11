@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NovizioPatrolWP : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class NovizioPatrolWP : MonoBehaviour
     private int wayPointIndex = 0;
     private float chaseRange = 1f;
 
+    private Rigidbody rigidbody;
+
     [SerializeField] private Transform castPoint;
     [SerializeField] private Transform castPoint2;
     public Transform target;
@@ -18,10 +21,16 @@ public class NovizioPatrolWP : MonoBehaviour
 
     #endregion
     [SerializeField] private Animator animator;
-
-    private bool shoot = false;
-
+    
     private bool walk = true;
+
+    private Transform deathPos;
+    
+    #region UI
+    [SerializeField] private float maxHealth;
+    public GameObject healthBarUI;
+    public Slider slider;
+    #endregion
 
     #region state
 
@@ -49,15 +58,38 @@ public class NovizioPatrolWP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rigidbody = GetComponent<Rigidbody>();
         transform.position = wayPoints[wayPointIndex].transform.position;
+        healthPts = maxHealth;
+        slider.value = CalculateHealth();
     }
 
     // Update is called once per frame
     void Update()
     {
+        slider.value = CalculateHealth();
+        if (healthPts < maxHealth)
+        {
+            healthBarUI.SetActive(true);
+        }
+        if (healthPts > maxHealth)
+        {
+            healthPts = maxHealth;
+        }
         if (healthPts <= 0)
         {
+            rigidbody.constraints = RigidbodyConstraints.FreezePositionX;
+            rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
             healthPts = 0;
+            animator.SetBool("Death",true);
+            healthBarUI.SetActive(false);
+            isAgro = false;
+            walk = false;
+            /*novizio.clip = deathClip;
+            novizio.Play();
+            Debug.Log(deathClip);*/
+            //CancelInvoke("RushPlayer");
+            StartCoroutine(Destroy());
         }
 
         float distance = Vector3.Distance(transform.position, target.position);
@@ -168,26 +200,24 @@ public class NovizioPatrolWP : MonoBehaviour
             animator.SetBool("isAttacking", true);
         }
     }
-    /*IEnumerator DestroyNovizio()
+    IEnumerator Destroy()
     {
-        yield return new WaitForSeconds(2);
+        //CancelInvoke("Patrol");
+        rigidbody.detectCollisions = false;
+        animator.SetBool("Death", true);
+        yield return new WaitForSeconds(3);
         Destroy(gameObject);
-    }*/
+    }
 
+    float CalculateHealth()
+    {
+        return healthPts / maxHealth;
+    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "PlayerBullet")
         {
-            Debug.Log("Enemy Hit ! ");
             healthPts--;
-            if (healthPts <= 0)
-            {
-                /*novizio.clip = deathClip;
-                novizio.Play();
-                Debug.Log(deathClip);*/
-                //StartCoroutine(DestroyNovizio());
-                Destroy(gameObject);
-            }
         }
     }
 }

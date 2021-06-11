@@ -39,8 +39,8 @@ public class SoldatiStaticRaycast : MonoBehaviour
 
     [SerializeField] private float healthPts;
     [SerializeField] private float maxHealth;
-    /*public GameObject healthBarUI;
-    public Slider slider;*/
+    public GameObject healthBarUI;
+    public Slider slider;
 
     // Start is called before the first frame update
     void Start()
@@ -51,49 +51,51 @@ public class SoldatiStaticRaycast : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         healthPts = maxHealth;
-        //slider.value = CalculateHealth();
+        slider.value = CalculateHealth();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (healthPts > maxHealth)
+        {
+            healthPts = maxHealth;
+        }
+        if (healthPts <= 0)
+        {
+            healthPts = 0;
+            animator.SetBool("Death",true);
+            healthBarUI.SetActive(false);
+            rb.constraints = RigidbodyConstraints.FreezePositionX;
+            CancelInvoke("ShootPlayer");
+            CancelInvoke("Patrol");
+            /*novizio.clip = deathClip;
+            novizio.Play();
+            Debug.Log(deathClip);*/
+            StartCoroutine(Destroy());
+        }
         
         float distance = Vector3.Distance(transform.position, target.position);
-        //Debug.Log(distance);
         if (distance > chaseRange)
         {
             shoot = false;
-            //Debug.Log(shoot + ">chase Range");
         }
         if (shoot == false)
         {
-            //Debug.Log(canonScript);
-            //GetComponent<SoldatiCanon>().enabled = false;
             canonScript.enabled = false;
             CancelInvoke("ShootPlayer");
             Patrol();
         }else if (shoot == true && distance < chaseRange)
         {
-            //GetComponent<SoldatiCanon>().enabled = true;
             canonScript.enabled = true;
             CancelInvoke("Patrol");
             ShootPlayer();
         }
 
-        //slider.value = CalculateHealth();
-        /*if (healthPts < maxHealth)
+        slider.value = CalculateHealth();
+        if (healthPts < maxHealth)
         {
             healthBarUI.SetActive(true);
-        }*/
-
-        if (healthPts <= 0)
-        {
-            Destroy(gameObject);
-        }
-
-        if (healthPts > maxHealth)
-        {
-            healthPts = maxHealth;
         }
     }
 
@@ -191,12 +193,16 @@ public class SoldatiStaticRaycast : MonoBehaviour
         if(other.gameObject.tag == "PlayerBullet")
         {
             healthPts--;
-            //Destroy(other.gameObject);
-            /*if (healthPts <= 0)
-            {
-                Destroy(gameObject);
-            }*/
         }    
+    }
+
+    IEnumerator Destroy()
+    {
+        rb.detectCollisions = false;
+        canon.SetActive(false);
+        animator.SetBool("Death", true);
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
     }
 
     float CalculateHealth()
