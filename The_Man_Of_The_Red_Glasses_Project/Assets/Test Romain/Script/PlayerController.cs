@@ -74,6 +74,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //Debug.DrawRay(playerTransform.position + new Vector3(0, 2, 0), transform.up * 2f, Color.red);
+
         if (UIManager.isPaused)
         {
             animator.SetFloat("Speed", 0);
@@ -260,7 +262,7 @@ public class PlayerController : MonoBehaviour
     bool RaycastSneaky()
     {
         // Raycast for detect the collision with other object at top
-        //Debug.DrawRay(playerTransform.position /*+ new Vector3(0,2,0)*/, transform.up * 2f, Color.red);
+        //Debug.DrawRay(playerTransform.position + new Vector3(0,2,0), transform.up * 2f, Color.red);
         RaycastHit hit;
 
         if (Physics.Raycast(playerTransform.position + new Vector3(0,2,0), transform.up, out hit,2f))
