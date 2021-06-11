@@ -27,8 +27,7 @@ Transform:
   m_LocalRotation: {x: -0.02124591, y: 0.006853959, z: 0.1934944, w: 0.98084736}
   m_LocalPosition: {x: -0.123354524, y: -0.75394595, z: -0.70034295}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3377078451873736962}
+  m_Children: []
   m_Father: {fileID: 589624600695771381}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -795,6 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pv: 3
   die: 0
+  wallJump: 0
   jumpHeight: 2.5
   baseSpeed: 1
   aiming: 0
@@ -804,6 +804,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   weaponsTransf: {fileID: 0}
+  beretta: {fileID: 0}
   secondWeapon: {fileID: 0}
 --- !u!1 &2764679335882032758
 GameObject:
@@ -2143,78 +2144,3 @@ Transform:
   m_Father: {fileID: 8833847183518611401}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3011668072964462754
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 59508874244765182}
-    m_Modifications:
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.563
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.963
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.4707542
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5105545
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.35527384
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.62570375
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 107.847
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -263.358
-      objectReference: {fileID: 0}
-    - target: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -186.764
-      objectReference: {fileID: 0}
-    - target: {fileID: 891011782763719450, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-        type: 3}
-      propertyPath: m_Name
-      value: beretta
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8ad0b1c91bce1f24faaba786c91a0963, type: 3}
---- !u!4 &3377078451873736962 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 510686671677813152, guid: 8ad0b1c91bce1f24faaba786c91a0963,
-    type: 3}
-  m_PrefabInstance: {fileID: 3011668072964462754}
-  m_PrefabAsset: {fileID: 0}

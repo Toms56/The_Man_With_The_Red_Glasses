@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 223495166}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: SecondWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +190,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223495165}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1180,7 +1180,7 @@ GameObject:
   - component: {fileID: 708853262}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: FirstWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1193,7 +1193,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708853261}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1863,12 +1863,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6e9f60400181a84c860fcfa2778be99, type: 3}
---- !u!1 &1615186318 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2708381195535594424, guid: 5112b92f9f417c24d9da004cc4be6e60,
-    type: 3}
-  m_PrefabInstance: {fileID: 3130479901243366383}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1640549026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8044669281949152778, guid: e2af267c4dedac741bab26435285a7b7,
@@ -3845,7 +3839,7 @@ PrefabInstance:
         type: 3}
       propertyPath: firstWeapon
       value: 
-      objectReference: {fileID: 1615186318}
+      objectReference: {fileID: 0}
     - target: {fileID: 3130479900518703116, guid: 5112b92f9f417c24d9da004cc4be6e60,
         type: 3}
       propertyPath: beretta
