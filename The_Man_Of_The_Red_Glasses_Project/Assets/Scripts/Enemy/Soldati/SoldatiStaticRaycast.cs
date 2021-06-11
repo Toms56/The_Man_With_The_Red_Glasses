@@ -6,7 +6,15 @@ using UnityEngine.UI;
 
 public class SoldatiStaticRaycast : MonoBehaviour
 {
-    
+
+    #region sound
+
+    public float volume = 0.5f;
+    //[SerializeField] private AudioClip[] clips;
+    public AudioClip walkSound;
+    public AudioClip deathSound;
+    public AudioSource audioSource;
+    #endregion
     #region Movement
 
     [SerializeField] float speed;
@@ -42,9 +50,20 @@ public class SoldatiStaticRaycast : MonoBehaviour
     public GameObject healthBarUI;
     public Slider slider;
 
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        #region sound
+
+        //walkSound = Resources.Load<AudioClip>("walkSound");
+        audioSource = GetComponent<AudioSource>();
+
+        #endregion
         target = GameObject.FindGameObjectWithTag("Player").transform;
         shoot = false;
         //Debug.Log(shoot);
@@ -198,6 +217,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
 
     IEnumerator Destroy()
     {
+        //audioSource.PlayOneShot(deathSound, volume);
         rb.detectCollisions = false;
         canon.SetActive(false);
         animator.SetBool("Death", true);
@@ -209,5 +229,4 @@ public class SoldatiStaticRaycast : MonoBehaviour
     {
         return healthPts / maxHealth;
     }
-
 }

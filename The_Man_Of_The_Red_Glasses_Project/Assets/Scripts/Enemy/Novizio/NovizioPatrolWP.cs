@@ -48,11 +48,13 @@ public class NovizioPatrolWP : MonoBehaviour
 
     #endregion
 
-    #region Audio
+    #region sound
 
-    [SerializeField] private AudioSource novizio;
-    [SerializeField] private AudioClip deathClip;
-
+    public float volume = 0.5f;
+    //[SerializeField] private AudioClip[] clips;
+    public AudioClip walkSound;
+    public AudioClip deathSound;
+    public AudioSource audioSource;
     #endregion
 
     // Start is called before the first frame update
@@ -114,6 +116,7 @@ public class NovizioPatrolWP : MonoBehaviour
     
     void Patrol()
     {
+        //audioSource.Play();
         animator.SetBool("isPatrolling", true);
         walk = true;
         transform.position = Vector3.MoveTowards(transform.position, wayPoints[wayPointIndex].transform.position,
@@ -202,6 +205,7 @@ public class NovizioPatrolWP : MonoBehaviour
     }
     IEnumerator Destroy()
     {
+        //audioSource.PlayOneShot(deathSound, volume);
         //CancelInvoke("Patrol");
         rigidbody.detectCollisions = false;
         animator.SetBool("Death", true);
