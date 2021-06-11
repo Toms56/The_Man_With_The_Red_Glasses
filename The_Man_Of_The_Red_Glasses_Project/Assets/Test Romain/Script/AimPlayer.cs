@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class AimPlayer : MonoBehaviour
 {
+    public static AimPlayer Instance;
+
     public Transform targetTransform;
     public GameObject bullet;
 
-    [SerializeField] int magazine;
+    public int magazine;
     [SerializeField] int bulletSpeed;
 
     [SerializeField] float fireRate;
@@ -15,8 +17,16 @@ public class AimPlayer : MonoBehaviour
 
     private void Awake()
     {
-
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
     }
+
     // Start is called before the first frame update
     void Start()
     {
