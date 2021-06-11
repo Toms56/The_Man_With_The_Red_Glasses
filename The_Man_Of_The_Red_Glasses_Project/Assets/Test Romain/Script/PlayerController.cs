@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //Debug.DrawRay(playerTransform.position + new Vector3(0, 2, 0), transform.up * 2f, Color.red);
+        Debug.DrawRay(playerTransform.position  +  new Vector3(0, 0.1f, 0) , transform.up, Color.green);
 
         if (UIManager.isPaused)
         {
