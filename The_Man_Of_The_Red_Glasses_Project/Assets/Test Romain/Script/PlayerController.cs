@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //Debug.DrawRay(playerTransform.position + new Vector3(0, 2, 0), transform.up * 2f, Color.red);
+        Debug.DrawRay(playerTransform.position  +  new Vector3(0, 0.3f, 0) , transform.up * 0.15f, Color.green);
 
         if (UIManager.isPaused)
         {
@@ -186,7 +186,7 @@ public class PlayerController : MonoBehaviour
         //Debug.Log(Time.frameCount + " " + movement + wallJump);
 
         charaController.Move(movement * Time.deltaTime);
-        //Debug.Log("Movement.y: " + movement.y);
+        Debug.Log("Raycast Sneaky : " + RaycastSneaky());
     }
 
     private void OnAnimatorIK()
@@ -265,9 +265,8 @@ public class PlayerController : MonoBehaviour
         //Debug.DrawRay(playerTransform.position + new Vector3(0,2,0), transform.up * 2f, Color.red);
         RaycastHit hit;
 
-        if (Physics.Raycast(playerTransform.position + new Vector3(0,2,0), transform.up, out hit,2f))
+        if (Physics.Raycast(playerTransform.position + new Vector3(0, 0.2f, 0), transform.up * 0.15f, out hit,0.2F))
         {
-            //Debug.Log("Je touche un truc");
             return false;
         }
         return true;
