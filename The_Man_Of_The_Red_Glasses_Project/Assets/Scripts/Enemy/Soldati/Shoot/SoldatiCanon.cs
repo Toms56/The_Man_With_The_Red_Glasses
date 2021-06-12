@@ -12,7 +12,7 @@ public class SoldatiCanon : MonoBehaviour
     //Shoot
     public GameObject soldatiBullet;
 
-    private Vector3 bossBulletOffset;
+    private Vector3 bulletOffset;
 
     [SerializeField]
     private float fireRate;
@@ -30,7 +30,6 @@ public class SoldatiCanon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //InvokeRepeating("SpawnBullet", 0.5f, 0.40f);
         if (n >= 0)
         {
             SpawnBullet();
@@ -50,6 +49,7 @@ public class SoldatiCanon : MonoBehaviour
 
     IEnumerator Shoot()
     {
+        //Sons de reload
         yield return new WaitForSeconds(3);
         n = 6;
         SpawnBullet();
@@ -60,7 +60,7 @@ public class SoldatiCanon : MonoBehaviour
         if (Time.time > time)
         {
             Debug.Log(n);
-            Instantiate(soldatiBullet, transform.position + bossBulletOffset, transform.rotation);
+            Instantiate(soldatiBullet, transform.position + bulletOffset, transform.rotation);
             time = Time.time + fireRate;
             n -= 1;
         }

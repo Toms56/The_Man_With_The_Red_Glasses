@@ -20,31 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Idle_Soldati.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Idle_Soldati.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati_Walk_Backward.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati_Walk_Backward.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/Neon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/Neon.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Ennemies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Ennemies.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Ennemies/sf_cri_douleur_homme_03.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Ennemies/sf_cri_douleur_homme_03.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Weapons.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Weapons.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Weapons/SF-gun2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Weapons/SF-gun2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Weapons/SFB-fusil_1coup.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Weapons/SFB-fusil_1coup.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/22/22c19a02f237fb6017d597de6e630721" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +66,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/Novizio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrol.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/FadeOnScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerNoController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test/AimPlayer.cs" />
@@ -85,13 +73,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmissiveMaterial.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
       </list>
     </option>
   </component>
@@ -179,6 +168,7 @@
       <workItem from="1623331375812" duration="7779000" />
       <workItem from="1623395913733" duration="5641000" />
       <workItem from="1623410307651" duration="183000" />
+      <workItem from="1623495864871" duration="3331000" />
     </task>
     <servers />
   </component>
@@ -203,11 +193,11 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="498" height="446" key="SwitcherDM" timestamp="1623336327715">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1623496498780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1622468233690" />
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623336327715" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623496498780" />
     <state x="-1447" y="0" width="1463" height="1028" maximized="true" key="dock-window-1" timestamp="1623410491944">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

@@ -212,7 +212,12 @@ public class SoldatiStaticRaycast : MonoBehaviour
         if(other.gameObject.tag == "PlayerBullet")
         {
             healthPts--;
-        }    
+        }
+
+        if (other.gameObject.tag == "Player")
+        {
+            rb.detectCollisions = false;
+        }
     }
 
     IEnumerator Destroy()

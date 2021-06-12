@@ -6,16 +6,19 @@ using UnityEngine;
 public class SoldatiBullet : MonoBehaviour
 {
     [SerializeField] private float bulletSpeed;
+
+    public Transform target;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 0.5f);
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        Destroy(gameObject, 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * bulletSpeed * Time.deltaTime);
+        transform.Translate(-target.transform.position * bulletSpeed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(0,0,0);
     }
 
