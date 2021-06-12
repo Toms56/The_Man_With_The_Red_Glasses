@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AimPlayer : MonoBehaviour
 {
-    public static AimPlayer Instance;
+    //public static AimPlayer Instance;
 
     public Transform targetTransform;
     public GameObject bullet;
@@ -15,7 +15,7 @@ public class AimPlayer : MonoBehaviour
     [SerializeField] float fireRate;
     private float time = 0;
 
-    private void Awake()
+    /*private void Awake()
     {
         if (Instance == null)
         {
@@ -25,7 +25,7 @@ public class AimPlayer : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 
     // Start is called before the first frame update
     void Start()

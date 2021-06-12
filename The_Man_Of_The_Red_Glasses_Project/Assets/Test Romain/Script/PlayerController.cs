@@ -186,7 +186,7 @@ public class PlayerController : MonoBehaviour
         //Debug.Log(Time.frameCount + " " + movement + wallJump);
 
         charaController.Move(movement * Time.deltaTime);
-        Debug.Log("Raycast Sneaky : " + RaycastSneaky());
+        //Debug.Log("Raycast Sneaky : " + RaycastSneaky());
     }
 
     private void OnAnimatorIK()
@@ -226,6 +226,7 @@ public class PlayerController : MonoBehaviour
             Instantiate(secondWeapon,weaponsTransf);
             Destroy(other.gameObject);
             equipSecondWeap = true;
+            //Debug.Log("Second Weapon : " + Instantiate(secondWeapon,weaponsTransf) + equipSecondWeap);
 
             if (firstWeapon.activeSelf)
             {
