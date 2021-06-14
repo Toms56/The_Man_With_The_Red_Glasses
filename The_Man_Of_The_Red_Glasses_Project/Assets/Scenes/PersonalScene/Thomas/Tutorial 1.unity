@@ -1299,6 +1299,74 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 725293492, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -472
+      objectReference: {fileID: 0}
+    - target: {fileID: 725293492, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -854
+      objectReference: {fileID: 0}
+    - target: {fileID: 828954308, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -469
+      objectReference: {fileID: 0}
+    - target: {fileID: 828954308, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -728.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088396527, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -470.09998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088396527, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -726.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202695598, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202695598, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -856.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296924003, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -869
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296924003, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 437
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363590501, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363590501, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -801.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618689838, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_Name
+      value: PanelUIGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122617675, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 461.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122617675, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 30.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122617675, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 205.43405
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122617675, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120.278046
+      objectReference: {fileID: 0}
     - target: {fileID: 3173958624704541433, guid: 24391343489e5da4b8b9c923868860c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target

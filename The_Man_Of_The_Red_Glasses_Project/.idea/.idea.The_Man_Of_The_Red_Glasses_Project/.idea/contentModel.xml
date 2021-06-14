@@ -57,6 +57,11 @@
             <e p="FadeOnScene.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
+          <e p="Weapons" t="Include">
+            <e p="Beretta.cs" t="Include" />
+            <e p="Thompson.cs" t="Include" />
+            <e p="Weapons (1).cs" t="Include" />
+          </e>
         </e>
         <e p="Test Romain" t="Include">
           <e p="Script" t="Include">

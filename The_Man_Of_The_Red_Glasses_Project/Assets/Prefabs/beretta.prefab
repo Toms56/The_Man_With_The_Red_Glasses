@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510686671677813152}
   - component: {fileID: 2961384103167871059}
+  - component: {fileID: -8300651631111784333}
   m_Layer: 0
   m_Name: beretta
   m_TagString: Untagged
@@ -121,9 +122,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891011782763719450}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec9c18d73bdfb364e9dcb641a38a42cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransform: {fileID: 2961384103242441252}
+  bullet: {fileID: 6937827055177815501, guid: 8c3c79b70fcb01044b2c68209a2acd7e, type: 3}
+  magazine: 1000
+  bulletSpeed: 10
+  fireRate: 0.7
+--- !u!114 &-8300651631111784333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891011782763719450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63b9d43f1d08024e9a046c42b10e9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 2961384103242441252}

@@ -437,7 +437,7 @@ Transform:
   m_GameObject: {fileID: 8567878248332176666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.0683975, y: -0.81, z: 0.784}
-  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 8058861458791279098}
   m_Father: {fileID: 0}
@@ -500,10 +500,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.59762
   m_Height: 2.1651406
   m_Direction: 1
-  m_Center: {x: 0, y: 0.082570314, z: 0}
+  m_Center: {x: 0, y: 0.082570314, z: -0.09762003}
 --- !u!54 &224472141
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -532,8 +532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ce90bef5fce904ca83b6bd36eef382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPts: 3
   animator: {fileID: 4122762987786924928}
+  healthPts: 3
+  maxHealth: 3
+  healthBarUI: {fileID: 319057984}
+  slider: {fileID: 876808726}
 --- !u!1001 &7520002790268751377
 PrefabInstance:
   m_ObjectHideFlags: 0
