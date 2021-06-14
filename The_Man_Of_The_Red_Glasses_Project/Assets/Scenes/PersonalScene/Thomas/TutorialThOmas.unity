@@ -766,8 +766,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ce90bef5fce904ca83b6bd36eef382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPts: 3
   animator: {fileID: 284311125}
+  healthPts: 3
+  maxHealth: 0
+  healthBarUI: {fileID: 0}
+  slider: {fileID: 0}
 --- !u!1001 &238509868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3166,6 +3169,32 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 4609096581742887311, guid: 5112b92f9f417c24d9da004cc4be6e60,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: b1b9213307081e147a59c1b74c7c9821, type: 2}
+    - target: {fileID: 4609096581742887311, guid: 5112b92f9f417c24d9da004cc4be6e60,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: e27f409ffe944b74e9910a5e24d40f97, type: 2}
+    - target: {fileID: 4609096581742887311, guid: 5112b92f9f417c24d9da004cc4be6e60,
+        type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2800253c6386c44eba53c394051e340, type: 2}
+    - target: {fileID: 4609096581742887311, guid: 5112b92f9f417c24d9da004cc4be6e60,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 955c452cde064e340b41dcbc6e478066, type: 2}
+    - target: {fileID: 4609096581742887311, guid: 5112b92f9f417c24d9da004cc4be6e60,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: -6629797300637803691, guid: 0fd92605561880344bdaaf2533f9cac9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5112b92f9f417c24d9da004cc4be6e60, type: 3}
 --- !u!1 &1442409149
