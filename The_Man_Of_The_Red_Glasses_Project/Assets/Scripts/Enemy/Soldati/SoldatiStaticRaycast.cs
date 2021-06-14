@@ -58,6 +58,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        patrol = true;
         #region sound
 
         //walkSound = Resources.Load<AudioClip>("walkSound");
@@ -83,15 +84,21 @@ public class SoldatiStaticRaycast : MonoBehaviour
         if (healthPts <= 0)
         {
             healthPts = 0;
+            patrol = false;
+            shoot = false;
             animator.SetBool("Death",true);
             healthBarUI.SetActive(false);
             rb.constraints = RigidbodyConstraints.FreezePositionX;
-            CancelInvoke("ShootPlayer");
-            CancelInvoke("Patrol");
             /*novizio.clip = deathClip;
             novizio.Play();
             Debug.Log(deathClip);*/
             StartCoroutine(Destroy());
+        }
+
+        if (patrol == false && shoot == false)
+        {
+            CancelInvoke("ShootPlayer");
+            CancelInvoke("Patrol");
         }
         
         float distance = Vector3.Distance(transform.position, target.position);
@@ -99,7 +106,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
         {
             shoot = false;
         }
-        if (shoot == false)
+        if (shoot == false && patrol)
         {
             canonScript.enabled = false;
             CancelInvoke("ShootPlayer");
@@ -165,7 +172,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     void ShootPlayer()
     {
         //float distance = Vector2.Distance(transform.position, target.position);
-        if(shoot == true)
+        if(shoot)
         {
             canon.SetActive(true);
             if (Vector2.Distance(transform.position, target.position) < stopDistance)

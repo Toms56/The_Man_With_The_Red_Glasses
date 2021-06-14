@@ -2427,7 +2427,7 @@ MonoBehaviour:
   castPoint: {fileID: 8287174777815908693}
   castPoint2: {fileID: 582494853}
   target: {fileID: 0}
-  attackRange: 0.2
+  attackRange: 0.3
   animator: {fileID: 2480181727659204049}
   maxHealth: 3
   healthBarUI: {fileID: 2129437546}

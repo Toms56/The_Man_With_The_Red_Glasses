@@ -69,6 +69,10 @@ public class NovizioPatrolWP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isAgro && walk == false)
+        {
+            RushPlayer();
+        }
         slider.value = CalculateHealth();
         if (healthPts < maxHealth)
         {
@@ -80,8 +84,8 @@ public class NovizioPatrolWP : MonoBehaviour
         }
         if (healthPts <= 0)
         {
-            rigidbody.constraints = RigidbodyConstraints.FreezePositionX;
-            rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+            /*rigidbody.constraints = RigidbodyConstraints.FreezePositionX;
+            rigidbody.constraints = RigidbodyConstraints.FreezePositionY;*/
             healthPts = 0;
             animator.SetBool("Death",true);
             healthBarUI.SetActive(false);
@@ -94,6 +98,12 @@ public class NovizioPatrolWP : MonoBehaviour
             StartCoroutine(Destroy());
         }
 
+        /*if (isAgro == false && walk == false)
+        {
+            CancelInvoke("Patrol");
+            CancelInvoke("RushPlayer");
+        }*/
+
         float distance = Vector3.Distance(transform.position, target.position);
         //Debug.Log(distance);
         if (distance > chaseRange)
@@ -101,7 +111,7 @@ public class NovizioPatrolWP : MonoBehaviour
             isAgro = false;
             //animator.SetBool("Chase", false);
         }
-        if (isAgro == false)
+        if (isAgro == false && walk == true)
         {
             CancelInvoke("RushPlayer");
             animator.SetBool("Chase", false);
@@ -146,7 +156,7 @@ public class NovizioPatrolWP : MonoBehaviour
             if (hit.collider.CompareTag("Player"))
             {
                 Debug.Log("Player hit");
-                walk = false;
+                //walk = false;
                 isAgro = true;
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
@@ -165,7 +175,7 @@ public class NovizioPatrolWP : MonoBehaviour
             if (hit2.collider.CompareTag("Player"))
             {
                 Debug.Log("Player hit");
-                walk = false;
+                //walk = false;
                 isAgro = true;
             }
             Debug.DrawLine(castPoint2.position, hit2.point, Color.red);

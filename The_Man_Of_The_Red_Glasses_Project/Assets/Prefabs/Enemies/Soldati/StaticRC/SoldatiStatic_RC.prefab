@@ -528,6 +528,7 @@ GameObject:
   - component: {fileID: 8836636606956988511}
   - component: {fileID: 8836636606956988506}
   - component: {fileID: 8836636606956988507}
+  - component: {fileID: 2047285417}
   m_Layer: 0
   m_Name: SoldatiStatic_RC
   m_TagString: Enemy
@@ -610,10 +611,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.43180627
+  m_Radius: 0.6661232
   m_Height: 2.2385573
   m_Direction: 1
-  m_Center: {x: -0.07459168, y: 0.11927684, z: 0.006398012}
+  m_Center: {x: -0.07459168, y: 0.11927684, z: 0.0975271}
 --- !u!54 &8836636606956988506
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -642,6 +643,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d5f16be186b814bacd9a51c0514a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volume: 0.5
+  walkSound: {fileID: 8300000, guid: e74b663fe1b39a94abd8df2da434c2d0, type: 3}
+  deathSound: {fileID: 8300000, guid: 6e0a294f3f58fbf48aad2e185156fdf6, type: 3}
+  audioSource: {fileID: 2047285417}
   speed: 1
   stopDistance: 1
   retreatDistance: 0.99
@@ -655,6 +660,102 @@ MonoBehaviour:
   maxHealth: 3
   healthBarUI: {fileID: 256998888}
   slider: {fileID: 1738774813}
+--- !u!82 &2047285417
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836636606956988508}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6e0a294f3f58fbf48aad2e185156fdf6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2130718193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,15 +845,15 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 6e8afef57540f5b488c5de235a8618ad, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b482860666fc34e8d91cfc71e0cfdb, type: 3}
---- !u!4 &543450651602799130 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 10b482860666fc34e8d91cfc71e0cfdb,
-    type: 3}
-  m_PrefabInstance: {fileID: 2130718193}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &5866666019912716384 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 10b482860666fc34e8d91cfc71e0cfdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2130718193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &543450651602799130 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 10b482860666fc34e8d91cfc71e0cfdb,
     type: 3}
   m_PrefabInstance: {fileID: 2130718193}
   m_PrefabAsset: {fileID: 0}
