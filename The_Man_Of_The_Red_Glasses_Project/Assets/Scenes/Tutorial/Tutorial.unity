@@ -1218,6 +1218,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1296924003, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296924003, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 174
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363590500, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1636084854, guid: 24391343489e5da4b8b9c923868860c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3228,6 +3240,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1835641641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 284534139174024300, guid: 5e02a5c343b784b4fb5fc92b9b18f406,
+    type: 3}
+  m_PrefabInstance: {fileID: 1644439086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1835641645
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835641641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020711422, y: 0.020192148, z: 0.0069729737}
+  m_Center: {x: 0.0000000037252903, y: 0.00000029802322, z: 0.012115968}
 --- !u!1 &1935739728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 794570001155018501, guid: 5e02a5c343b784b4fb5fc92b9b18f406,
