@@ -6,6 +6,13 @@ using UnityEngine.UI;
 
 public class SoldatiPatrolWP : MonoBehaviour
 {
+    #region sound
+
+    public float volume = 0.5f;
+    //public AudioClip walkSound;
+    public AudioClip deathSound;
+    public AudioSource audioSource;
+    #endregion
     #region Movement
     
         [SerializeField] float speed;
@@ -17,6 +24,7 @@ public class SoldatiPatrolWP : MonoBehaviour
         
         [SerializeField]
         private Transform castPoint;
+        [SerializeField]
         private Transform castPoint2;
         public Transform target;
         #endregion
@@ -31,6 +39,9 @@ public class SoldatiPatrolWP : MonoBehaviour
     [SerializeField]
     private SoldatiCanon canonScript;
 
+    private bool doOnce;
+    private int isInvert;
+
     #region UI
     public float healthPts;
     [SerializeField] private float maxHealth;
@@ -38,56 +49,152 @@ public class SoldatiPatrolWP : MonoBehaviour
     public Slider slider;
     #endregion
     
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
+        walk = true;
         transform.position = wayPoints[wayPointIndex].transform.position;
         rb = GetComponent<Rigidbody>();
-
         healthPts = maxHealth;
         slider.value = CalculateHealth();
+        #region sound
+
+        //walkSound = Resources.Load<AudioClip>("walkSound");
+        audioSource = GetComponent<AudioSource>();
+
+        #endregion
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (healthPts > maxHealth)
+        if (shoot && walk == false)
         {
-            healthPts = maxHealth;
-        }
-        if (healthPts <= 0)
-        {
-            animator.SetBool("Death", true);
-            healthPts = 0;
-            StartCoroutine(Destroy());
+            ShootPlayer();
         }
         slider.value = CalculateHealth();
         if (healthPts < maxHealth)
         {
             healthBarUI.SetActive(true);
         }
+        if (healthPts > maxHealth)
+        {
+            healthPts = maxHealth;
+        }
+        if (healthPts <= 0)
+        {
+            canon.SetActive(false);
+            healthPts = 0;
+            walk = false;
+            shoot = false;
+            animator.SetBool("Death",true);
+            healthBarUI.SetActive(false);
+            rb.constraints = RigidbodyConstraints.FreezePositionX;
+            if (!doOnce)
+            { 
+                StartCoroutine(Destroy());
+                doOnce = true;
+            }
+        }
+        if (walk == false && shoot == false)
+        {
+            CancelInvoke("ShootPlayer");
+            CancelInvoke("Patrol");
+        }
+        
         float distance = Vector3.Distance(transform.position, target.position);
 
         if (distance > chaseRange)
         {
             shoot = false;
+            walk = true;
         }
-        if (shoot == false)
+        if (shoot == false && walk)
         {
             canonScript.enabled = false;
-            animator.SetBool("isShooting", false);
+            //animator.SetBool("isShooting", false);
             CancelInvoke("ShootPlayer");
-            Move();
+            Patrol();
         }
         else if (shoot && distance< chaseRange)
         {
+            walk = false;
             canonScript.enabled = true;
             CancelInvoke("Move");
             ShootPlayer();
         }
     }
 
-    void Move()
+    void Patrol()
+    {
+        animator.SetBool("isPatrolling", true);
+        //walk = true;
+        transform.position = Vector3.MoveTowards(transform.position, wayPoints[wayPointIndex].transform.position,
+            speed * Time.deltaTime);
+        if (transform.position == wayPoints[wayPointIndex].transform.position)
+        {
+            wayPointIndex += 1;
+        }
+        if (wayPointIndex == wayPoints.Length)
+        {
+            wayPointIndex = 0;
+        }
+
+        if (wayPoints[wayPointIndex].transform.position.x > gameObject.transform.position.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.identity;
+        }
+        
+        RaycastHit hit;
+        if (Physics.Raycast(castPoint.position, -transform.right, out hit, 1f, 1 << LayerMask.NameToLayer("Default")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit.collider.CompareTag("Player"))
+            {
+                Debug.Log("Player hit");
+                walk = false;
+                shoot = true;
+            }
+            Debug.DrawLine(castPoint.position, hit.point, Color.red);
+        }
+        else
+        {
+            shoot = false;
+            Debug.DrawLine(castPoint.position, castPoint.position + -transform.right.normalized * 1f,
+                Color.green);
+        }
+        RaycastHit hit2;
+
+        if (Physics.Raycast(castPoint2.position, -transform.right, out hit2, 1f, 1 << LayerMask.NameToLayer("Default")))
+        {
+            //penser a desac .forward lors de la rotation
+            if (hit2.collider.CompareTag("Player"))
+            {
+                Debug.Log("Player hit");
+                walk = false;
+                shoot = true;
+            }
+            Debug.DrawLine(castPoint2.position, hit2.point, Color.red);
+        }
+        else
+        {
+            shoot = false;
+            Debug.DrawLine(castPoint2.position, castPoint2.position + -transform.right.normalized * 1f,
+                Color.green);
+        }
+        
+    }
+
+    /*void Move()
     {
         canon.SetActive(false);
         animator.SetBool("isPatrolling", true);
@@ -150,54 +257,52 @@ public class SoldatiPatrolWP : MonoBehaviour
             Debug.DrawLine(castPoint2.position, castPoint2.position + -transform.right.normalized * 1f,
                 Color.green);
         }
-    }
+    }*/
 
     void ShootPlayer()
     {
-        animator.SetBool("isPatrolling",false);
-        canon.SetActive(true);
-        if (Vector2.Distance(transform.position, target.position) < stopDistance)
+        animator.SetBool("isPatrolling", false);
+        float distance = Mathf.Abs(target.position.x - transform.position.x);
+        Debug.Log(distance);
+        //Debug.Log(Distance + "StopDistance");
+        if(shoot)
         {
-            //transform.Translate(transform.right * speed * Time.deltaTime);
-            animator.SetBool("isShooting", true);
-            animator.SetBool("shootBack", false);
-            walk = false;
-            shoot = true;
-        }
-        if (Vector2.Distance(transform.position, target.position) > stopDistance+0.1f)
-        {
-            transform.Translate(transform.right * -speed * Time.deltaTime);
-            animator.SetBool("isShooting", true);
-            animator.SetBool("shootBack", false);
-            walk = false;
-            shoot = true;
-        }else if(Vector2.Distance(transform.position,target.position) < stopDistance && Vector2.Distance(transform.position,target.position) > retreatDistance)
-        {
-            transform.position = this.transform.position;
-        }else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
-        {
-            transform.Translate(-transform.right * -speed * Time.deltaTime); // -transform.r == transform.left
-            animator.SetBool("isShooting", false);
-            animator.SetBool("shootBack", true);
-            walk = false;
-            shoot = true;
-        } 
-        if (target.position.x > transform.position.x)
-        {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-            animator.SetBool("isShooting", true);
-            animator.SetBool("shootBack", false);
-        }
-        else
-        {
-            transform.rotation = Quaternion.identity;
+            canon.SetActive(true);
+            if (distance > stopDistance)
+            {
+                transform.Translate(-transform.right * speed * Time.deltaTime * isInvert);
+                animator.SetBool("isShooting", true);
+                animator.SetBool("shootBack", false);
+                walk = false;
+                shoot = true;
+            }else if (distance < retreatDistance)
+            {
+                transform.Translate(transform.right * speed * Time.deltaTime * isInvert); // -transform.r == transform.left
+                animator.SetBool("isShooting", false);
+                animator.SetBool("shootBack", true);
+                walk = false;
+                shoot = true;
+            } 
+            if (target.position.x > transform.position.x)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+                animator.SetBool("isShooting", true);
+                animator.SetBool("shootBack", false);
+                isInvert = -1;
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+                isInvert = 1;
+            }
         }
     }
     
     IEnumerator Destroy()
     {
+        audioSource.clip = deathSound;
+        audioSource.Play();
         rb.detectCollisions = false;
-        canon.SetActive(false);
         animator.SetBool("Death", true);
         yield return new WaitForSeconds(3);
         Destroy(gameObject);

@@ -129,25 +129,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 549750871, guid: 076b1fb2586426a4380003b29daebdbd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1656666857432870987, guid: 076b1fb2586426a4380003b29daebdbd,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 653189072}
-    - target: {fileID: 1656666857432870987, guid: 076b1fb2586426a4380003b29daebdbd,
-        type: 3}
-      propertyPath: fireRate
-      value: 0.75
-      objectReference: {fileID: 0}
     - target: {fileID: 1656666858210008705, guid: 076b1fb2586426a4380003b29daebdbd,
         type: 3}
       propertyPath: m_Name
-      value: SoldatiPatrol
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656666858210008705, guid: 076b1fb2586426a4380003b29daebdbd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: SoldatiPatrolWP
       objectReference: {fileID: 0}
     - target: {fileID: 1656666858210008718, guid: 076b1fb2586426a4380003b29daebdbd,
         type: 3}
@@ -164,16 +158,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 653189072}
-    - target: {fileID: 1656666858210008718, guid: 076b1fb2586426a4380003b29daebdbd,
-        type: 3}
-      propertyPath: speed
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656666858210008718, guid: 076b1fb2586426a4380003b29daebdbd,
-        type: 3}
-      propertyPath: healthPts
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1656666858210008719, guid: 076b1fb2586426a4380003b29daebdbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -182,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 1656666858210008719, guid: 076b1fb2586426a4380003b29daebdbd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.159
+      value: 0.1545
       objectReference: {fileID: 0}
     - target: {fileID: 1656666858210008719, guid: 076b1fb2586426a4380003b29daebdbd,
         type: 3}
@@ -267,11 +251,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NovizioStaticRCast
       objectReference: {fileID: 0}
-    - target: {fileID: 123146478058097431, guid: 397764afe1c340d4daab005487c46055,
-        type: 3}
-      propertyPath: novizio
-      value: 
-      objectReference: {fileID: 719184187}
     - target: {fileID: 123146478058097431, guid: 397764afe1c340d4daab005487c46055,
         type: 3}
       propertyPath: target
@@ -2353,7 +2332,7 @@ PrefabInstance:
     - target: {fileID: 6509927619090309786, guid: acacacfbbfa47ea4bbbcd47f4efd2d06,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.86
+      value: 0.835
       objectReference: {fileID: 0}
     - target: {fileID: 6509927619090309786, guid: acacacfbbfa47ea4bbbcd47f4efd2d06,
         type: 3}
@@ -2415,14 +2394,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 250976729, guid: 91f9dbfaaa9463e4e85082b0533d268b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 250976729, guid: 91f9dbfaaa9463e4e85082b0533d268b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8287174777868055834, guid: 91f9dbfaaa9463e4e85082b0533d268b,
         type: 3}
       propertyPath: m_Name

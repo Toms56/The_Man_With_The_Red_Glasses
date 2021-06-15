@@ -17,9 +17,19 @@ public class NovizioAfk : MonoBehaviour
     public Slider slider;
     #endregion
     
+    #region Sound
 
+    public float volume = 0.5f;
+    //public AudioClip runSound;
+    public AudioClip deathSound;
+    public AudioSource audioSource;
+    #endregion
+
+    private bool doOnce;
+    private float zAxis;
     void Start()
     {
+        zAxis = transform.position.z;
         rb = GetComponent<Rigidbody>();
         healthPts = maxHealth;
         slider.value = CalculateHealth();
@@ -40,15 +50,22 @@ public class NovizioAfk : MonoBehaviour
             healthPts = 0;
             animator.SetBool("Death",true);
             healthBarUI.SetActive(false);
-            rb.constraints = RigidbodyConstraints.FreezePositionX;
-            /*novizio.clip = deathClip;
-            novizio.Play();
-            Debug.Log(deathClip);*/
-            StartCoroutine(Destroy());
+            //audioSource.Play();
+            if (!doOnce)
+            { 
+                StartCoroutine(Destroy());
+                doOnce = true;
+            }
         }
+    }
+    private void LateUpdate()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
     }
     IEnumerator Destroy()
     {
+        audioSource.clip = deathSound;
+        audioSource.Play();
         rb.detectCollisions = false;
         animator.SetBool("Death", true);
         yield return new WaitForSeconds(3);

@@ -51,6 +51,8 @@ public class SoldatiStaticRaycast : MonoBehaviour
     public Slider slider;
 
     private int isInvert;
+    
+    private bool doOnce;
 
     private void Awake()
     {
@@ -86,16 +88,18 @@ public class SoldatiStaticRaycast : MonoBehaviour
         }
         if (healthPts <= 0)
         {
+            canon.SetActive(false);
             healthPts = 0;
             patrol = false;
             shoot = false;
             animator.SetBool("Death",true);
             healthBarUI.SetActive(false);
             rb.constraints = RigidbodyConstraints.FreezePositionX;
-            /*novizio.clip = deathClip;
-            novizio.Play();
-            Debug.Log(deathClip);*/
-            StartCoroutine(Destroy());
+            if (!doOnce)
+            { 
+                StartCoroutine(Destroy());
+                doOnce = true;
+            }
         }
 
         if (patrol == false && shoot == false)
@@ -210,7 +214,21 @@ public class SoldatiStaticRaycast : MonoBehaviour
             }
         }
     }
+    
+    IEnumerator Destroy()
+    {
+        audioSource.clip = deathSound;
+        audioSource.Play();
+        rb.detectCollisions = false;
+        animator.SetBool("Death", true);
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
+    }
 
+    float CalculateHealth()
+    {
+        return healthPts / maxHealth;
+    }
     private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "PlayerBullet")
@@ -222,20 +240,5 @@ public class SoldatiStaticRaycast : MonoBehaviour
         {
             rb.detectCollisions = false;
         }
-    }
-
-    IEnumerator Destroy()
-    {
-        //audioSource.PlayOneShot(deathSound, volume);
-        rb.detectCollisions = false;
-        canon.SetActive(false);
-        animator.SetBool("Death", true);
-        yield return new WaitForSeconds(3);
-        Destroy(gameObject);
-    }
-
-    float CalculateHealth()
-    {
-        return healthPts / maxHealth;
     }
 }

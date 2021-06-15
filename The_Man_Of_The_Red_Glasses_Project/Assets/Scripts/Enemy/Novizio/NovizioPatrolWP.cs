@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -62,8 +63,7 @@ public class NovizioPatrolWP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //dans le start : zAxis = transform.position.z;
-        //Update = transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
+        zAxis = transform.position.z;
         rigidbody = GetComponent<Rigidbody>();
         transform.position = wayPoints[wayPointIndex].transform.position;
         healthPts = maxHealth;
@@ -126,7 +126,12 @@ public class NovizioPatrolWP : MonoBehaviour
             RushPlayer();
         }
     }
-    
+
+    private void LateUpdate()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
+    }
+
     void Patrol()
     {
         //audioSource.Play();

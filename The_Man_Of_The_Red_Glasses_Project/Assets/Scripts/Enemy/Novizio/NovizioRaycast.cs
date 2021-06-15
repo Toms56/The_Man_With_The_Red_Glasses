@@ -18,6 +18,14 @@ public class NovizioRaycast : MonoBehaviour
     private Rigidbody rb;
     private float chaseRange = 1.5f;
     [SerializeField]private float attackRange;
+    
+    #region Sound
+
+    public float volume = 0.5f;
+    //public AudioClip runSound;
+    public AudioClip deathSound;
+    public AudioSource audioSource;
+    #endregion
 
     #region state
 
@@ -39,21 +47,16 @@ public class NovizioRaycast : MonoBehaviour
     [SerializeField] private float healthPts;
     #endregion
 
-    #region Audio
-
-    [SerializeField] private AudioSource novizio;
-    [SerializeField] private AudioClip deathClip;
-    
-    #endregion
-
+    private bool doOnce;
+    private float zAxis;
     public Transform target;
     // Start is called before the first frame update
     void Start()
     {
+        zAxis = transform.position.z;
         isAgro = false;
         rb = GetComponent<Rigidbody>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
-
         healthPts = maxHealth;
         slider.value = CalculateHealth();
     }
@@ -75,17 +78,20 @@ public class NovizioRaycast : MonoBehaviour
             healthPts = 0;
             animator.SetBool("Death",true);
             healthBarUI.SetActive(false);
-            /*novizio.clip = deathClip;
-            novizio.Play();
-            Debug.Log(deathClip);*/
-            StartCoroutine(Destroy());
+            isAgro = false;
+            //audioSource.Play();
+            if (!doOnce)
+            { 
+                StartCoroutine(Destroy());
+                doOnce = true;
+            }
         }
         float distance = Vector3.Distance(transform.position, target.position);
         //Debug.Log(distance);
         if (distance > chaseRange)
         {
             isAgro = false;
-            animator.SetBool("Chase",false);
+            //animator.SetBool("Chase",false);
         }
         if (isAgro == false)
         {
@@ -97,6 +103,10 @@ public class NovizioRaycast : MonoBehaviour
             CancelInvoke("Patrol");
             RushPlayer();
         }
+    }
+    private void LateUpdate()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
     }
 
     void RushPlayer()
@@ -166,8 +176,9 @@ public class NovizioRaycast : MonoBehaviour
 
     IEnumerator Destroy()
     {
+        audioSource.clip = deathSound;
+        audioSource.Play();
         rb.detectCollisions = false;
-        healthBarUI.SetActive(false);
         animator.SetBool("Death", true);
         yield return new WaitForSeconds(3);
         Destroy(gameObject);

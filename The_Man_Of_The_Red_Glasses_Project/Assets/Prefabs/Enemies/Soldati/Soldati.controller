@@ -33,11 +33,11 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isPatrolling
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: isShooting
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: isPatrolling
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3127002915260402333}
@@ -180,7 +180,7 @@ AnimatorStateMachine:
     m_Position: {x: 600, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1841423573221462840}
-    m_Position: {x: 770, y: 10, z: 0}
+    m_Position: {x: 610, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6620567090259231416}
     m_Position: {x: 520, y: 420, z: 0}
@@ -312,13 +312,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: shootBack
+  - m_Name: isPatrolling
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isPatrolling
+  - m_Name: shootBack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
