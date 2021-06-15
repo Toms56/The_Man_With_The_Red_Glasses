@@ -649,7 +649,7 @@ MonoBehaviour:
   audioSource: {fileID: 2047285417}
   speed: 1
   stopDistance: 1
-  retreatDistance: 0.99
+  retreatDistance: 0.9
   castPoint: {fileID: 8836636606488584385}
   castPoint2: {fileID: 615559444}
   target: {fileID: 0}

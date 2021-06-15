@@ -59,8 +59,9 @@ public class SoldatiCanon : MonoBehaviour
     {
         if (Time.time > time)
         {
-            Debug.Log(n);
-            Instantiate(soldatiBullet, transform.position + bulletOffset, transform.rotation);
+            //Debug.Log(n);
+            GameObject go = Instantiate(soldatiBullet, transform.position + bulletOffset, transform.rotation);
+            go.GetComponent<SoldatiBullet>().target = target;
             time = Time.time + fireRate;
             n -= 1;
         }

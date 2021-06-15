@@ -8,17 +8,22 @@ public class SoldatiBullet : MonoBehaviour
     [SerializeField] private float bulletSpeed;
 
     public Transform target;
+
+    private Vector3 moveDirection;
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        var pos = target.position;
+        pos.y = transform.position.y;
+        //target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        moveDirection = pos - transform.position;
         Destroy(gameObject, 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(-target.transform.position * bulletSpeed * Time.deltaTime);
+        transform.Translate(moveDirection * bulletSpeed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(0,0,0);
     }
 

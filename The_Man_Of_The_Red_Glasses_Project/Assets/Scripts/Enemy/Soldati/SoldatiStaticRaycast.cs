@@ -50,6 +50,8 @@ public class SoldatiStaticRaycast : MonoBehaviour
     public GameObject healthBarUI;
     public Slider slider;
 
+    private int isInvert;
+
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -77,6 +79,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.DrawRay(transform.position, transform.right);
         if (healthPts > maxHealth)
         {
             healthPts = maxHealth;
@@ -105,6 +108,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
         if (distance > chaseRange)
         {
             shoot = false;
+            patrol = true;
         }
         if (shoot == false && patrol)
         {
@@ -171,31 +175,22 @@ public class SoldatiStaticRaycast : MonoBehaviour
     
     void ShootPlayer()
     {
-        //float distance = Vector2.Distance(transform.position, target.position);
+        float distance = Mathf.Abs(target.position.x - transform.position.x);
+        Debug.Log(distance);
+        //Debug.Log(Distance + "StopDistance");
         if(shoot)
         {
             canon.SetActive(true);
-            if (Vector2.Distance(transform.position, target.position) < stopDistance)
+            if (distance > stopDistance)
             {
-                //transform.Translate(transform.right * speed * Time.deltaTime);
+                transform.Translate(-transform.right * speed * Time.deltaTime * isInvert);
                 animator.SetBool("isShooting", true);
                 animator.SetBool("shootBack", false);
                 patrol = false;
                 shoot = true;
-            }
-            if (Vector2.Distance(transform.position, target.position) > stopDistance+0.1f)
+            }else if (distance < retreatDistance)
             {
-                transform.Translate(transform.right * -speed * Time.deltaTime);
-                animator.SetBool("isShooting", true);
-                animator.SetBool("shootBack", false);
-                patrol = false;
-                shoot = true;
-            }else if(Vector2.Distance(transform.position,target.position) < stopDistance && Vector2.Distance(transform.position,target.position) > retreatDistance)
-            {
-                transform.position = this.transform.position;
-            }else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
-            {
-                transform.Translate(-transform.right * -speed * Time.deltaTime); // -transform.r == transform.left
+                transform.Translate(transform.right * speed * Time.deltaTime * isInvert); // -transform.r == transform.left
                 animator.SetBool("isShooting", false);
                 animator.SetBool("shootBack", true);
                 patrol = false;
@@ -206,10 +201,12 @@ public class SoldatiStaticRaycast : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 180, 0);
                 animator.SetBool("isShooting", true);
                 animator.SetBool("shootBack", false);
+                isInvert = -1;
             }
             else
             {
-                transform.rotation = Quaternion.identity;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+                isInvert = 1;
             }
         }
     }

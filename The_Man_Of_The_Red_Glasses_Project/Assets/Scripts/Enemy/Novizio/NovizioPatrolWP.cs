@@ -57,9 +57,13 @@ public class NovizioPatrolWP : MonoBehaviour
     public AudioSource audioSource;
     #endregion
 
+    private bool doOnce;
+    private float zAxis;
     // Start is called before the first frame update
     void Start()
     {
+        //dans le start : zAxis = transform.position.z;
+        //Update = transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
         rigidbody = GetComponent<Rigidbody>();
         transform.position = wayPoints[wayPointIndex].transform.position;
         healthPts = maxHealth;
@@ -84,18 +88,17 @@ public class NovizioPatrolWP : MonoBehaviour
         }
         if (healthPts <= 0)
         {
-            /*rigidbody.constraints = RigidbodyConstraints.FreezePositionX;
-            rigidbody.constraints = RigidbodyConstraints.FreezePositionY;*/
             healthPts = 0;
             animator.SetBool("Death",true);
             healthBarUI.SetActive(false);
             isAgro = false;
             walk = false;
-            /*novizio.clip = deathClip;
-            novizio.Play();
-            Debug.Log(deathClip);*/
-            //CancelInvoke("RushPlayer");
-            StartCoroutine(Destroy());
+            //audioSource.Play();
+            if (!doOnce)
+            { 
+                StartCoroutine(Destroy());
+                doOnce = true;
+            }
         }
 
         /*if (isAgro == false && walk == false)
@@ -215,7 +218,8 @@ public class NovizioPatrolWP : MonoBehaviour
     }
     IEnumerator Destroy()
     {
-        //audioSource.PlayOneShot(deathSound, volume);
+        audioSource.clip = deathSound;
+        audioSource.Play();
         //CancelInvoke("Patrol");
         rigidbody.detectCollisions = false;
         animator.SetBool("Death", true);
