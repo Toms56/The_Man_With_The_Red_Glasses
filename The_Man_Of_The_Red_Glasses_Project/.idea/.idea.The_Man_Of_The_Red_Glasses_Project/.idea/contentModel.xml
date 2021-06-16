@@ -26,6 +26,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="3DObjects" t="Include">
+            <e p="tableAnim.cs" t="Include" />
+          </e>
           <e p="Camera" t="Include">
             <e p="SimpleCameraController.cs" t="Include" />
             <e p="SmoothCamera.cs" t="Include" />
@@ -63,6 +66,7 @@
             <e p="UIManager.cs" t="Include" />
           </e>
           <e p="Weapons" t="Include">
+            <e p="AmmoBox.cs" t="Include" />
             <e p="Beretta.cs" t="Include" />
             <e p="Thompson.cs" t="Include" />
             <e p="Weapons (1).cs" t="Include" />

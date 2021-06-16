@@ -20,30 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/Grey.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/LevelTuto.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/LevelTuto.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/NeonBlue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/NeonBlue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/NovizioAfk/NovizioAfk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/NovizioAfk/NovizioAfk.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/PatrolWP/NovizioPatrolWP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/PatrolWP/NovizioPatrolWP.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/StaticRC/NovizioStaticRCast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/StaticRC/NovizioStaticRCast.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Patrol/SoldatiPatrol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Patrol/SoldatiPatrol.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/StaticRC/SoldatiStatic_RC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/StaticRC/SoldatiStatic_RC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-1_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-1_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-1_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-1_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-0.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/3DObjects/tableAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/QuickOutline/Scripts/Outline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/JumpTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,10 +90,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/tableAnim.cs" />
       </list>
     </option>
   </component>
@@ -187,6 +189,7 @@
       <workItem from="1623680411370" duration="2322000" />
       <workItem from="1623741295311" duration="8749000" />
       <workItem from="1623756519642" duration="4485000" />
+      <workItem from="1623829764778" duration="3915000" />
     </task>
     <servers />
   </component>
@@ -220,10 +223,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1637" y="-11" width="1367" height="1028" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623757357626" />
-    <state x="-1656" y="0" width="1367" height="1028" maximized="true" key="dock-window-2" timestamp="1623759943750">
+    <state x="-1656" y="0" width="1367" height="1028" maximized="true" key="dock-window-2" timestamp="1623830065883">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1656" y="0" width="1367" height="1028" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623759943750" />
+    <state x="-1656" y="0" width="1367" height="1028" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623830065883" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1623681655624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

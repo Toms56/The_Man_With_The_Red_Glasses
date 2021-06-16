@@ -54,6 +54,8 @@ public class SoldatiStaticRaycast : MonoBehaviour
     
     private bool doOnce;
 
+    private bool isHit;
+
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -62,6 +64,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isHit = false;
         patrol = true;
         #region sound
 
@@ -147,6 +150,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
             {
                 Debug.Log("Player hit");
                 shoot = true;
+                //isHit = false;
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }
@@ -166,6 +170,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
             {
                 //Debug.Log("Player detected");
                 shoot = true;
+                //isHit = false;
             }
             Debug.DrawLine(castPoint2.position, hit2.point, Color.red);
         }
@@ -231,8 +236,21 @@ public class SoldatiStaticRaycast : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
+        float distance = Mathf.Abs(target.position.x - transform.position.x);
         if(other.gameObject.tag == "PlayerBullet")
         {
+            /*isHit = true;
+            if (target.position.x < gameObject.transform.position.x)
+            {
+                animator.SetBool("isShooting", true);
+                canon.SetActive(true);
+                transform.Translate(-transform.right * speed * Time.deltaTime * isInvert);
+            }else if (target.position.x > gameObject.transform.position.x)
+            {
+                canon.SetActive(true);
+                animator.SetBool("isShooting", true);
+                transform.Translate(transform.right * speed * Time.deltaTime * isInvert);
+            }*/
             healthPts--;
         }
 

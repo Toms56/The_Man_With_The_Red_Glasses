@@ -12,6 +12,7 @@ TagManager:
   - SecondWeapon
   - FirstWeapon
   - Torse
+  - EnnemyBullet
   layers:
   - Default
   - TransparentFX
