@@ -25,12 +25,16 @@ public class UIManager : MonoBehaviour
     public Image thompsonNotUsed;
 
     #endregion
-    
+
+    private bool isMuted;
     public static bool isPaused;
     
 
     void Start()
     {
+        #region  sound
+        AudioListener.pause = false;
+        #endregion
         thompsonNotUsed.enabled = false;
         thompsonUsed.enabled = false;
         berettaUsed.enabled = false;
@@ -71,6 +75,17 @@ public class UIManager : MonoBehaviour
             thompsonUsed.enabled = true;
             berettaUsed.enabled = false;
             berettaNotUsed.enabled = true;
+        }
+    }
+
+    public void Mute(int i)
+    {
+        if (i == 0)
+        {
+            AudioListener.pause = true;
+        }else if (i == 1)
+        {
+            AudioListener.pause = false;
         }
     }
 
