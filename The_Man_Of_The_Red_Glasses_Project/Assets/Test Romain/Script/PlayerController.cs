@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
+    private float zAxis;
 
     // PV
     public int pv;
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask mouseAimMask;
     public Transform weaponsTransf;
     public GameObject beretta;
-    GameObject firstWeapon;
+    public GameObject firstWeapon;
     public GameObject secondWeapon;
 
     private void Awake()
@@ -69,6 +70,7 @@ public class PlayerController : MonoBehaviour
         charaController = GetComponent<CharacterController>();
         playerTransform = GetComponent<Transform>();
         mainCamera = Camera.main;
+        zAxis = transform.position.z;
     }
 
 
@@ -187,6 +189,11 @@ public class PlayerController : MonoBehaviour
 
         charaController.Move(movement * Time.deltaTime);
         //Debug.Log("Raycast Sneaky : " + RaycastSneaky());
+    }
+
+    private void LateUpdate()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
     }
 
     private void OnAnimatorIK()

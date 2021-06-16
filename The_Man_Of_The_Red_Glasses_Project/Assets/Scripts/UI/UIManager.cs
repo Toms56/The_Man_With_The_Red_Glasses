@@ -10,19 +10,17 @@ public class UIManager : MonoBehaviour
     #region Panels
     public GameObject panelUIGame;
     [SerializeField] GameObject panelPause;
-
+    public GameObject panelBerreta;
+    public GameObject panelThompson;
     #endregion
+
     #region Texts
-    public Text magasineTxt;
+    public Text magazineTxt;
     #endregion
 
     #region Img
 
-    public Image berettaUsed;
-    public Image berettaNotUsed;
-
-    public Image thompsonUsed;
-    public Image thompsonNotUsed;
+    [SerializeField] Image circleWeapons;
 
     #endregion
 
@@ -35,10 +33,6 @@ public class UIManager : MonoBehaviour
         #region  sound
         AudioListener.pause = false;
         #endregion
-        thompsonNotUsed.enabled = false;
-        thompsonUsed.enabled = false;
-        berettaUsed.enabled = false;
-        berettaNotUsed.enabled = false;
         isPaused = true;
     }
 
@@ -51,30 +45,17 @@ public class UIManager : MonoBehaviour
             panelPause.SetActive(true);
         }
 
-        #region MagasineManagement
-        magasineTxt.text = " " + Weapons.magazine;
-        #endregion
-
-        if (Beretta.Instance)
+        if (PlayerController.Instance.firstWeapon.activeSelf)
         {
-            thompsonNotUsed.enabled = true;
-            thompsonUsed.enabled = false;
-            berettaUsed.enabled = true;
-            berettaNotUsed.enabled = false;
+            panelThompson.SetActive(false);
+            panelBerreta.SetActive(true);
+            magazineTxt.text = "" +  Beretta.Instance.magazine;
         }
-
-        if (Thompson.Instance == null)
+        else
         {
-            thompsonNotUsed.enabled = false;
-            thompsonUsed.enabled = false;
-        }
-
-        if (Thompson.Instance)
-        {
-            thompsonNotUsed.enabled = false;
-            thompsonUsed.enabled = true;
-            berettaUsed.enabled = false;
-            berettaNotUsed.enabled = true;
+            panelBerreta.SetActive(false);
+            panelThompson.SetActive(true);
+            magazineTxt.text = "" + Thompson.Instance.magazine;
         }
     }
 

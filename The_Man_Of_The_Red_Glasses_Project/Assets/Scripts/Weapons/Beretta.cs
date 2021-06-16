@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Beretta : Weapons
 {
     public static Beretta Instance;
+
+    private void Start()
+    {
+
+    }
 
     private void Awake()
     {
