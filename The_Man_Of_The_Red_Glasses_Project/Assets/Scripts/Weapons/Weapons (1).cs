@@ -1,16 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Weapons : MonoBehaviour
 {
-    [SerializeField] Transform targetTransform;
-    [SerializeField] GameObject bullet;
+    public Transform targetTransform;
+    public GameObject bullet;
 
-    public int magazine;
+    public static int magazine = 100;
     public int bulletSpeed;
-
 
     public float fireRate;
     private float time = 0;

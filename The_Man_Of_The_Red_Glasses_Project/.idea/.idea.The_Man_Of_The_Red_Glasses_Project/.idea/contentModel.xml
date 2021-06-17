@@ -25,6 +25,13 @@
             <e p="Outline.cs" t="Include" />
           </e>
         </e>
+        <e p="Scenes" t="Include">
+          <e p="PersonalScene" t="Include">
+            <e p="Thomas" t="Include">
+              <e p="UIManager2.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="3DObjects" t="Include">
             <e p="tableAnim.cs" t="Include" />
@@ -52,6 +59,9 @@
               <e p="SoldatiPatrolWP.cs" t="Include" />
               <e p="SoldatiStaticRaycast.cs" t="Include" />
             </e>
+          </e>
+          <e p="Lights" t="Include">
+            <e p="FlashLight.cs" t="Include" />
           </e>
           <e p="MenuManager.cs" t="Include" />
           <e p="Sounds" t="Include">

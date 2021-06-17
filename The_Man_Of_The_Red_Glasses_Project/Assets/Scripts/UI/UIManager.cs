@@ -10,17 +10,19 @@ public class UIManager : MonoBehaviour
     #region Panels
     public GameObject panelUIGame;
     [SerializeField] GameObject panelPause;
-    public GameObject panelBerreta;
-    public GameObject panelThompson;
-    #endregion
 
+    #endregion
     #region Texts
-    public Text magazineTxt;
+    public Text magasineTxt;
     #endregion
 
     #region Img
 
-    [SerializeField] Image circleWeapons;
+    public Image berettaUsed;
+    public Image berettaNotUsed;
+
+    public Image thompsonUsed;
+    public Image thompsonNotUsed;
 
     #endregion
 
@@ -33,6 +35,10 @@ public class UIManager : MonoBehaviour
         #region  sound
         AudioListener.pause = false;
         #endregion
+        thompsonNotUsed.enabled = false;
+        thompsonUsed.enabled = false;
+        berettaUsed.enabled = false;
+        berettaNotUsed.enabled = false;
         isPaused = true;
     }
 
@@ -45,17 +51,30 @@ public class UIManager : MonoBehaviour
             panelPause.SetActive(true);
         }
 
-        if (PlayerController.Instance.firstWeapon.activeSelf)
+        #region MagasineManagement
+        magasineTxt.text = " " + Weapons.magazine;
+        #endregion
+
+        if (Beretta.Instance)
         {
-            panelThompson.SetActive(false);
-            panelBerreta.SetActive(true);
-            magazineTxt.text = "" +  Beretta.Instance.magazine;
+            thompsonNotUsed.enabled = true;
+            thompsonUsed.enabled = false;
+            berettaUsed.enabled = true;
+            berettaNotUsed.enabled = false;
         }
-        else
+
+        if (Thompson.Instance == null)
         {
-            panelBerreta.SetActive(false);
-            panelThompson.SetActive(true);
-            magazineTxt.text = "" + Thompson.Instance.magazine;
+            thompsonNotUsed.enabled = false;
+            thompsonUsed.enabled = false;
+        }
+
+        if (Thompson.Instance)
+        {
+            thompsonNotUsed.enabled = false;
+            thompsonUsed.enabled = true;
+            berettaUsed.enabled = false;
+            berettaNotUsed.enabled = true;
         }
     }
 

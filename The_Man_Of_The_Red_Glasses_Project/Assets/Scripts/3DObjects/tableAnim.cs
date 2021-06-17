@@ -6,11 +6,14 @@ using UnityEngine;
 public class tableAnim : MonoBehaviour
 {
     [SerializeField]private float healhPts;
-    private Animation anim;
+
+    public Animator anim;
+
+    public Collider cl;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cl.enabled = false;
     }
 
     // Update is called once per frame
@@ -27,7 +30,9 @@ public class tableAnim : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            anim.Play("table");
+            Debug.Log("Table HIT");
+            cl.enabled = true;
+            anim.SetBool("fall", true);
         }
     }
 
