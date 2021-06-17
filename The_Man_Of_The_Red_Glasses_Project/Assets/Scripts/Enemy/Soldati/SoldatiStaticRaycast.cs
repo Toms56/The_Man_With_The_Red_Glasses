@@ -11,7 +11,6 @@ public class SoldatiStaticRaycast : MonoBehaviour
 
     public float volume = 0.5f;
     //[SerializeField] private AudioClip[] clips;
-    public AudioClip walkSound;
     public AudioClip deathSound;
     public AudioSource audioSource;
     #endregion
@@ -185,7 +184,6 @@ public class SoldatiStaticRaycast : MonoBehaviour
     void ShootPlayer()
     {
         float distance = Mathf.Abs(target.position.x - transform.position.x);
-        Debug.Log(distance);
         //Debug.Log(Distance + "StopDistance");
         if(shoot)
         {

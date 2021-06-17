@@ -10,8 +10,10 @@ public class UIManager2 : MonoBehaviour
     #region Panels
     //public GameObject panelUIGame;
     [SerializeField] GameObject panelPause;
+    public GameObject panelLettre3;
+    public GameObject panelWin;
 
-    /*#endregion
+    #endregion
     #region Texts
     public Text magasineTxt;
     #endregion
@@ -23,23 +25,25 @@ public class UIManager2 : MonoBehaviour
 
     public Image thompsonUsed;
     public Image thompsonNotUsed;
-    */
 
     #endregion
 
     private bool isMuted;
     public static bool isPaused;
+    public bool levelFinish;
     
 
     void Start()
     {
+        levelFinish = false;
+        Time.timeScale = 1;
         #region  sound
         AudioListener.pause = false;
         #endregion
-        /*thompsonNotUsed.enabled = false;
+        thompsonNotUsed.enabled = false;
         thompsonUsed.enabled = false;
         berettaUsed.enabled = false;
-        berettaNotUsed.enabled = false;*/
+        berettaNotUsed.enabled = false;
         isPaused = false;
     }
 
@@ -57,7 +61,21 @@ public class UIManager2 : MonoBehaviour
             }
         }
 
-        /*#region MagasineManagement
+        if (isPaused && levelFinish == false)
+        {
+            panelPause.SetActive(true);
+        }else if (!isPaused)
+        {
+            panelPause.SetActive(false);
+        }
+
+        if (levelFinish)
+        {
+            panelWin.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        #region MagasineManagement
         magasineTxt.text = " " + Weapons.magazine;
         #endregion
 
@@ -81,21 +99,24 @@ public class UIManager2 : MonoBehaviour
             thompsonUsed.enabled = true;
             berettaUsed.enabled = false;
             berettaNotUsed.enabled = true;
-        }*/
+        }
     }
 
     public void Pause()
     {
         Time.timeScale = 0;
-        panelPause.SetActive(true);
         isPaused = true;
     }
 
     public void Resume()
     {
         Time.timeScale = 1;
-        panelPause.SetActive(false);
         isPaused = false;
+    }
+
+    public void OnClickDisplayWin()
+    {
+        levelFinish = true;
     }
 
     public void Mute(int i)
@@ -109,12 +130,12 @@ public class UIManager2 : MonoBehaviour
         }
     }
 
-    public void Onclick_Play()
+    public void Onclick_ChangeScene( int scene)
     {
-        isPaused = false;
+        SceneManager.LoadScene(scene);
     }
 
-    public void Onclick_Menu()
+    /*public void Onclick_Menu()
     {
         SceneManager.LoadScene(0);
     }
@@ -122,5 +143,5 @@ public class UIManager2 : MonoBehaviour
     public void OnCLickRetry(int scene)
     {
         SceneManager.LoadScene(scene);
-    }
+    }*/
 }

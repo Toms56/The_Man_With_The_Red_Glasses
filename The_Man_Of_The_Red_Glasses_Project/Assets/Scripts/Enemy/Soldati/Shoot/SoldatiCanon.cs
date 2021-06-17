@@ -6,6 +6,14 @@ using Debug = UnityEngine.Debug;
 
 public class SoldatiCanon : MonoBehaviour
 {
+    #region Sound
+
+    //public float volume;
+    public AudioClip shotSound;
+    public AudioClip reloadSound;
+    public AudioSource audioSource;
+
+    #endregion
 
     public Transform target;
     
@@ -20,6 +28,11 @@ public class SoldatiCanon : MonoBehaviour
     private float time = 0f;
 
     private int n = 6;
+    
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -49,10 +62,11 @@ public class SoldatiCanon : MonoBehaviour
 
     IEnumerator Shoot()
     {
-        //Sons de reload
+        audioSource.clip = reloadSound;
+        audioSource.Play();
         yield return new WaitForSeconds(3);
         n = 6;
-        SpawnBullet();
+        //SpawnBullet();
     }
     
     void SpawnBullet()
@@ -60,10 +74,12 @@ public class SoldatiCanon : MonoBehaviour
         if (Time.time > time)
         {
             //Debug.Log(n);
+            audioSource.clip = shotSound;
             GameObject go = Instantiate(soldatiBullet, transform.position + bulletOffset, transform.rotation);
+            audioSource.Play();
             go.GetComponent<SoldatiBullet>().target = target;
             time = Time.time + fireRate;
-            n -= 1;
+            n --;
         }
     }
 }
