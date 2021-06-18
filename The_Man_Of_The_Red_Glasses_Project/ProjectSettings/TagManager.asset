@@ -13,6 +13,7 @@ TagManager:
   - FirstWeapon
   - Torse
   - EnnemyBullet
+  - AmmoBox
   layers:
   - Default
   - TransparentFX

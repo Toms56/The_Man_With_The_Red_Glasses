@@ -560,11 +560,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: 0fd92605561880344bdaaf2533f9cac9, type: 3}
-  - {fileID: 4874126678125670354, guid: 0fd92605561880344bdaaf2533f9cac9, type: 3}
-  - {fileID: -3846018093981099296, guid: 0fd92605561880344bdaaf2533f9cac9, type: 3}
-  - {fileID: -6629797300637803691, guid: 0fd92605561880344bdaaf2533f9cac9, type: 3}
-  - {fileID: -6922793697723135513, guid: 0fd92605561880344bdaaf2533f9cac9, type: 3}
+  - {fileID: 2100000, guid: dd0be2847013be641b06a76ae994fa10, type: 2}
+  - {fileID: 2100000, guid: 1683c7ef8b74e834e80b0c672970bcb0, type: 2}
+  - {fileID: 2100000, guid: e27f409ffe944b74e9910a5e24d40f97, type: 2}
+  - {fileID: 2100000, guid: 636b6a2e65abdf84e86af24b16c8d26c, type: 2}
+  - {fileID: 2100000, guid: f2800253c6386c44eba53c394051e340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 3130479900518703116}
   m_Layer: 0
   m_Name: Cyrius Controller 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -735,7 +735,7 @@ Transform:
   m_GameObject: {fileID: 2708381195476623756}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.38, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children:
   - {fileID: 5939438287514037160}
   - {fileID: 1189605924657551079}
@@ -774,12 +774,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 12
-  m_Radius: 1.65
+  m_Radius: 2.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_StepOffset: 0
+  m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 6, z: 0}
+  m_Center: {x: 0, y: 6, z: 0.5}
 --- !u!114 &3130479900518703116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,7 +795,7 @@ MonoBehaviour:
   pv: 3
   die: 0
   wallJump: 0
-  jumpHeight: 2.5
+  jumpHeight: 3.5
   baseSpeed: 1
   aiming: 0
   equipSecondWeap: 0
@@ -803,9 +803,14 @@ MonoBehaviour:
   mouseAimMask:
     serializedVersion: 2
     m_Bits: 512
-  weaponsTransf: {fileID: 0}
-  beretta: {fileID: 0}
-  secondWeapon: {fileID: 0}
+  weaponsTransf: {fileID: 59508874244765182}
+  beretta: {fileID: 891011782763719450, guid: 8ad0b1c91bce1f24faaba786c91a0963, type: 3}
+  firstWeapon: {fileID: 0}
+  secondWeapon: {fileID: 4232727617659029542, guid: be99916c56cb3934d9e926a11e31b09e,
+    type: 3}
+  walkSound: {fileID: 8300000, guid: e74b663fe1b39a94abd8df2da434c2d0, type: 3}
+  runSound: {fileID: 8300000, guid: 34487d4cfb43ba7408df07d3964d0d9b, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &2764679335882032758
 GameObject:
   m_ObjectHideFlags: 0

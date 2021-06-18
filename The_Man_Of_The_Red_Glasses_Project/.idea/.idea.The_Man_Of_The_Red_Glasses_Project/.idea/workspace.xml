@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Test/Lighting/BlueLight.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Test/Lighting/BlueLight.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/Beretta.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/Beretta.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CanvasFonctionnels/CanvasGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CanvasFonctionnels/CanvasGame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CanvasFonctionnels/CanvasPause_Lettres.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CanvasFonctionnels/CanvasPause_Lettres.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/beretta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/beretta.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/Texture faites/Canapé/canapé.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/Texture faites/Canapé/canapé.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/Texture faites/canapé en coin/canapé en coin.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/Texture faites/canapé en coin/canapé en coin.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cyrius Controller 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cyrius Controller 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/LightingData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Lightmap-0_comp_dir.png" afterDir="false" />
@@ -47,6 +45,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-2.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-2.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-20.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-20.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-21.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-21.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-22.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-22.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-3.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-3.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-4.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-4.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-5.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-5.exr" afterDir="false" />
@@ -54,28 +53,15 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-7.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-7.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-8.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-8.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-9.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/ReflectionProbe-9.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenus.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenus.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-1.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-1.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-2.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-2.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-3.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-3.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-4.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial/ReflectionProbe-4.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test Romain/Script/Shoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test Romain/Script/Shoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +103,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmissiveMaterial.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Thompson.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
@@ -132,9 +117,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Letters/SpinLetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Test Romain/Script/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" />
+        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
       </list>
     </option>
   </component>
@@ -236,7 +222,7 @@
       <workItem from="1623932015677" duration="7486000" />
       <workItem from="1623948892583" duration="2169000" />
       <workItem from="1623995980722" duration="2924000" />
-      <workItem from="1624007206790" duration="1371000" />
+      <workItem from="1624007206790" duration="4446000" />
     </task>
     <servers />
   </component>

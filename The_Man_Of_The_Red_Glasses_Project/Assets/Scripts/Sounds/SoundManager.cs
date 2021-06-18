@@ -7,24 +7,15 @@ public class SoundManager : MonoBehaviour
 {
 
     [SerializeField] private AudioClip[] clips;
+    public AudioClip clip;
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
     }
-
-    private void Walk()
-    {
-        AudioClip clip = GetRandomClip();
-        audioSource.PlayOneShot(clip);
-    }
-
-    private AudioClip GetRandomClip()
-    {
-        return clips[UnityEngine.Random.Range(0, clips.Length)];
-    }
+    
 
     // Start is called before the first frame update
     void Start()
@@ -36,5 +27,11 @@ public class SoundManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }
