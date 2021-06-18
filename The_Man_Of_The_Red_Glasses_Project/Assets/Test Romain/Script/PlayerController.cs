@@ -52,6 +52,14 @@ public class PlayerController : MonoBehaviour
     public GameObject firstWeapon;
     public GameObject secondWeapon;
 
+    #region Sound
+    public AudioClip walkSound;
+    public AudioClip runSound;
+    //public AudioClip deathSound;
+    public AudioSource audioSource;
+
+    #endregion
+
     private void Awake()
     {
         if (Instance == null)
@@ -62,6 +70,8 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -104,7 +114,6 @@ public class PlayerController : MonoBehaviour
             movement.x = inputX * finalSpeed;
         }
         animator.SetFloat("Speed", (facingSign * movement.x) / finalSpeed);
-
 
         // SNEAKY AND SPEED                                    
         if (Input.GetKeyDown(KeyCode.LeftControl) && !sneaky)
@@ -270,7 +279,7 @@ public class PlayerController : MonoBehaviour
     bool RaycastSneaky()
     {
         // Raycast for detect the collision with other object at top
-        //Debug.DrawRay(playerTransform.position + new Vector3(0,2,0), transform.up * 2f, Color.red);
+        Debug.DrawRay(playerTransform.position + new Vector3(0,2,0), transform.up * 2f, Color.red);
         RaycastHit hit;
 
         if (Physics.Raycast(playerTransform.position + new Vector3(0, 0.2f, 0), transform.up * 0.15f, out hit,0.2F))

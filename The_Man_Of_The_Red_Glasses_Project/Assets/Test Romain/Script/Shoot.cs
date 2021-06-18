@@ -7,6 +7,15 @@ public class Shoot : MonoBehaviour
     public Transform gunTransform;
     public GameObject bullet;
 
+    /*#region Sound
+    public AudioClip shotSound;
+    public AudioSource audioSource;
+    #endregion*/
+
+    /*private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }*/
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +33,8 @@ public class Shoot : MonoBehaviour
 
     void Shooting()
     {
+        //audioSource.clip = shotSound;
         Instantiate(bullet, gunTransform.position, gunTransform.rotation, gunTransform.transform);
+        //audioSource.Play();
     }
 }

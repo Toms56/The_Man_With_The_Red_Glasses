@@ -12,11 +12,22 @@ public class Weapons : MonoBehaviour
 
     public float fireRate;
     private float time = 0;
+    
+    #region Sound
+    public AudioClip shotSound;
+    public AudioSource audioSource;
 
+    public Camera mainCam;
+    #endregion
+    
+    private void Awake()
+    {
+        audioSource = mainCam.GetComponent<AudioSource>();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        //mainCam.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,10 +44,13 @@ public class Weapons : MonoBehaviour
 
     void Shoot()
     {
+        
         if (Time.time > time)
         {
+            audioSource.clip = shotSound; 
             GameObject firedBullet = Instantiate(bullet, targetTransform.position, targetTransform.rotation);
             firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * bulletSpeed;
+            audioSource.Play();
             firedBullet.transform.rotation = bullet.transform.rotation;
             magazine -= 1;
             time = Time.time + fireRate;

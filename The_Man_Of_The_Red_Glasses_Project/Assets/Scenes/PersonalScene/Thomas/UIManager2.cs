@@ -134,14 +134,4 @@ public class UIManager2 : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
-
-    /*public void Onclick_Menu()
-    {
-        SceneManager.LoadScene(0);
-    }
-
-    public void OnCLickRetry(int scene)
-    {
-        SceneManager.LoadScene(scene);
-    }*/
 }
