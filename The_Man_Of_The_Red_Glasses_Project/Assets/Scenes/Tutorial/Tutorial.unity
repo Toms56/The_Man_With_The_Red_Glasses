@@ -3969,6 +3969,7 @@ MonoBehaviour:
   berettaNotUsed: {fileID: 295185025}
   thompsonUsed: {fileID: 2054991812}
   thompsonNotUsed: {fileID: 2097979035}
+  isPaused: 0
   levelFinish: 0
 --- !u!1 &1805628931 stripped
 GameObject:

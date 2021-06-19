@@ -47,10 +47,8 @@ public class Weapons : MonoBehaviour
         
         if (Time.time > time)
         {
-            audioSource.clip = shotSound; 
             GameObject firedBullet = Instantiate(bullet, targetTransform.position, targetTransform.rotation);
             firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * bulletSpeed;
-            audioSource.Play();
             firedBullet.transform.rotation = bullet.transform.rotation;
             magazine -= 1;
             time = Time.time + fireRate;

@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.DrawRay(playerTransform.position  +  new Vector3(0, 0.3f, 0) , transform.up * 0.15f, Color.green);
 
-        if (UIManager.isPaused)
+        if (UIManager2.Instance.isPaused)
         {
             animator.SetFloat("Speed", 0);
             return;

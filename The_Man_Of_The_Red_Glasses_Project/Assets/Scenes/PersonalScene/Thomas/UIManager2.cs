@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class UIManager2 : MonoBehaviour
 {
+
+    public static UIManager2 Instance;
     #region Panels
     //public GameObject panelUIGame;
     [SerializeField] GameObject panelPause;
@@ -29,8 +31,22 @@ public class UIManager2 : MonoBehaviour
     #endregion
 
     private bool isMuted;
-    public static bool isPaused;
+    
+    public bool isPaused;
     public bool levelFinish;
+    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        
+    }
     
 
     void Start()
@@ -44,7 +60,7 @@ public class UIManager2 : MonoBehaviour
         thompsonUsed.enabled = false;
         berettaUsed.enabled = false;
         berettaNotUsed.enabled = false;
-        isPaused = false;
+        //isPaused = false;
     }
 
     // Update is called once per frame
