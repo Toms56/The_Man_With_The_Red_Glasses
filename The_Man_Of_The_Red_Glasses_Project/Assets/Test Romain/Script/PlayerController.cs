@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource audioSource;
 
     #endregion
-
+    
     private void Awake()
     {
         if (Instance == null)
@@ -107,6 +107,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        #region movement
+
         // MOVEMENT
         float inputX = Input.GetAxis("Horizontal");
         if (!wallJump)
@@ -114,6 +116,12 @@ public class PlayerController : MonoBehaviour
             movement.x = inputX * finalSpeed;
         }
         animator.SetFloat("Speed", (facingSign * movement.x) / finalSpeed);
+
+        #endregion
+
+        
+
+        #region Sneaky and speed
 
         // SNEAKY AND SPEED                                    
         if (Input.GetKeyDown(KeyCode.LeftControl) && !sneaky)
@@ -143,6 +151,10 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Run", false);
         }
 
+        #endregion
+        
+
+        #region Jump
 
         // JUMP
         if (charaController.isGrounded)
@@ -180,6 +192,11 @@ public class PlayerController : MonoBehaviour
         }
 
 
+        #endregion
+        
+
+        #region Facing Rotation
+
         // FACING ROTATION
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -198,6 +215,9 @@ public class PlayerController : MonoBehaviour
 
         charaController.Move(movement * Time.deltaTime);
         //Debug.Log("Raycast Sneaky : " + RaycastSneaky());
+
+        #endregion
+        
     }
 
     private void LateUpdate()

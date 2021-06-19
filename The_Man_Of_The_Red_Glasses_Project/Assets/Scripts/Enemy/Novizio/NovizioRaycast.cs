@@ -24,6 +24,7 @@ public class NovizioRaycast : MonoBehaviour
     public float volume = 0.5f;
     //public AudioClip runSound;
     public AudioClip deathSound;
+    public AudioClip surpriseSound;
     public AudioSource audioSource;
     #endregion
 
@@ -111,6 +112,9 @@ public class NovizioRaycast : MonoBehaviour
 
     void RushPlayer()
     {
+        audioSource.clip = surpriseSound;
+        Debug.Log(audioSource);
+        audioSource.Play();
         float distance = Vector3.Distance(transform.position, target.position);
         animator.SetBool("Chase",true);
         if (distance > attackRange)

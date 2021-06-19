@@ -44,6 +44,7 @@
           <e p="Enemy" t="Include">
             <e p="EnemySpawner.cs" t="Include" />
             <e p="Novizio" t="Include">
+              <e p="FixAnimPos.cs" t="Include" />
               <e p="NovizioAfk.cs" t="Include" />
               <e p="NovizioPatrol.cs" t="Include" />
               <e p="NovizioPatrolWP.cs" t="Include" />
