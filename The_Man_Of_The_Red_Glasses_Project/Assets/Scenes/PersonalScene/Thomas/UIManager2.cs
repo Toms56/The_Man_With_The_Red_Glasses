@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class UIManager2 : MonoBehaviour
 {
 
+    public GameObject[] imgPv;
+    private int i;
      public static UIManager2 Instance;
     #region Panels
     //public GameObject panelUIGame;
@@ -57,6 +59,17 @@ public class UIManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #region HealthBar
+
+        if (PlayerController.Instance.pv != i)
+        {
+            imgPv[i].SetActive(false);
+            i = PlayerController.Instance.pv;
+            imgPv[i].SetActive(true);
+        }
+        
+
+        #endregion
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isPaused)

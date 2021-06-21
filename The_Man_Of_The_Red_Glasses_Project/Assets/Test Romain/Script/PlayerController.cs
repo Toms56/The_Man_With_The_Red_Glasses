@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -59,6 +61,8 @@ public class PlayerController : MonoBehaviour
     public AudioSource audioSource;
 
     #endregion
+
+    public Camera mainCam;
     
     private void Awake()
     {
@@ -249,10 +253,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "BulletEnemy")
-        {
-            pv -= 1;
-        }
 
         if (other.tag == "FirstWeapon")
         {
@@ -271,6 +271,15 @@ public class PlayerController : MonoBehaviour
             {
                 firstWeapon.SetActive(false);
             }
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "EnnemyBullet")
+        {
+            mainCam.DOShakePosition(0.8f, 0.3f);
+            pv -= 1;
         }
     }
 
