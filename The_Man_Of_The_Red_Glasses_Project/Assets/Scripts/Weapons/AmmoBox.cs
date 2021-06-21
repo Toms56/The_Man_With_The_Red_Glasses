@@ -19,7 +19,8 @@ public class AmmoBox : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            //Rajouter ligne pour mettre les balles au maximum
+            Beretta.Instance.magazine = 10;
+            Thompson.Instance.magazine = 25;
         }
     }
 }

@@ -77,7 +77,6 @@
             <e p="Letters" t="Include">
               <e p="SpinLetter.cs" t="Include" />
             </e>
-            <e p="UIManager.cs" t="Include" />
           </e>
           <e p="Weapons" t="Include">
             <e p="AmmoBox.cs" t="Include" />
@@ -85,6 +84,9 @@
             <e p="Thompson.cs" t="Include" />
             <e p="Weapons (1).cs" t="Include" />
           </e>
+        </e>
+        <e p="SupportThomas" t="Include">
+          <e p="UIManager.cs" t="Include" />
         </e>
         <e p="Test Romain" t="Include">
           <e p="Script" t="Include">

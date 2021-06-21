@@ -8,26 +8,21 @@ using UnityEngine.UI;
 public class UIManager2 : MonoBehaviour
 {
 
-    public static UIManager2 Instance;
+     public static UIManager2 Instance;
     #region Panels
     //public GameObject panelUIGame;
     [SerializeField] GameObject panelPause;
     public GameObject panelLettre3;
     public GameObject panelWin;
+    public GameObject panelBerreta;
+    public GameObject panelThompson;
+    public GameObject circleWeapons;
+    public GameObject panelmagazine;
 
     #endregion
+
     #region Texts
-    public Text magasineTxt;
-    #endregion
-
-    #region Img
-
-    public Image berettaUsed;
-    public Image berettaNotUsed;
-
-    public Image thompsonUsed;
-    public Image thompsonNotUsed;
-
+    public Text magazineTxt;
     #endregion
 
     private bool isMuted;
@@ -56,10 +51,6 @@ public class UIManager2 : MonoBehaviour
         #region  sound
         AudioListener.pause = false;
         #endregion
-        thompsonNotUsed.enabled = false;
-        thompsonUsed.enabled = false;
-        berettaUsed.enabled = false;
-        berettaNotUsed.enabled = false;
         //isPaused = false;
     }
 
@@ -71,7 +62,8 @@ public class UIManager2 : MonoBehaviour
             if (!isPaused)
             {
                 Pause();
-            }else if (isPaused)
+            }
+            else if (isPaused)
             {
                 Resume();
             }
@@ -80,7 +72,8 @@ public class UIManager2 : MonoBehaviour
         if (isPaused && levelFinish == false)
         {
             panelPause.SetActive(true);
-        }else if (!isPaused)
+        }
+        else if (!isPaused)
         {
             panelPause.SetActive(false);
         }
@@ -91,30 +84,20 @@ public class UIManager2 : MonoBehaviour
             Time.timeScale = 0;
         }
 
-        #region MagasineManagement
-        magasineTxt.text = " " + Weapons.magazine;
-        #endregion
-
-        if (Beretta.Instance)
+        if (PlayerController.Instance.firstWeapon.activeSelf)
         {
-            thompsonNotUsed.enabled = true;
-            thompsonUsed.enabled = false;
-            berettaUsed.enabled = true;
-            berettaNotUsed.enabled = false;
+            panelBerreta.SetActive(true);
+            panelmagazine.SetActive(true);
+            magazineTxt.text = "" + Beretta.Instance.magazine;
+            panelThompson.SetActive(false);
+            
+            circleWeapons.SetActive(true);           
         }
-
-        if (Thompson.Instance == null)
+        else
         {
-            thompsonNotUsed.enabled = false;
-            thompsonUsed.enabled = false;
-        }
-
-        if (Thompson.Instance)
-        {
-            thompsonNotUsed.enabled = false;
-            thompsonUsed.enabled = true;
-            berettaUsed.enabled = false;
-            berettaNotUsed.enabled = true;
+            panelBerreta.SetActive(false);
+            panelThompson.SetActive(true);
+            magazineTxt.text = "" + Thompson.Instance.magazine;
         }
     }
 

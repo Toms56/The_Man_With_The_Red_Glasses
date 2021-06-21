@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 2961384103242441252}
   bullet: {fileID: 6937827055177815501, guid: 8c3c79b70fcb01044b2c68209a2acd7e, type: 3}
+  magazine: 10
   bulletSpeed: 10
   fireRate: 0.7
   shotSound: {fileID: 8300000, guid: 00db00d5d0792684f8ee5c6d6256b42c, type: 3}

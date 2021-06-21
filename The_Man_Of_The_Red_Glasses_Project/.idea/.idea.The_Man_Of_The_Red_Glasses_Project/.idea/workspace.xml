@@ -20,14 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Thompson.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Thompson.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/beretta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/beretta.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Main Camera Profile 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1/Main Camera Profile 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenus.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenus.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
@@ -80,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/tableAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlashLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
@@ -92,9 +99,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/FixAnimPos.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" />
       </list>
     </option>
   </component>
@@ -199,6 +207,7 @@
       <workItem from="1624007206790" duration="4446000" />
       <workItem from="1624097045553" duration="5359000" />
       <workItem from="1624123555904" duration="1074000" />
+      <workItem from="1624256276513" duration="7404000" />
     </task>
     <servers />
   </component>
@@ -236,13 +245,17 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1656" y="0" width="1367" height="1028" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623860528502" />
+    <state x="627" y="119" width="666" height="801" key="find.popup" timestamp="1624260778313">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="119" width="666" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1624260778313" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1623937181803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623937181803" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1620907737309">
+    <state x="935" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1624260678535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1620907737309" />
+    <state x="935" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1624260678535" />
   </component>
 </project>
