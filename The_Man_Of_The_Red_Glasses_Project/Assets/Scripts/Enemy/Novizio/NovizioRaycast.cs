@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = System.Random;
 
 public class NovizioRaycast : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class NovizioRaycast : MonoBehaviour
     //public AudioClip runSound;
     public AudioClip deathSound;
     public AudioClip surpriseSound;
+    public AudioClip[] surpriseClips;
     public AudioSource audioSource;
     #endregion
 
@@ -54,6 +56,7 @@ public class NovizioRaycast : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         zAxis = transform.position.z;
         isAgro = false;
         rb = GetComponent<Rigidbody>();
@@ -83,6 +86,7 @@ public class NovizioRaycast : MonoBehaviour
             //audioSource.Play();
             if (!doOnce)
             { 
+                
                 StartCoroutine(Destroy());
                 doOnce = true;
             }
@@ -112,8 +116,8 @@ public class NovizioRaycast : MonoBehaviour
 
     void RushPlayer()
     {
-        audioSource.clip = surpriseSound;
         Debug.Log(audioSource);
+        audioSource.clip = surpriseSound;
         audioSource.Play();
         float distance = Vector3.Distance(transform.position, target.position);
         animator.SetBool("Chase",true);
@@ -148,6 +152,7 @@ public class NovizioRaycast : MonoBehaviour
             if (hit.collider.CompareTag("Player"))
             {
                 Debug.Log("Player hit");
+                
                 isAgro = true;
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
@@ -177,6 +182,7 @@ public class NovizioRaycast : MonoBehaviour
                 Color.green);
         }
     }
+    
 
     IEnumerator Destroy()
     {

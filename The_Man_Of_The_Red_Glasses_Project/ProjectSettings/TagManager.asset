@@ -15,6 +15,16 @@ TagManager:
   - EnnemyBullet
   - AmmoBox
   - Medikit
+  - main
+  - option
+  - Credits
+  - closeCredits
+  - credits2
+  - credits1
+  - credits3
+  - muteOn
+  - muteOff
+  - mainMenu
   layers:
   - Default
   - TransparentFX

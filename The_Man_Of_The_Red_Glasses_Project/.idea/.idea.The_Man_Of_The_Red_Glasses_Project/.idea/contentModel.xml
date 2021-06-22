@@ -99,6 +99,7 @@
           </e>
           <e p="UI" t="Include">
             <e p="Colliders_Help.cs" t="Include" />
+            <e p="CreditsLetter.cs" t="Include" />
             <e p="FadeOnScene.cs" t="Include" />
             <e p="Letters" t="Include">
               <e p="SpinLetter.cs" t="Include" />

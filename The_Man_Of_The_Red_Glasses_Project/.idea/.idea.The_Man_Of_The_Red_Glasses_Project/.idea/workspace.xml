@@ -21,13 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Maps/MaterialsExtracts/01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Maps/MaterialsExtracts/01 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/MEDKIT_.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/MEDKIT_.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier_Anim (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier_Anim (1).fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu3D.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
@@ -35,7 +39,6 @@
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,17 +97,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Letters/SpinLetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Test Romain/Script/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/FixAnimPos.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/TurnWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/Medikit.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Menu3D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreditsLetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" />
       </list>
     </option>
   </component>
@@ -212,6 +216,7 @@
       <workItem from="1624256276513" duration="7404000" />
       <workItem from="1624269472530" duration="6614000" />
       <workItem from="1624299777909" duration="1274000" />
+      <workItem from="1624347860635" duration="17913000" />
     </task>
     <servers />
   </component>

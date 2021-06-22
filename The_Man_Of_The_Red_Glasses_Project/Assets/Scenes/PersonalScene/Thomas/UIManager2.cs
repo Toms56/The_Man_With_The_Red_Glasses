@@ -8,9 +8,19 @@ using UnityEngine.UI;
 public class UIManager2 : MonoBehaviour
 {
 
-    public GameObject[] imgPv;
-    private int i;
+    public Animator anim;
+    public GameObject panelFinal;
+    public GameObject panelHealth;
+    //public Animation anim;
+
+    /*public GameObject[] imgPv;
+    private int i;*/
      public static UIManager2 Instance;
+
+     public Image pv4;
+     public Image pv3;
+     public Image pv2;
+     public Image pv1;
     #region Panels
     //public GameObject panelUIGame;
     [SerializeField] GameObject panelPause;
@@ -61,14 +71,74 @@ public class UIManager2 : MonoBehaviour
     {
         #region HealthBar
 
-        if (PlayerController.Instance.pv != i)
+        /*if (PlayerController.Instance.pv != i)
         {
             imgPv[i].SetActive(false);
             i = PlayerController.Instance.pv;
             imgPv[i].SetActive(true);
-        }
-        
+        }*/
 
+        /*switch (PlayerController.Instance.pv)
+        {
+            case 0:
+                pv4.enabled = false;
+                pv3.enabled = false;
+                pv2.enabled = false;
+                pv1.enabled = true;
+                break;
+            case 1:
+                pv4.enabled = false;
+                pv3.enabled = false;
+                pv2.enabled = true;
+                pv1.enabled = false;
+                break;
+            case 2:
+                pv4.enabled = false;
+                pv3.enabled = true;
+                pv2.enabled = false;
+                pv1.enabled = false;
+                break;
+            case 3:
+                pv4.enabled = true;
+                pv3.enabled = false;
+                pv2.enabled = false;
+                pv1.enabled = false;
+                break;
+                
+        }*/
+
+        if (PlayerController.Instance.pv == 4)
+        {
+            pv4.enabled = true;
+            pv3.enabled = false;
+            pv2.enabled = false;
+            pv1.enabled = false;
+        }else if (PlayerController.Instance.pv == 3)
+        {
+            pv4.enabled = false;
+            pv3.enabled = true;
+            pv2.enabled = false;
+            pv1.enabled = false; 
+        }else if (PlayerController.Instance.pv == 2)
+        {
+            pv4.enabled = false;
+            pv3.enabled = false;
+            pv2.enabled = true;
+            pv1.enabled = false;
+        }else if (PlayerController.Instance.pv == 1)
+        {
+            pv4.enabled = false;
+            pv3.enabled = false;
+            pv2.enabled = false;
+            pv1.enabled = true;
+        }
+        else if (PlayerController.Instance.pv == 0)
+        {
+            pv4.enabled = false;
+            pv3.enabled = false;
+            pv2.enabled = false;
+            pv1.enabled = false;
+        }
         #endregion
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -145,5 +215,15 @@ public class UIManager2 : MonoBehaviour
     public void Onclick_ChangeScene( int scene)
     {
         SceneManager.LoadScene(scene);
+    }
+    public void OnClickEndGame()
+    {
+        panelBerreta.SetActive(false);
+        panelThompson.SetActive(false);
+        circleWeapons.SetActive(false);
+        panelmagazine.SetActive(false);
+        panelHealth.SetActive(false);
+        panelFinal.SetActive(true);
+        anim.SetBool("endGame", true);
     }
 }
