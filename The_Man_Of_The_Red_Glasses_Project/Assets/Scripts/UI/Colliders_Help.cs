@@ -24,14 +24,14 @@ public class Colliders_Help : MonoBehaviour
     {
         if (other.tag == "Player" && !pastPlayer && numbers == 1)
         {
-            UIManager.isPaused = true;
+            UIManager2.Instance.isPausedTuto = true;
             panel.SetActive(true);
             pastPlayer = true;
         }
 
         if (other.tag == "Player" && !pastPlayer && numbers == 2 && PlayerController.Instance.equipSecondWeap)
         {
-            UIManager.isPaused = true;
+            UIManager2.Instance.isPausedTuto = true;
             panel.SetActive(true);
             pastPlayer = true;
         }

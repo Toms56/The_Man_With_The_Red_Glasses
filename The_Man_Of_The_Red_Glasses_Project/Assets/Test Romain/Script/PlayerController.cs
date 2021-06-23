@@ -80,6 +80,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        pv = 4;
         animator = GetComponent<Animator>();
         charaController = GetComponent<CharacterController>();
         playerTransform = GetComponent<Transform>();
@@ -94,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
         if (UIManager2.Instance != null)
         {
-            if (UIManager2.Instance.isPaused)
+            if (UIManager2.Instance.isPaused || UIManager2.Instance.isPausedTuto)
             {
                 animator.SetFloat("Speed", 0);
                 return;
@@ -103,7 +104,11 @@ public class PlayerController : MonoBehaviour
 
         if (pv <= 0)
         {
-            //die = true;
+            movement.x = 0;
+            movement.z = 0;
+            movement.y -= 15f * Time.deltaTime;
+            charaController.Move(movement * Time.deltaTime);
+            die = true;
             animator.SetFloat("Speed", 0);
             animator.SetBool("Death", true);
             baseSpeed = 0;
@@ -283,8 +288,8 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "EnnemyBullet")
         {
-            mainCam.DOShakePosition(0.8f, 0.3f);
-            pv -= 1;
+            mainCam.DOShakePosition(0.3f, 0.05f);
+            pv --;
         }
     }
     

@@ -26,6 +26,9 @@ TagManager:
   - muteOff
   - mainMenu
   - cut
+  - loadTuto
+  - loadLvl1
+  - leaveGame
   layers:
   - Default
   - TransparentFX

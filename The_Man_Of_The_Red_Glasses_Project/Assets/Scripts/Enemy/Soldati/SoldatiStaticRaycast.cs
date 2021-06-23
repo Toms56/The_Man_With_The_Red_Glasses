@@ -12,6 +12,7 @@ public class SoldatiStaticRaycast : MonoBehaviour
     public float volume = 0.5f;
     //[SerializeField] private AudioClip[] clips;
     public AudioClip deathSound;
+    public AudioClip surpriseSound;
     public AudioSource audioSource;
     #endregion
     #region Movement
@@ -147,8 +148,10 @@ public class SoldatiStaticRaycast : MonoBehaviour
             //penser a desac .forward lors de la rotation
             if (hit.collider.CompareTag("Player"))
             {
-                Debug.Log("Player hit");
+                //Debug.Log("Player hit");
                 shoot = true;
+                audioSource.clip = surpriseSound;
+                audioSource.Play();
                 //isHit = false;
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);

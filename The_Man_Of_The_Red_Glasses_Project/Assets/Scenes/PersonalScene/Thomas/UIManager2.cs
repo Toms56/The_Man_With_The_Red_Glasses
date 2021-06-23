@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class UIManager2 : MonoBehaviour
 {
+    public bool isPausedTuto;
 
     public Animator anim;
     public GameObject panelFinal;
@@ -57,6 +58,7 @@ public class UIManager2 : MonoBehaviour
 
     void Start()
     {
+        
         levelFinish = false;
         Time.timeScale = 1;
         #region  sound
@@ -68,6 +70,22 @@ public class UIManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (isPaused)
+        {
+            panelBerreta.SetActive(false);
+            panelThompson.SetActive(false);
+            circleWeapons.SetActive(false);
+            panelmagazine.SetActive(false);
+            panelHealth.SetActive(false);
+        }else if (!isPaused)
+        {
+            panelBerreta.SetActive(true);
+            panelThompson.SetActive(true);
+            circleWeapons.SetActive(true);
+            panelmagazine.SetActive(true);
+            panelHealth.SetActive(true);
+        }
         #region HealthBar
 
         if (PlayerController.Instance.pv == 0)
@@ -135,21 +153,25 @@ public class UIManager2 : MonoBehaviour
             Time.timeScale = 0;
         }
 
-        if (PlayerController.Instance.firstWeapon.activeSelf)
+        if (PlayerController.Instance.firstWeapon != null)
         {
-            panelBerreta.SetActive(true);
-            panelmagazine.SetActive(true);
-            magazineTxt.text = "" + Beretta.Instance.magazine;
-            panelThompson.SetActive(false);
+            if (PlayerController.Instance.firstWeapon.activeSelf)
+            {
+                panelBerreta.SetActive(true);
+                panelmagazine.SetActive(true);
+                magazineTxt.text = "" + Beretta.Instance.magazine;
+                panelThompson.SetActive(false);
             
-            circleWeapons.SetActive(true);           
+                circleWeapons.SetActive(true);           
+            }
+            else
+            {
+                panelBerreta.SetActive(false);
+                panelThompson.SetActive(true);
+                magazineTxt.text = "" + Thompson.Instance.magazine;
+            }  
         }
-        else
-        {
-            panelBerreta.SetActive(false);
-            panelThompson.SetActive(true);
-            magazineTxt.text = "" + Thompson.Instance.magazine;
-        }
+        
     }
 
     public void Pause()
@@ -167,6 +189,10 @@ public class UIManager2 : MonoBehaviour
     public void OnClickDisplayWin()
     {
         levelFinish = true;
+    }
+    public void Onclick_Play()
+    {
+        isPausedTuto = false;
     }
 
     public void Mute(int i)

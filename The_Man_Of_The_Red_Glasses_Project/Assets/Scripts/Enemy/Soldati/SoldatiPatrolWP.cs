@@ -11,6 +11,7 @@ public class SoldatiPatrolWP : MonoBehaviour
     public float volume = 0.5f;
     //public AudioClip walkSound;
     public AudioClip deathSound;
+    public AudioClip surpriseSound;
     public AudioSource audioSource;
     #endregion
     #region Movement
@@ -163,6 +164,8 @@ public class SoldatiPatrolWP : MonoBehaviour
                 Debug.Log("Player hit");
                 walk = false;
                 shoot = true;
+                audioSource.clip = surpriseSound;
+                audioSource.Play();
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }
@@ -193,71 +196,6 @@ public class SoldatiPatrolWP : MonoBehaviour
         }
         
     }
-
-    /*void Move()
-    {
-        canon.SetActive(false);
-        animator.SetBool("isPatrolling", true);
-        walk = true;
-        transform.position = Vector3.MoveTowards(transform.position, wayPoints[wayPointIndex].transform.position,
-            speed * Time.deltaTime);
-        if (transform.position == wayPoints[wayPointIndex].transform.position)
-        {
-            wayPointIndex += 1;
-        }
-        if (wayPointIndex == wayPoints.Length)
-        {
-            wayPointIndex = 0;
-        }
-
-        if (wayPoints[wayPointIndex].transform.position.x > gameObject.transform.position.x)
-        {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-        }
-        else
-        {
-            transform.rotation = Quaternion.identity;
-        }
-        
-        RaycastHit hit;
-
-        if (Physics.Raycast(castPoint.position, -transform.right, out hit, 1f, 1 << LayerMask.NameToLayer("Default")))
-        {
-            //penser a desac .forward lors de la rotation
-            if (hit.collider.CompareTag("Player"))
-            {
-                Debug.Log("Player hit");
-                shoot = true;
-                walk = false;
-            }
-            Debug.DrawLine(castPoint.position, hit.point, Color.red);
-        }
-        else
-        {
-            shoot = false;
-            walk = true;
-            Debug.DrawLine(castPoint.position, castPoint.position + -transform.right.normalized * 1f,
-                Color.green);
-        }
-        RaycastHit hit2;
-
-        if (Physics.Raycast(castPoint2.position, -transform.right, out hit2, 1f, 1 << LayerMask.NameToLayer("Default")))
-        {
-            //penser a desac .forward lors de la rotation
-            if (hit2.collider.CompareTag("Player"))
-            {
-                //Debug.Log("Player detected");
-                shoot = true;
-            }
-            Debug.DrawLine(castPoint2.position, hit2.point, Color.red);
-        }
-        else
-        {
-            shoot = false;
-            Debug.DrawLine(castPoint2.position, castPoint2.position + -transform.right.normalized * 1f,
-                Color.green);
-        }
-    }*/
 
     void ShootPlayer()
     {

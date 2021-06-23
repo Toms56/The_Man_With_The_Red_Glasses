@@ -48,6 +48,20 @@ public class Dossier : MonoBehaviour
                     
                     OnClickOpen();
                     mainMenuPage.SetActive(true);
+                    optionPage.SetActive(false);
+                    for (int i = 0; i < creditsPages.Length; i++)
+                    {
+                        creditsPages[i].SetActive(false);
+                    }
+                }
+            }
+            else if (selection.CompareTag("main") && fileOpen)
+            {
+                mainMenuPage.SetActive(true);
+                optionPage.SetActive(false);
+                for (int i = 0; i < creditsPages.Length; i++)
+                {
+                    creditsPages[i].SetActive(false);
                 }
             }
             else if (selection.CompareTag("option") && !fileOpen)
@@ -66,6 +80,8 @@ public class Dossier : MonoBehaviour
                     anim.SetBool("open", true);
                     fileOpen = true;
                     creditsPage1.SetActive(true);
+                    optionPage.SetActive(false);
+                    mainMenuPage.SetActive(true);
                 } 
             }
             else if (selection.CompareTag("option") && fileOpen)
@@ -79,8 +95,9 @@ public class Dossier : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     audioSource.Play();
-
                     creditsPage1.SetActive(true);
+                    optionPage.SetActive(false);
+                    mainMenuPage.SetActive(false);
                 } 
             }
             else if (selection.CompareTag("credits1"))
@@ -89,8 +106,9 @@ public class Dossier : MonoBehaviour
                 {
                     audioSource.Play();
                     creditsPage1.SetActive(true);
-
                     creditsPage2.SetActive(false);
+                    optionPage.SetActive(false);
+                    mainMenuPage.SetActive(false);
                 } 
             }
             else if (selection.CompareTag("credits2"))
@@ -101,6 +119,8 @@ public class Dossier : MonoBehaviour
                     creditsPage1.SetActive(false);
                     creditsPage3.SetActive(false);
                     creditsPage2.SetActive(true);
+                    optionPage.SetActive(false);
+                    mainMenuPage.SetActive(false);
                 } 
             }
             else if (selection.CompareTag("credits3"))
@@ -108,9 +128,10 @@ public class Dossier : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     audioSource.Play();
-
                     creditsPage2.SetActive(false);
                     creditsPage3.SetActive(true);
+                    optionPage.SetActive(false);
+                    mainMenuPage.SetActive(false);
                 } 
             }
             else if (selection.CompareTag("closeCredits"))
@@ -118,39 +139,59 @@ public class Dossier : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     audioSource.Play();
-
                     creditsPage1.SetActive(false);
                     creditsPage2.SetActive(false);
+                    creditsPage3.SetActive(false);
+                    mainMenuPage.SetActive(true);
                 } 
             }
             else if (selection.CompareTag("muteOn"))
             {
-                MuteOn();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    MuteOn();
+                }
             }
             else if (selection.CompareTag("muteOff"))
             {
-                MuteOff();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    MuteOff();
+                }
             }
             else if (selection.CompareTag("loadTuto"))
             {
-                LoadTuto();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    LoadTuto();
+                }
+                
             }
             else if (selection.CompareTag("loadLvl1"))
             {
-                LoadLvl1();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    LoadLvl1();
+                }
             }
             else if (selection.CompareTag("leaveGame"))
             {
-                LeaveGame();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    LeaveGame();
+                }
             }
             else if (selection.CompareTag("mainMenu"))
             {
-                for (int i = 0; i < creditsPages.Length; i++)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    creditsPages[i].SetActive(false);
+                    for (int i = 0; i < creditsPages.Length; i++)
+                    {
+                        creditsPages[i].SetActive(false);
+                    }
+                    optionPage.SetActive(false);
+                    mainMenuPage.SetActive(true);
                 }
-                optionPage.SetActive(false);
-                mainMenuPage.SetActive(true);
             }
         }
     }
@@ -170,6 +211,7 @@ public class Dossier : MonoBehaviour
         }
         audioSource.Play();
         optionPage.SetActive(true);
+        mainMenuPage.SetActive(false);
     }
 
     public void LoadTuto()

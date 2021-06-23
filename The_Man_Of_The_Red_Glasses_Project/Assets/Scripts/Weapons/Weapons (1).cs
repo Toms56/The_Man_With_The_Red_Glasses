@@ -15,6 +15,7 @@ public class Weapons : MonoBehaviour
     
     #region Sound
     public AudioClip shotSound;
+    public AudioClip notBulletSound;
     public AudioSource audioSource;
 
     public Camera mainCam;
@@ -33,6 +34,11 @@ public class Weapons : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        if (magazine <= 0 && Input.GetMouseButtonDown(0))
+        {
+            audioSource.clip = notBulletSound;
+            audioSource.Play();
+        }
         if (Input.GetMouseButton(0) && !PlayerController.Instance.die && PlayerController.Instance.aiming)
         {
             if (magazine != 0)
@@ -47,7 +53,9 @@ public class Weapons : MonoBehaviour
         
         if (Time.time > time)
         {
+            audioSource.clip = shotSound;
             GameObject firedBullet = Instantiate(bullet, targetTransform.position, targetTransform.rotation);
+            audioSource.Play();
             firedBullet.GetComponent<Rigidbody>().velocity = firedBullet.transform.right * bulletSpeed;
             firedBullet.transform.rotation = bullet.transform.rotation;
             magazine -= 1;
