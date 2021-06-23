@@ -33,7 +33,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2083,9 +2083,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8121911596759363840}
+  - component: {fileID: 1162775566}
   m_Layer: 0
   m_Name: Blade
-  m_TagString: Untagged
+  m_TagString: cut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2106,6 +2107,19 @@ Transform:
   m_Father: {fileID: 5942572784293112936}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1162775566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580950098584719410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0031688923, y: 0.107604586, z: 0.013097406}
+  m_Center: {x: -0.0006956065, y: 0.002484401, z: -0.00020662158}
 --- !u!1 &7719421891701673497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,7 +2327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8287174777868055840
 Transform:
   m_ObjectHideFlags: 0
@@ -2427,7 +2441,7 @@ MonoBehaviour:
   castPoint: {fileID: 8287174777815908693}
   castPoint2: {fileID: 582494853}
   target: {fileID: 0}
-  attackRange: 0.3
+  attackRange: 0.25
   animator: {fileID: 2480181727659204049}
   maxHealth: 3
   healthBarUI: {fileID: 2129437546}
@@ -2547,6 +2561,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: e74b663fe1b39a94abd8df2da434c2d0, type: 3}
+  clip: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &8370045014457897708
 GameObject:
   m_ObjectHideFlags: 0

@@ -2810,10 +2810,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 250976729, guid: 91f9dbfaaa9463e4e85082b0533d268b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 250976729, guid: 91f9dbfaaa9463e4e85082b0533d268b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8287174777868055834, guid: 91f9dbfaaa9463e4e85082b0533d268b,
         type: 3}
       propertyPath: m_Name
       value: NovizioPatrolWP
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287174777868055834, guid: 91f9dbfaaa9463e4e85082b0533d268b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8287174777868055837, guid: 91f9dbfaaa9463e4e85082b0533d268b,
         type: 3}
@@ -3915,7 +3928,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42be5bc4e1bbcc449ecde7fdb0814db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imgPv: []
+  anim: {fileID: 0}
+  panelFinal: {fileID: 0}
+  panelHealth: {fileID: 0}
+  pv4: {fileID: 0}
+  pv3: {fileID: 0}
+  pv2: {fileID: 0}
+  pv1: {fileID: 0}
   panelPause: {fileID: 3173958625102969654}
   panelLettre3: {fileID: 1894930115}
   panelWin: {fileID: 3956603116921420152}
@@ -3923,6 +3942,7 @@ MonoBehaviour:
   panelThompson: {fileID: 3956603115238744022}
   circleWeapons: {fileID: 3956603116116460906}
   panelmagazine: {fileID: 3956603116726247816}
+  panelGameOver: {fileID: 0}
   magazineTxt: {fileID: 3956603116816401415}
   isPaused: 0
   levelFinish: 0

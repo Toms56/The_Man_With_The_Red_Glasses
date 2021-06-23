@@ -51,13 +51,13 @@ public class NovizioRaycast : MonoBehaviour
     #endregion
 
     private bool doOnce;
-    private float zAxis;
+    //private float zAxis;
     public Transform target;
     // Start is called before the first frame update
     void Start()
     {
         
-        zAxis = transform.position.z;
+        //zAxis = transform.position.z;
         isAgro = false;
         rb = GetComponent<Rigidbody>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -108,17 +108,24 @@ public class NovizioRaycast : MonoBehaviour
             CancelInvoke("Patrol");
             RushPlayer();
         }
+        if (PlayerController.Instance.pv == 0)
+        {
+            rb.detectCollisions = false;
+            CancelInvoke("RushPLayer");
+            animator.SetBool("isAttacking", false);
+            animator.SetBool("Chase", false);
+            animator.SetBool("isPatrolling", false);
+        }
     }
     private void LateUpdate()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
+        //transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
     }
 
     void RushPlayer()
     {
-        Debug.Log(audioSource);
-        audioSource.clip = surpriseSound;
-        audioSource.Play();
+        //Debug.Log(audioSource);
+        
         float distance = Vector3.Distance(transform.position, target.position);
         animator.SetBool("Chase",true);
         if (distance > attackRange)
@@ -151,9 +158,11 @@ public class NovizioRaycast : MonoBehaviour
             //penser a desac .forward lors de la rotation
             if (hit.collider.CompareTag("Player"))
             {
-                Debug.Log("Player hit");
+                //Debug.Log("Player hit");
                 
                 isAgro = true;
+                audioSource.clip = surpriseSound;
+                audioSource.Play();
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }

@@ -53,17 +53,18 @@ public class NovizioPatrolWP : MonoBehaviour
 
     public float volume = 0.5f;
     //[SerializeField] private AudioClip[] clips;
-    public AudioClip walkSound;
+    public AudioClip surpriseSound;
     public AudioClip deathSound;
     public AudioSource audioSource;
     #endregion
 
     private bool doOnce;
-    private float zAxis;
+    //private float zAxis;
     // Start is called before the first frame update
     void Start()
     {
-        zAxis = transform.position.z;
+        
+        //zAxis = transform.position.z;
         rigidbody = GetComponent<Rigidbody>();
         transform.position = wayPoints[wayPointIndex].transform.position;
         healthPts = maxHealth;
@@ -125,11 +126,20 @@ public class NovizioPatrolWP : MonoBehaviour
             CancelInvoke("Patrol");
             RushPlayer();
         }
+
+        if (PlayerController.Instance.pv == 0)
+        {
+            rigidbody.detectCollisions = false;
+            CancelInvoke("RushPLayer");
+            animator.SetBool("isAttacking", false);
+            animator.SetBool("Chase", false);
+            animator.SetBool("isPatrolling", false);
+        }
     }
 
     private void LateUpdate()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
+        //transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
     }
 
     void Patrol()
@@ -164,8 +174,9 @@ public class NovizioPatrolWP : MonoBehaviour
             if (hit.collider.CompareTag("Player"))
             {
                 Debug.Log("Player hit");
-                //walk = false;
                 isAgro = true;
+                audioSource.clip = surpriseSound;
+                audioSource.Play();
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }
@@ -182,7 +193,7 @@ public class NovizioPatrolWP : MonoBehaviour
             //penser a desac .forward lors de la rotation
             if (hit2.collider.CompareTag("Player"))
             {
-                Debug.Log("Player hit");
+                //Debug.Log("Player hit");
                 //walk = false;
                 isAgro = true;
             }

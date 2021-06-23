@@ -25,6 +25,7 @@ TagManager:
   - muteOn
   - muteOff
   - mainMenu
+  - cut
   layers:
   - Default
   - TransparentFX

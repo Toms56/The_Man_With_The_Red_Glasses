@@ -20,18 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Maps/MaterialsExtracts/01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Maps/MaterialsExtracts/01 - Default.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/MEDKIT_.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/3DObjects/MEDKIT_.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier_Anim (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier_Anim (1).fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/PatrolWP/NovizioPatrolWP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/PatrolWP/NovizioPatrolWP.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/StaticRC/NovizioStaticRCast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/StaticRC/NovizioStaticRCast.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu3D.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
@@ -86,7 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EmissiveMaterial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Thompson.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/tableAnim.cs" />
@@ -102,13 +99,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/TurnWeapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/Medikit.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Menu3D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreditsLetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
       </list>
     </option>
   </component>
@@ -217,6 +215,7 @@
       <workItem from="1624269472530" duration="6614000" />
       <workItem from="1624299777909" duration="1274000" />
       <workItem from="1624347860635" duration="17913000" />
+      <workItem from="1624432012012" duration="6513000" />
     </task>
     <servers />
   </component>
@@ -262,9 +261,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1623937181803" />
-    <state x="935" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1624260678535">
+    <state x="935" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1624436338833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="935" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1624260678535" />
+    <state x="935" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1624436338833" />
   </component>
 </project>

@@ -11,11 +11,7 @@ public class UIManager2 : MonoBehaviour
     public Animator anim;
     public GameObject panelFinal;
     public GameObject panelHealth;
-    //public Animation anim;
-
-    /*public GameObject[] imgPv;
-    private int i;*/
-     public static UIManager2 Instance;
+    public static UIManager2 Instance;
 
      public Image pv4;
      public Image pv3;
@@ -30,7 +26,10 @@ public class UIManager2 : MonoBehaviour
     public GameObject panelThompson;
     public GameObject circleWeapons;
     public GameObject panelmagazine;
+    public GameObject panelGameOver;
 
+    public AudioSource audioSource;
+    public AudioClip endSound;
     #endregion
 
     #region Texts
@@ -71,41 +70,10 @@ public class UIManager2 : MonoBehaviour
     {
         #region HealthBar
 
-        /*if (PlayerController.Instance.pv != i)
+        if (PlayerController.Instance.pv == 0)
         {
-            imgPv[i].SetActive(false);
-            i = PlayerController.Instance.pv;
-            imgPv[i].SetActive(true);
-        }*/
-
-        /*switch (PlayerController.Instance.pv)
-        {
-            case 0:
-                pv4.enabled = false;
-                pv3.enabled = false;
-                pv2.enabled = false;
-                pv1.enabled = true;
-                break;
-            case 1:
-                pv4.enabled = false;
-                pv3.enabled = false;
-                pv2.enabled = true;
-                pv1.enabled = false;
-                break;
-            case 2:
-                pv4.enabled = false;
-                pv3.enabled = true;
-                pv2.enabled = false;
-                pv1.enabled = false;
-                break;
-            case 3:
-                pv4.enabled = true;
-                pv3.enabled = false;
-                pv2.enabled = false;
-                pv1.enabled = false;
-                break;
-                
-        }*/
+            StartCoroutine(Die());
+        }
 
         if (PlayerController.Instance.pv == 4)
         {
@@ -216,8 +184,17 @@ public class UIManager2 : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Time.timeScale = 0;
+        panelGameOver.SetActive(true);
+    }
     public void OnClickEndGame()
     {
+        audioSource.clip = endSound;
+        audioSource.Play();
         panelBerreta.SetActive(false);
         panelThompson.SetActive(false);
         circleWeapons.SetActive(false);

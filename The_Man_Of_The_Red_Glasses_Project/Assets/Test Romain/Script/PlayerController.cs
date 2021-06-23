@@ -272,6 +272,11 @@ public class PlayerController : MonoBehaviour
                 firstWeapon.SetActive(false);
             }
         }
+
+        if (other.gameObject.tag == "cut")
+        {
+            pv--;
+        }
     }
 
     private void OnCollisionEnter(Collision other)
@@ -282,6 +287,7 @@ public class PlayerController : MonoBehaviour
             pv -= 1;
         }
     }
+    
 
     // WALL JUMP
     private void OnControllerColliderHit(ControllerColliderHit hit)
