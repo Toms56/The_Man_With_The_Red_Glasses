@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -55,8 +56,12 @@ public class PlayerController : MonoBehaviour
     public GameObject secondWeapon;
 
     #region Sound
-    public AudioClip walkSound;
-    public AudioClip runSound;
+    public AudioClip jumpSound;
+    public AudioClip comeHereSound;
+    public AudioClip ezSound;
+    public AudioClip reloadSound;
+
+    public AudioClip[] jumps;
     //public AudioClip deathSound;
     public AudioSource audioSource;
 
@@ -150,7 +155,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift) && finalSpeed != 0 && !sneaky && die == false)
         {
-            finalSpeed = baseSpeed * 2;
+            finalSpeed = baseSpeed * 1.5f;
             animator.SetBool("Run", true);
         }
         else if (sneaky)
@@ -177,12 +182,17 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetButtonDown("Jump") && !sneaky)
                 {
+                    audioSource.clip = jumps[Random.Range(0, jumps.Length)];
+                    //audioSource.clip = jumpSound;
+                    audioSource.Play();
                     movement.y = jumpHeight;
                     isGrounded = true;
                     animator.SetBool("Jump", true);
                 }
                 else if (Input.GetButtonDown("Jump") && sneaky)
                 {
+                    audioSource.clip = jumpSound;
+                    audioSource.Play();
                     movement.y = jumpHeight * 1.2f;
                     isGrounded = true;
                     animator.SetBool("Jump", true);
@@ -258,9 +268,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.tag == "FirstWeapon")
         {
+            audioSource.clip = comeHereSound;
+            audioSource.Play();
             firstWeapon = Instantiate(beretta, weaponsTransf);
             Destroy(other.gameObject);
         }
@@ -282,13 +293,24 @@ public class PlayerController : MonoBehaviour
         {
             pv--;
         }
+
+        if (other.gameObject.tag == "letter")
+        {
+            audioSource.clip = ezSound;
+            audioSource.Play();
+        }
+
+        if (other.gameObject.tag == "AmmoBox")
+        {
+            audioSource.clip = reloadSound;
+            audioSource.Play();
+        }
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "EnnemyBullet")
         {
-            mainCam.DOShakePosition(0.3f, 0.05f);
             pv --;
         }
     }

@@ -65,7 +65,7 @@ public class SoldatiCanon : MonoBehaviour
         audioSource.clip = reloadSound;
         audioSource.Play();
         yield return new WaitForSeconds(3);
-        n = 6;
+        n = 4;
         //SpawnBullet();
     }
     

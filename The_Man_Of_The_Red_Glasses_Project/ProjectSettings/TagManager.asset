@@ -29,6 +29,8 @@ TagManager:
   - loadTuto
   - loadLvl1
   - leaveGame
+  - letter
+  - table
   layers:
   - Default
   - TransparentFX
@@ -43,9 +45,9 @@ TagManager:
   - Action
   - Wall
   - Pause
-  - 
-  - 
-  - 
+  - IA
+  - Bullet
+  - Joueur
   - 
   - 
   - 

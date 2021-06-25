@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EnnemyBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 37b2ff2bbe882f4428f25f792541a1b3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b2ff2bbe882f4428f25f792541a1b3, type: 3}
 --- !u!1 &466618442725750304 stripped

@@ -50,14 +50,16 @@ public class NovizioRaycast : MonoBehaviour
     [SerializeField] private float healthPts;
     #endregion
 
+    private float zAxis;
     private bool doOnce;
+
+    private Transform startPos;
     //private float zAxis;
     public Transform target;
     // Start is called before the first frame update
     void Start()
     {
-        
-        //zAxis = transform.position.z;
+        zAxis = transform.position.z;
         isAgro = false;
         rb = GetComponent<Rigidbody>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -68,6 +70,7 @@ public class NovizioRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         slider.value = CalculateHealth();
         if (healthPts < maxHealth)
         {
@@ -119,13 +122,14 @@ public class NovizioRaycast : MonoBehaviour
     }
     private void LateUpdate()
     {
-        //transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
+        transform.position = new Vector3(transform.position.x, transform.position.y, zAxis);
     }
 
     void RushPlayer()
     {
         //Debug.Log(audioSource);
-        
+        audioSource.clip = surpriseSound;
+        audioSource.Play();
         float distance = Vector3.Distance(transform.position, target.position);
         animator.SetBool("Chase",true);
         if (distance > attackRange)
@@ -157,12 +161,7 @@ public class NovizioRaycast : MonoBehaviour
         {
             //penser a desac .forward lors de la rotation
             if (hit.collider.CompareTag("Player"))
-            {
-                //Debug.Log("Player hit");
-                
-                isAgro = true;
-                audioSource.clip = surpriseSound;
-                audioSource.Play();
+            { isAgro = true;
             }
             Debug.DrawLine(castPoint.position, hit.point, Color.red);
         }

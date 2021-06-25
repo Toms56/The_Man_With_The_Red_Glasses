@@ -14,7 +14,7 @@ public class SoldatiBullet : MonoBehaviour
     void Start()
     {
         var pos = target.position;
-        pos.y = transform.position.y;
+        pos.y = transform.position.y - 0.05f;
         //target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         moveDirection = pos - transform.position;
         Destroy(gameObject, 1f);
@@ -33,7 +33,12 @@ public class SoldatiBullet : MonoBehaviour
         {
             Debug.Log("Player HIT buy bullet");
             Destroy(gameObject);
-        }    
+        }
+
+        if (other.gameObject.CompareTag("table"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     /*private void OnTriggerEnter(Collider other)

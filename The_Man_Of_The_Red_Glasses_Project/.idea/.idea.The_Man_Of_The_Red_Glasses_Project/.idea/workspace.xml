@@ -20,40 +20,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e17fe-88e8-455b-8cef-d281598f36fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Man_Of_The_Red_Glasses_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Cyrius/DeathCollider.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Cyrius/DeathCollider.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabTest/Weapon/Beretta/BerettaBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cyrius Controller 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cyrius Controller 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/PatrolWP/NovizioPatrolWP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/PatrolWP/NovizioPatrolWP.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/StaticRC/NovizioStaticRCast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Novizio/StaticRC/NovizioStaticRCast.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Patrol/SoldatiPatrol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Patrol/SoldatiPatrol.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati_Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/Soldati_Walk.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/StaticRC/SoldatiStatic_RC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Soldati/StaticRC/SoldatiStatic_RC.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Niveau_tuto_light.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Niveau_tuto_light.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Thompson.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Thompson.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_2bis.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_2bis.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/3D/Credits_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/Credits_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Credits/Credits_1.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier/Dossier.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/beretta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/beretta.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Materials/OutlineFill.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Materials/OutlineFill.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Materials/OutlineMask.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Materials/OutlineMask.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Shaders/OutlineFill.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Shaders/OutlineFill.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Shaders/OutlineMask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Resources/Shaders/OutlineMask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Samples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Samples/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Samples/Materials/Plane.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Samples/Materials/Plane.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Samples/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Samples/Scenes/QuickOutline.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Samples/Scenes/QuickOutline.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Scripts/Outline.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QuickOutline/Scripts/Outline.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu3D.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Colliders_Help.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Colliders_Help.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +92,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/TurnWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmissiveMaterial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/QuickOutline/Scripts/Outline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/3DObjects/tableAnim.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,31 +121,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EmissiveMaterial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Thompson.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioAfk.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/tableAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlashLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Letters/SpinLetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Test Romain/Script/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/FixAnimPos.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/TurnWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/Medikit.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Menu3D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreditsLetter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiStaticRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapons (1).cs" />
-        <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Colliders_Help.cs" />
-        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/SoldatiPatrolWP.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/AmmoBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiCanon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Menu3D/Dossier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Soldati/Shoot/SoldatiBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/3DObjects/tableAnim.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioPatrolWP.cs" />
+        <option value="$PROJECT_DIR$/Assets/Test Romain/Script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Novizio/NovizioRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/PersonalScene/Thomas/UIManager2.cs" />
       </list>
     </option>
   </component>
@@ -236,6 +256,8 @@
       <workItem from="1624347860635" duration="17913000" />
       <workItem from="1624432012012" duration="6513000" />
       <workItem from="1624447747269" duration="10417000" />
+      <workItem from="1624519494083" duration="13605000" />
+      <workItem from="1624608206845" duration="3856000" />
     </task>
     <servers />
   </component>

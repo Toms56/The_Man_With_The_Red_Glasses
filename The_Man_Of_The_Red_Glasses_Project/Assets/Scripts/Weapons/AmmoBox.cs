@@ -19,8 +19,15 @@ public class AmmoBox : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            Beretta.Instance.magazine = 10;
-            Thompson.Instance.magazine = 25;
+            if (Beretta.Instance != null)
+            {
+                Beretta.Instance.magazine = 10;
+            }
+
+            if (Thompson.Instance != null)
+            {
+                Thompson.Instance.magazine = 25;
+            }
         }
     }
 }

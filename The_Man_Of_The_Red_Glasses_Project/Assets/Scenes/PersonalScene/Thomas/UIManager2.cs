@@ -18,6 +18,7 @@ public class UIManager2 : MonoBehaviour
      public Image pv3;
      public Image pv2;
      public Image pv1;
+     
     #region Panels
     //public GameObject panelUIGame;
     [SerializeField] GameObject panelPause;
@@ -52,13 +53,15 @@ public class UIManager2 : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
     
-
     void Start()
     {
         
+        panelBerreta.SetActive(false);
+        panelThompson.SetActive(false);
+        circleWeapons.SetActive(false);
+        panelmagazine.SetActive(false);
         levelFinish = false;
         Time.timeScale = 1;
         #region  sound
@@ -70,7 +73,6 @@ public class UIManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isPaused)
         {
             panelBerreta.SetActive(false);
@@ -150,10 +152,11 @@ public class UIManager2 : MonoBehaviour
         if (levelFinish)
         {
             panelWin.SetActive(true);
+            audioSource.Stop();
             Time.timeScale = 0;
         }
 
-        if (PlayerController.Instance.firstWeapon != null)
+        if (PlayerController.Instance.firstWeapon != null && isPaused == false)
         {
             if (PlayerController.Instance.firstWeapon.activeSelf)
             {
@@ -211,11 +214,21 @@ public class UIManager2 : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void OnClickMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     IEnumerator Die()
     {
         yield return new WaitForSeconds(2.5f);
         Time.timeScale = 0;
         panelGameOver.SetActive(true);
+        panelBerreta.SetActive(false);
+        panelThompson.SetActive(false);
+        circleWeapons.SetActive(false);
+        panelmagazine.SetActive(false);
+        panelHealth.SetActive(false);
     }
     public void OnClickEndGame()
     {

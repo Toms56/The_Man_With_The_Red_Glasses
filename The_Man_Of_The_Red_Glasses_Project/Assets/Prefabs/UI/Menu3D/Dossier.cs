@@ -23,17 +23,24 @@ public class Dossier : MonoBehaviour
     public GameObject optionPage;
     
     public AudioSource audioSource;
+    public GameObject panelPopup;
+    public GameObject panelSpace;
 
     public AudioClip pageSound;
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         audioSource.clip = pageSound;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            panelSpace.SetActive(false); 
+        }
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
@@ -81,7 +88,7 @@ public class Dossier : MonoBehaviour
                     fileOpen = true;
                     creditsPage1.SetActive(true);
                     optionPage.SetActive(false);
-                    mainMenuPage.SetActive(true);
+                    mainMenuPage.SetActive(false);
                 } 
             }
             else if (selection.CompareTag("option") && fileOpen)
@@ -174,8 +181,13 @@ public class Dossier : MonoBehaviour
                     LoadLvl1();
                 }
             }
+            else if (!selection.CompareTag("leaveGame"))
+            {
+                panelPopup.SetActive(false);
+            }
             else if (selection.CompareTag("leaveGame"))
             {
+                panelPopup.SetActive(true);
                 if (Input.GetMouseButtonDown(0))
                 {
                     LeaveGame();
@@ -185,11 +197,11 @@ public class Dossier : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
+                    optionPage.SetActive(false);
                     for (int i = 0; i < creditsPages.Length; i++)
                     {
                         creditsPages[i].SetActive(false);
                     }
-                    optionPage.SetActive(false);
                     mainMenuPage.SetActive(true);
                 }
             }

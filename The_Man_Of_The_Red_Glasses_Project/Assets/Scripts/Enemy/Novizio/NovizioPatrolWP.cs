@@ -74,6 +74,13 @@ public class NovizioPatrolWP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isAgro)
+        {
+            speed = 1.1f;
+        }else if (!isAgro)
+        {
+            speed = 0.6f;
+        }
         if (isAgro && walk == false)
         {
             RushPlayer();

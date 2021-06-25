@@ -130,8 +130,8 @@ MonoBehaviour:
   targetTransform: {fileID: 2961384103242441252}
   bullet: {fileID: 6937827055177815501, guid: 8c3c79b70fcb01044b2c68209a2acd7e, type: 3}
   magazine: 10
-  bulletSpeed: 10
-  fireRate: 0.7
+  bulletSpeed: 15
+  fireRate: 0.55
   shotSound: {fileID: 8300000, guid: b4febee2336b50747890a0f6e46234bd, type: 3}
   notBulletSound: {fileID: 8300000, guid: c1b07b6630d3b6f4fb213b78c46488a2, type: 3}
   audioSource: {fileID: -9181151004527184764}
